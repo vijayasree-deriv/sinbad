@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksinbad_dev=self.webpackChunksinbad_dev||[]).push([[32],{7190:function(e,n,a){a.r(n);var t=a(5007),u=a(7539);n.default=function(e){return t.createElement(u.Z,null,t.createElement(t.Fragment,null,e.params.id))}}}]);
+//# sourceMappingURL=component---src-pages-job-description-[id]-tsx-fd2ac7e31960a069304c.js.map
