@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-404-tsx-db88e9b0fda9bc9f249a.js","mappings":"kIAMA,UAJqB,WACjB,OAAOA,EAAAA,QAAAA,cAAAA,KAAAA,KAAAA","sources":["webpack://sinbad-dev/./src/pages/404.tsx"],"sourcesContent":["import React from 'react'\n\nconst PageNotFound = () => {\n    return <h1>404</h1>\n}\n\nexport default PageNotFound\n"],"names":["React"],"sourceRoot":""}
