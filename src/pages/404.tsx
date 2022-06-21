@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Layout from 'components/layout/layout'
@@ -68,11 +69,12 @@ const PageNotFound = () => {
             <DescriptionContainer>
                 <DescriptionContainerWrapper>
                     <PageNotFoundContainer>
-                        <img
-                            src={ImageNotAvailable}
+                        <StaticImage
+                            key={1}
+                            src="../images/common/sinbad-thinking.png"
                             alt="Page not found"
-                            width="450"
-                            height="450"
+                            loading="eager"
+                            placeholder="none"
                         />
                         <PageNotFoundContainerInfo>
                             <Header>We couldn’t find that page</Header>
