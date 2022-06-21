@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 import Layout from 'components/layout/layout'
 import { ContainerWrapper } from 'components/containers/common/style'
-import ImageNotAvailable from 'images/common/sinbad-thinking.png'
 
 const DescriptionContainer = styled.div`
     display: flex;
