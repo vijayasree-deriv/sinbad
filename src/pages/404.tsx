@@ -69,7 +69,6 @@ const PageNotFound = () => {
                 <DescriptionContainerWrapper>
                     <PageNotFoundContainer>
                         <StaticImage
-                            key={1}
                             src="../images/common/sinbad-thinking.png"
                             alt="Page not found"
                             loading="eager"
