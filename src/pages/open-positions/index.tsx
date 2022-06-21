@@ -1,8 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Loadable from '@loadable/component'
-export const Hero = Loadable(() => import('./hero'))
-export const OpenPositions = Loadable(() => import('./open-positions'))
+import { Hero, OpenPositions } from './loading'
 import { JoinUs, Layout } from 'pages/home'
 
 const Positions = () => {

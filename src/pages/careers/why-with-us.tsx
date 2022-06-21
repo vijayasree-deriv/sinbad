@@ -80,7 +80,7 @@ const StyledImage = styled(ImageContainer)`
     }
 `
 
-const WorkWithUs = () => {
+const WhyWithUs = () => {
     return (
         <WorkWithUsContainer>
             <CareersContainerWrapper>
@@ -107,4 +107,4 @@ const WorkWithUs = () => {
     )
 }
 
-export default WorkWithUs
+export default WhyWithUs

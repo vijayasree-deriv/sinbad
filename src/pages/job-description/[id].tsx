@@ -1,10 +1,7 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import type { PageProps } from 'gatsby'
-import Loadable from '@loadable/component'
-export const BenefitsList = Loadable(() => import('./benefits'))
-export const Description = Loadable(() => import('./description'))
-export const JobTitle = Loadable(() => import('./job-title'))
+import { BenefitsList, Description, JobTitle } from './loading'
 import { positions } from './data'
 import { JoinUs, Layout } from 'pages/home'
 

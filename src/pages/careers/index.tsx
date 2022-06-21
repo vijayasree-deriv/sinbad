@@ -1,11 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Loadable from '@loadable/component'
-const WorkWithUs = Loadable(() => import('./work-with-us'))
-const WhyWithUs = Loadable(() => import('./why-with-us'))
-const PerksBenefits = Loadable(() => import('./perks-benefits'))
-const OpenPositions = Loadable(() => import('./open-positions'))
-const HiringProcess = Loadable(() => import('./hiring-process'))
+import { HiringProcess, OpenPositions, PerksBenefits, WhyWithUs, WorkWithUs } from './loading'
 import Layout from 'components/layout/layout'
 import { JoinUs } from 'pages/home'
 
