@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { RoundRight } from 'images/svg'
+import device from 'themes/device'
 
 /* stylelint-disable */
 
@@ -39,13 +40,21 @@ const ButtonItem = styled.button`
         margin: 0 10px 0 10px;
     }
 `
+const ButtonContainer = styled.div`
+    display: flex;
+    @media ${device.mobileL} {
+        justify-content: center;
+    }
+`
 
 const Button = ({ has_icon = true, label, onClick }: ButtonProps) => {
     return (
-        <ButtonItem onClick={onClick}>
-            {has_icon && <img src={RoundRight} />}
-            <span>{label}</span>
-        </ButtonItem>
+        <ButtonContainer>
+            <ButtonItem onClick={onClick}>
+                {has_icon && <img src={RoundRight} />}
+                <span>{label}</span>
+            </ButtonItem>
+        </ButtonContainer>
     )
 }
 

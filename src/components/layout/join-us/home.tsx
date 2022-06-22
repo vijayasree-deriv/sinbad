@@ -25,6 +25,9 @@ export const StyledHeader = styled.div<{ font_family?: string }>`
     line-height: 58px;
     font-weight: 560;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
+    @media ${device.mobileL} {
+        text-align: center;
+    }
 `
 
 export const StyledText = styled.div<{ font_family?: string }>`
@@ -37,6 +40,9 @@ export const StyledText = styled.div<{ font_family?: string }>`
     font-family: ${(props) => props.font_family || 'Maven Pro'};
     text-align: left;
     padding: 25px 0;
+    @media ${device.mobileL} {
+        text-align: center;
+    }
 `
 
 export const JoinUsContainer = styled.div<{ fd?: string; height?: string }>`
@@ -60,6 +66,11 @@ export const TextContainer = styled.div<{ padding_bottom?: string }>`
     @media ${device.tabletL} {
         padding-bottom: 20px;
     }
+    @media ${device.mobileL} {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 `
 
 const JoinUsWrapper = styled(JoinUsContainer)`
@@ -78,6 +89,10 @@ export const JoinUsInfo = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    @media ${device.mobileL} {
+        align-items: center;
+        padding: 10px;
+    }
 `
 
 const JoinUsHome = () => {

@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
     i { font-style: italic }
     * {
-        font-family: 'IBM Plex Sans', sans-serif;
+        font-family: 'Maven Pro Bold', sans-serif;
 
         &, &::before, &::after {
             box-sizing: border-box;
@@ -34,6 +34,10 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         background: white;
+    }
+    
+    div {
+        font-size: 0px;
     }
 `
 

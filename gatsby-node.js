@@ -1,5 +1,6 @@
 /* eslint-disable import/order */
 const path = require('path')
+// const positions = require('src/pages/job-description/data')
 
 exports.onCreatePage = () => {}
 
@@ -27,5 +28,43 @@ exports.onCreateWebpackConfig = ({ actions, getConfig }, { ...options }) => {
             },
             modules: [path.resolve(__dirname, 'src'), 'node_modules'],
         },
+    })
+}
+
+exports.createPages = async ({ reporter, actions, graphql }) => {
+    const { createPage } = actions
+    const position_template = path.resolve(__dirname, 'src/templates/position.tsx')
+
+    // Fetch the data JSON for positions
+    const result = await graphql(`
+        query All {
+            allPositionsJson {
+                edges {
+                    node {
+                        slug
+                    }
+                }
+            }
+        }
+    `)
+
+    if (result.errors) {
+        reporter.panic(result.errors)
+    }
+
+    const positions = result.data.allPositionsJson.edges
+
+    positions.forEach(({ node: { slug } }) => {
+        const path = `/job-description/${slug}/`
+
+        createPage({
+            path,
+            component: position_template,
+            context: {
+                locale: 'en',
+                pathname: path,
+                slug,
+            },
+        })
     })
 }

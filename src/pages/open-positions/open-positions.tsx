@@ -52,6 +52,12 @@ const PositionsCarouselContainer = styled.div`
     @media ${device.tablet} {
         padding: 60px 0;
     }
+    @media ${device.mobileL} {
+        width: 100%;
+        max-width: 300px;
+        padding-right: 35px;
+        padding-top: 0px;
+    }
 `
 const CardButtonContainer = styled(Link)`
     display: flex;

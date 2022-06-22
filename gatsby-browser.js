@@ -1,5 +1,6 @@
 import React from 'react'
 import GlobalStyle from 'themes/global-style'
+import './static/css/global-style.css'
 import './static/css/ibm-plex-sans-var.css'
 
 export const onInitialClientRender = () => {}
