@@ -32,13 +32,40 @@ const StyledHeader = styled(Header)`
     line-height: 50px;
     font-weight: 560;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
+    @media ${device.tabletL} {
+        padding-left: 25px;
+    }
+    @media ${device.tabletS} {
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+    @media ${device.mobileL} {
+        font-size: 3rem;
+        line-height: 35px;
+        padding-right: 10px;
+    }
+    @media ${device.mobileM} {
+        line-height: 30px;
+        padding-right: 10px;
+    }
 `
-
+const HeaderWrapper = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    @media ${device.mobileL} {
+        padding: 10px;
+        justify-content: center;
+        width: auto;
+    }
+`
 const HeaderImageContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding-top: 30px;
+    @media ${device.tabletS} {
+        justify-content: space-between;
+    }
 `
 
 const JDContainer = styled.div`
@@ -46,6 +73,9 @@ const JDContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     padding-bottom: 60px;
+    @media ${device.laptopL} {
+        width: 90%;
+    }
 `
 
 const StyledCard = styled(Card)`
@@ -53,11 +83,22 @@ const StyledCard = styled(Card)`
     flex-direction: column;
     max-width: 1190px;
     margin: 20px 0;
+    @media ${device.mobileL} {
+        padding: 10px;
+    }
 `
 
 const StyledImg = styled.img`
     padding-right: 50px;
     align-items: flex-end;
+    @media ${device.mobileL} {
+        align-items: center;
+        padding-right: 0px;
+    }
+    @media ${device.mobileM} {
+        width: 50px;
+        height: 50px;
+    }
 `
 
 const ArrowImage = styled.img<{ margin?: string }>`
@@ -72,6 +113,10 @@ const StyledList = styled.ul`
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 50px 0;
+    @media ${device.tablet} {
+        align-items: center;
+        padding-right: 50px;
+    }
 `
 
 const StyledListItem = styled.li<{ pb?: string }>`
@@ -84,8 +129,12 @@ const StyledListItem = styled.li<{ pb?: string }>`
     max-width: 1000px;
     padding-bottom: ${(props) => props.pb || 'unset'};
 
+    @media ${device.laptopL} {
+        max-width: 800px;
+    }
+
     @media ${device.tabletL} {
-        max-width: 700px;
+        max-width: 600px;
     }
     @media ${device.tablet} {
         max-width: 500px;
@@ -124,10 +173,12 @@ const Description = ({ position }: JobTitleProps) => {
                     </StyledCard>
 
                     <StyledCard direction="column">
-                        <HeaderImageContainer>
-                            <StyledHeader>Your challenges</StyledHeader>
-                            <StyledImg src={Challenges} />
-                        </HeaderImageContainer>
+                        <HeaderWrapper>
+                            <HeaderImageContainer>
+                                <StyledHeader>Your challenges</StyledHeader>
+                                <StyledImg src={Challenges} />
+                            </HeaderImageContainer>
+                        </HeaderWrapper>
                         <StyledList>
                             {position?.challenges.map((challenge, index) => {
                                 return (
@@ -142,17 +193,21 @@ const Description = ({ position }: JobTitleProps) => {
                         </StyledList>
                     </StyledCard>
                     <StyledCard direction="column">
-                        <HeaderImageContainer>
-                            <StyledHeader>Our Team</StyledHeader>
-                            <StyledImg src={Team} />
-                        </HeaderImageContainer>
+                        <HeaderWrapper>
+                            <HeaderImageContainer>
+                                <StyledHeader>Our Team</StyledHeader>
+                                <StyledImg src={Team} />
+                            </HeaderImageContainer>
+                        </HeaderWrapper>
                         <StyledText padding="15px 75px 50px">{position?.team}</StyledText>
                     </StyledCard>
                     <StyledCard direction="column">
-                        <HeaderImageContainer>
-                            <StyledHeader>Requirements</StyledHeader>
-                            <StyledImg src={Requirements} />
-                        </HeaderImageContainer>
+                        <HeaderWrapper>
+                            <HeaderImageContainer>
+                                <StyledHeader>Requirements</StyledHeader>
+                                <StyledImg src={Requirements} />
+                            </HeaderImageContainer>
+                        </HeaderWrapper>
                         <StyledList>
                             {position?.requirements.map((requirement, index) => {
                                 return (
@@ -168,10 +223,12 @@ const Description = ({ position }: JobTitleProps) => {
                     </StyledCard>
                     {position?.good_to_have.length > 1 ? (
                         <StyledCard direction="column">
-                            <HeaderImageContainer>
-                                <StyledHeader>What’s good to have</StyledHeader>
-                                <StyledImg src={GoodToHave} />
-                            </HeaderImageContainer>
+                            <HeaderWrapper>
+                                <HeaderImageContainer>
+                                    <StyledHeader>What’s good to have</StyledHeader>
+                                    <StyledImg src={GoodToHave} />
+                                </HeaderImageContainer>
+                            </HeaderWrapper>
                             <StyledList>
                                 {position?.good_to_have.map((ability, index) => {
                                     return (

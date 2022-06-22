@@ -25,7 +25,6 @@ const JoinUsWrapper = styled(JoinUsContainer)`
     background-image: url(${Banner});
     background-size: 47.5% 65%;
     width: 100%;
-    height: 760px;
 `
 
 const JoinUsJob = () => {
@@ -37,7 +36,7 @@ const JoinUsJob = () => {
     return (
         <Wrapper>
             <JoinUsWrapper>
-                <JoinUsContainer>
+                <JoinUsContainer fd="column-reverse">
                     <JoinUsImageContainer padding_bottom="unset" width="600px" mobile_pb="unset">
                         <StaticImage
                             src="../../../images/common/jd/job-join-us.png"
