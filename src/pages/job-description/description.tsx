@@ -88,6 +88,11 @@ const ArrowImage = styled.img<{ margin?: string }>`
     width: 18px;
     height: 18px;
     margin-top: 5px;
+
+    @media ${device.laptopL} {
+        align-self: start;
+        margin-top: 10px;
+    }
 `
 
 const StyledList = styled.ul`
@@ -110,6 +115,7 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li<{ pb?: string }>`
     display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
