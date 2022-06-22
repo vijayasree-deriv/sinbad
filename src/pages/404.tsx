@@ -72,7 +72,7 @@ const PageNotFound = () => {
                             src="../images/common/sinbad-thinking.png"
                             alt="Page not found"
                             loading="eager"
-                            placeholder="none"
+                            placeholder="tracedSVG"
                         />
                         <PageNotFoundContainerInfo>
                             <Header>We couldn’t find that page</Header>
