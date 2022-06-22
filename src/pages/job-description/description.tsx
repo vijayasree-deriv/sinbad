@@ -165,13 +165,11 @@ const Description = ({ position }: JobTitleProps) => {
                             )
                         })}
                     </StyledCard>
-
                     <StyledCard direction="column">
                         <HeaderImageContainer>
                             <StyledHeader>Your challenges</StyledHeader>
                             <StyledImg src={Challenges} />
                         </HeaderImageContainer>
-
                         <StyledList>
                             {position?.challenges.map((challenge, index) => {
                                 return (
@@ -190,7 +188,6 @@ const Description = ({ position }: JobTitleProps) => {
                             <StyledHeader>Our Team</StyledHeader>
                             <StyledImg src={Team} />
                         </HeaderImageContainer>
-
                         <StyledText padding="15px 75px 50px">{position?.team}</StyledText>
                     </StyledCard>
                     <StyledCard direction="column">
@@ -198,7 +195,6 @@ const Description = ({ position }: JobTitleProps) => {
                             <StyledHeader>Requirements</StyledHeader>
                             <StyledImg src={Requirements} />
                         </HeaderImageContainer>
-
                         <StyledList>
                             {position?.requirements.map((requirement, index) => {
                                 return (
@@ -218,7 +214,6 @@ const Description = ({ position }: JobTitleProps) => {
                                 <StyledHeader>What’s good to have</StyledHeader>
                                 <StyledImg src={GoodToHave} />
                             </HeaderImageContainer>
-
                             <StyledList>
                                 {position?.good_to_have.map((ability, index) => {
                                     return (
