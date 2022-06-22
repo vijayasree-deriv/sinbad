@@ -129,7 +129,7 @@ const StyledListItem = styled.li<{ pb?: string }>`
     }
 
     @media ${device.tabletL} {
-        max-width: 600px;
+        max-width: 700px;
         padding-left: 10px;
     }
     @media ${device.tablet} {
