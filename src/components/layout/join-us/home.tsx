@@ -116,7 +116,7 @@ const JoinUsHome = () => {
                         <StaticImage
                             src="../../../images/common/homepage/join-us/home-join-us.png"
                             alt="home join us image"
-                            placeholder="none"
+                            placeholder="tracedSVG"
                         />
                     </JoinUsImageContainer>
                 </JoinUsContainer>

@@ -108,19 +108,37 @@ const CardButton = styled(Link)`
 
 const positions: PositionsType[] = [
     {
-        icon: <StaticImage src="../../images/common/careers/it.png" alt="information security" />,
+        icon: (
+            <StaticImage
+                src="../../images/common/careers/it.png"
+                alt="information security"
+                placeholder="tracedSVG"
+            />
+        ),
         position: 'Information security',
         text: 'Provide the best solutions for our clients by taking a hollstic view of our technical environment',
         link: '',
     },
     {
-        icon: <StaticImage src="../../images/common/careers/product.png" alt="product design" />,
+        icon: (
+            <StaticImage
+                src="../../images/common/careers/product.png"
+                alt="product design"
+                placeholder="tracedSVG"
+            />
+        ),
         position: 'Product design',
         text: 'Deliver intuitive and beautiful designs that will impress our clients and help them reach their goals',
         link: '',
     },
     {
-        icon: <StaticImage src="../../images/common/careers/bi.png" alt="business intelligence" />,
+        icon: (
+            <StaticImage
+                src="../../images/common/careers/bi.png"
+                alt="business intelligence"
+                placeholder="tracedSVG"
+            />
+        ),
         position: 'Business intelligence',
         text: 'Provide analytical and strategic insights that enchance the growth of our clients business, products, and services',
         link: '',

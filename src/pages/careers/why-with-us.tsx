@@ -66,8 +66,8 @@ const StyledText = styled.div<{ font_family?: string }>`
     }
 `
 const StyledImage = styled(ImageContainer)`
-    width: 900px;
-    height: 800px;
+    width: 700px;
+    height: 600px;
     max-height: unset;
 
     @media ${device.tabletL} {
@@ -98,7 +98,7 @@ const WorkWithUs = () => {
                     <StaticImage
                         src="../../images/common/careers/words.png"
                         alt="reasons to work at sinbad"
-                        placeholder="none"
+                        placeholder="tracedSVG"
                         loading="eager"
                     />
                 </StyledImage>

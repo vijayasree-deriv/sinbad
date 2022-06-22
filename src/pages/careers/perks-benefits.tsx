@@ -179,7 +179,7 @@ const PerksBenefits = () => {
                     <StaticImage
                         src={`../../images/common/careers/sinbad-near-p&b.png`}
                         alt="sinbad mascott"
-                        placeholder="none"
+                        placeholder="tracedSVG"
                     />
                 </StyledImage>
                 <Table data={data} text={'Perks and benefits'} />

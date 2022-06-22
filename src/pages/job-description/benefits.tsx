@@ -169,7 +169,11 @@ const BenefitsList = () => {
                             <StyledSSText font_family="Maven Pro Bold">Location</StyledSSText>
                             <StyledText>Dubai, the UAE</StyledText>
                         </LocationImageContainer>
-                        <StaticImage src="../../images/common/jd/location.png" alt="location" />
+                        <StaticImage
+                            src="../../images/common/jd/location.png"
+                            alt="location"
+                            placeholder="tracedSVG"
+                        />
                     </Card>
                 </LocationContainer>
             </BenefitsContainerWrapper>

@@ -199,7 +199,7 @@ const data = {
             <StaticImage
                 src="../../images/common/homepage/welcome/first.png"
                 alt="ideation icon"
-                placeholder="none"
+                placeholder="tracedSVG"
                 objectFit="contain"
             />
         ),
@@ -212,7 +212,7 @@ const data = {
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-0.png"
                     alt="ideation icon"
-                    placeholder="none"
+                    placeholder="tracedSVG"
                     objectFit="contain"
                 />
             ),
@@ -224,7 +224,7 @@ const data = {
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-1.png"
                     alt="quality assurance icon"
-                    placeholder="none"
+                    placeholder="tracedSVG"
                     objectFit="contain"
                 />
             ),
@@ -236,7 +236,7 @@ const data = {
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-2.png"
                     alt="product design icon"
-                    placeholder="none"
+                    placeholder="tracedSVG"
                     objectFit="contain"
                 />
             ),
@@ -248,7 +248,7 @@ const data = {
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-3.png"
                     alt="software maintenance icon"
-                    placeholder="none"
+                    placeholder="tracedSVG"
                     objectFit="contain"
                 />
             ),

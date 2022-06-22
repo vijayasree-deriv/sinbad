@@ -94,7 +94,7 @@ const WorkWithUs = () => {
                     <StaticImage
                         src="../../images/common/careers/work-with-us.png"
                         alt="work with us"
-                        placeholder="none"
+                        placeholder="tracedSVG"
                         loading="eager"
                     />
                 </StyledImageContainer>

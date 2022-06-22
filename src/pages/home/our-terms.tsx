@@ -199,7 +199,7 @@ const OurTeams = () => {
                         <StaticImage
                             src="../../images/common/homepage/our-terms/sinbad-in-our-terms.png"
                             alt="sinbad mascott"
-                            placeholder="none"
+                            placeholder="tracedSVG"
                             objectFit="scale-down"
                         />
                     </SinbadImage>
