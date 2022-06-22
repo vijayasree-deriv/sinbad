@@ -13,7 +13,6 @@ import {
     Contract,
     BlueBackground,
 } from 'images/common/jd'
-import device from 'themes/device'
 
 const BenefitsContainer = styled.div`
     display: flex;
@@ -33,7 +32,7 @@ const BenefitsContainerWrapper = styled(ContainerWrapper)`
     align-items: flex-end;
     flex-direction: column;
 
-    @media ${device.laptop} {
+    @media (max-width: 1335px) {
         align-items: center;
     }
 `
@@ -91,7 +90,7 @@ const LocationContainer = styled(Flex)`
     flex-wrap: wrap;
     justify-content: flex-end;
 
-    @media ${device.tabletL} {
+    @media (max-width: 1335px) {
         justify-content: center;
     }
 `
