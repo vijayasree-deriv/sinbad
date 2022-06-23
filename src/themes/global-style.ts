@@ -1,11 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
 import Reset from './reset'
-import Variables from './variables'
 import device from './device'
 
 const GlobalStyle = createGlobalStyle`
     ${Reset}
-    ${Variables}
 
     i { font-style: italic }
     * {

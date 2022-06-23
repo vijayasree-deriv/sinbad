@@ -65,8 +65,7 @@ const TermHeaderText = styled.div<TermProps>`
     font-size: 3.8rem;
     line-height: 53px;
     color: var(--color-black-3);
-    font-weight: 640;
-    font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
+    font-weight: bold;
     text-align: left;
     padding: 0 110px 30px 0;
 
@@ -107,8 +106,7 @@ const TermText = styled.div<TermProps>`
     font-size: 1.8rem;
     line-height: 22px;
     color: var(--color-black-3);
-    font-weight: 480;
-    font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
+    font-weight: bold;
     text-align: left;
 
     @media ${device.laptopM} {

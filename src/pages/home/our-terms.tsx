@@ -1,17 +1,8 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
-import {
-    Term0,
-    Term1,
-    Term2,
-    Term3,
-    Term4,
-    Term5,
-    Term6,
-    Term7,
-    OurTermsBackground,
-} from 'images/common/homepage/our-terms'
+import { OurTermsBackground } from 'images/common/homepage/our-terms'
+import { Term0, Term1, Term2, Term3, Term4, Term5, Term6, Term7 } from 'images/svg/terms'
 import { ImageContainer } from 'components/containers'
 import Table, { TableType } from 'components/containers/table'
 import { SectionLabel } from 'components/chunks'

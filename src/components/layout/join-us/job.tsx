@@ -25,7 +25,6 @@ const JoinUsWrapper = styled(JoinUsContainer)`
     background-image: url(${Banner});
     background-size: 47.5% 65%;
     width: 100%;
-    height: 760px;
 `
 
 const JoinUsJob = () => {

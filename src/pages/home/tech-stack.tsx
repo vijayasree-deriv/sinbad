@@ -27,6 +27,9 @@ const TechStackContainerWrapper = styled(ContainerWrapper)`
         flex-direction: column;
         align-items: center;
     }
+    @media ${device.laptopM} {
+        padding: 30px 0 0;
+    }
 `
 
 const TechDashboard = styled.img`
@@ -128,6 +131,10 @@ const StyledDescription = styled.div<StyledTextProps>`
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     text-align: left;
     padding-bottom: 120px;
+
+    @media ${device.laptopM} {
+        padding-bottom: 0;
+    }
 `
 
 const TechStack = () => {

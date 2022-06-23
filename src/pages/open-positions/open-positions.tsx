@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 import { Text } from 'components/containers/main'
 import { ContainerWrapper } from 'components/containers/common/style'
-import RightArrow from 'images/common/openpositions/arrow.png'
-import Flex, { Card } from 'components/containers/flex'
+import Flex, { Card, CardButton, LinkContainer } from 'components/containers/flex'
 import device from 'themes/device'
 import { positions } from 'pages/job-description/data'
 import { BlueBackground } from 'images/common/jd'
@@ -59,23 +58,6 @@ const PositionsCarouselContainer = styled.div`
         padding-top: 0px;
     }
 `
-const CardButtonContainer = styled(Link)`
-    display: flex;
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
-    background: var(--color-blue-3);
-    padding: 5px;
-`
-const CardButton = styled.img`
-    width: 10px;
-    height: 10px;
-`
-const LinkContainer = styled(Link)`
-    display: flex;
-    text-decoration: none;
-`
-
 const StyledFlex = styled(Flex)`
     @media (max-width: 1200px) {
         flex-direction: column;
@@ -163,7 +145,7 @@ const OpenPositions = () => {
                                     ai="center"
                                     jc="space-between"
                                     max_width=" 340px"
-                                    height="300px"
+                                    height="350px"
                                     padding="30px"
                                     margin="20px"
                                 >
@@ -184,9 +166,16 @@ const OpenPositions = () => {
                                         >
                                             More
                                         </Text>
-                                        <CardButtonContainer to={`/job-description/${id}`}>
-                                            <CardButton src={RightArrow} />
-                                        </CardButtonContainer>
+                                        <CardButton>
+                                            <StaticImage
+                                                src="../../images/common/openpositions/arrow.png"
+                                                alt="arrow"
+                                                width={10}
+                                                height={10}
+                                                loading="eager"
+                                                placeholder="none"
+                                            />
+                                        </CardButton>
                                     </LinkContainer>
                                 </Card>
                             )
