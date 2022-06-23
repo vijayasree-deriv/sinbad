@@ -1,11 +1,3 @@
-import Insurance from './insurance.png'
-import Education from './education.png'
-import Annual from './annual.png'
-import Office from './office.png'
-import Security from './security.png'
-import Tech from './tech.png'
-import Bonus from './bonus.png'
-import Pantry from './pantry.png'
 import OpacityBackground from './opacity-background.png'
 import Background from './background.png'
 import LinkArrow from './link-arrow.png'
@@ -25,14 +17,6 @@ import PBSinbad from './sinbad-near-p&b.png'
 import Banner from './banner-bg.png'
 
 export {
-    Insurance,
-    Education,
-    Annual,
-    Office,
-    Security,
-    Tech,
-    Bonus,
-    Pantry,
     OpacityBackground,
     Background,
     LinkArrow,

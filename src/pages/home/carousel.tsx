@@ -16,7 +16,6 @@ const CarouselContainer = styled.div`
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right 35% bottom 0%;
-    height: 780px;
 
     @media ${device.tabletS} {
         background-image: none;

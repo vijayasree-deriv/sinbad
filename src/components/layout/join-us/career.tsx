@@ -28,10 +28,8 @@ const JoinUsWrapper = styled(JoinUsContainer)`
     background-position: top right;
     background-size: 42% 70%;
     width: 100%;
-    height: 830px;
 
     @media ${device.tabletL} {
-        height: 970px;
     }
 `
 
@@ -57,7 +55,7 @@ const JoinUsCareers = () => {
                         padding_bottom="unset"
                         mobile_pb="unset"
                         width="550px"
-                        height="625px"
+                        height="unset"
                     >
                         <StaticImage
                             src="../../../images/common/careers/careers-join-us.png"

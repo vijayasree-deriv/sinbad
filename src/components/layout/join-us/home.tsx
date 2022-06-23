@@ -25,6 +25,7 @@ export const StyledHeader = styled.div<{ font_family?: string }>`
     line-height: 58px;
     font-weight: 560;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
+
     @media ${device.mobileL} {
         text-align: center;
     }
@@ -37,7 +38,6 @@ export const StyledText = styled.div<{ font_family?: string }>`
     line-height: 34px;
     color: var(--color-black-3);
     font-weight: 320;
-    font-family: ${(props) => props.font_family || 'Maven Pro'};
     text-align: left;
     padding: 25px 0;
     @media ${device.mobileL} {
@@ -64,7 +64,7 @@ export const TextContainer = styled.div<{ padding_bottom?: string }>`
     padding-bottom: ${(props) => props.padding_bottom || '190px'};
 
     @media ${device.tabletL} {
-        padding-bottom: 20px;
+        padding-bottom: 60px;
     }
     @media ${device.mobileL} {
         display: flex;
@@ -89,6 +89,7 @@ export const JoinUsInfo = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+
     @media ${device.mobileL} {
         align-items: center;
         padding: 10px;

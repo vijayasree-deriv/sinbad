@@ -84,7 +84,6 @@ export const Text = styled.div<TextProps>`
     text-align: ${(props) => props.text_align || 'left'};
     padding: ${(props) => props.padding || '15px 0'};
     color: ${(props) => props.color || 'black'};
-    font-family: ${(props) => props.font_family || 'Maven Pro'};
     font-weight: ${(props) => props.font_weight || 'normal'};
     text-transform: ${(props) => props.text_transform || ''};
 `

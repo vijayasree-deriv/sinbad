@@ -28,12 +28,11 @@ const HiringProcessContainerWrapper = styled(ContainerWrapper)`
     align-items: center;
 `
 
-const StyledHeader = styled.div<{ uppercase?: string }>`
+const StyledHeader = styled.div`
     font-size: 4.8rem;
     line-height: 51px;
     color: var(--color-black-3);
-    font-weight: 560;
-    font-family: ${(props) => props.uppercase || 'Maven Pro Bold'};
+    font-weight: bold;
     text-transform: uppercase;
     padding: 0 0 30px;
 `
@@ -70,8 +69,7 @@ const CardHeader = styled.div<{ font_family?: string }>`
     font-size: 2.2rem;
     line-height: 28px;
     color: var(--color-black-3);
-    font-weight: 560;
-    font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
+    font-weight: bold;
     text-align: left;
 
     @media ${device.laptop} {
@@ -99,8 +97,7 @@ const CardNumber = styled.div<{ font_family?: string }>`
     font-size: 3.8rem;
     line-height: 22px;
     color: #dae3e5;
-    font-weight: 560;
-    font-family: ${(props) => props.font_family || 'Maven Pro'};
+    font-weight: bold;
 `
 
 const StyledImageContainer = styled(ImageContainer)`

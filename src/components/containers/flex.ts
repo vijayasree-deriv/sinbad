@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
 import device, { size } from 'themes/device'
 
@@ -96,6 +97,20 @@ export const Card = styled(Flex)<CardProps>`
     margin: ${(props) => props.margin || 'unset'};
     align-self: ${(props) => props.alignSelf || 'start'};
     border-radius: ${(props) => props.border_radius || '4px'};
+`
+
+export const CardButton = styled.div`
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background: var(--color-blue-3);
+    padding: 5px;
+`
+
+export const LinkContainer = styled(Link)`
+    display: flex;
+    text-decoration: none;
 `
 
 export default Flex

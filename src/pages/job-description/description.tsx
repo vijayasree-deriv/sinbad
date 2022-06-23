@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { StaticImage } from 'gatsby-plugin-image'
 import { JobTitleProps } from './data'
 import { Card } from 'components/containers/flex'
 import { ContainerWrapper, Header } from 'components/containers'
-import { Challenges, Team, Requirements, GoodToHave, Arrow, BlueBackground } from 'images/common/jd'
+import { BlueBackground } from 'images/common/jd'
 import device from 'themes/device'
 
 const DescriptionContainer = styled.div`
@@ -74,7 +75,7 @@ const StyledCard = styled(Card)`
     }
 `
 
-const StyledImg = styled.img`
+const StyledImg = styled.div`
     padding-right: 50px;
     align-items: flex-end;
 
@@ -84,7 +85,7 @@ const StyledImg = styled.img`
     }
 `
 
-const ArrowImage = styled.img<{ margin?: string }>`
+const ArrowImage = styled.div`
     width: 18px;
     height: 18px;
     margin-top: 5px;
@@ -133,7 +134,8 @@ const StyledListItem = styled.li<{ pb?: string }>`
         padding-left: 10px;
     }
     @media ${device.tablet} {
-        max-width: 500px;
+        max-width: 600px;
+        padding-left: 25px;
     }
 `
 
@@ -174,13 +176,25 @@ const Description = ({ position }: JobTitleProps) => {
                     <StyledCard direction="column">
                         <HeaderImageContainer>
                             <StyledHeader>Your challenges</StyledHeader>
-                            <StyledImg src={Challenges} />
+                            <StyledImg>
+                                <StaticImage
+                                    src="../../images/common/jd/challenges.png"
+                                    alt="career join us image"
+                                    placeholder="none"
+                                />
+                            </StyledImg>
                         </HeaderImageContainer>
                         <StyledList>
                             {position?.challenges.map((challenge, index) => {
                                 return (
                                     <StyledListItem key={index}>
-                                        <ArrowImage src={Arrow} />
+                                        <ArrowImage>
+                                            <StaticImage
+                                                src="../../images/common/jd/arrow.png"
+                                                alt="career join us image"
+                                                placeholder="none"
+                                            />
+                                        </ArrowImage>
                                         <StyledText padding="0 0 0 10px" mobile_ta="left">
                                             {challenge}
                                         </StyledText>
@@ -192,20 +206,38 @@ const Description = ({ position }: JobTitleProps) => {
                     <StyledCard direction="column">
                         <HeaderImageContainer>
                             <StyledHeader>Our Team</StyledHeader>
-                            <StyledImg src={Team} />
+                            <StyledImg>
+                                <StaticImage
+                                    src="../../images/common/jd/team.png"
+                                    alt="career join us image"
+                                    placeholder="none"
+                                />
+                            </StyledImg>
                         </HeaderImageContainer>
                         <StyledText padding="15px 75px 50px">{position?.team}</StyledText>
                     </StyledCard>
                     <StyledCard direction="column">
                         <HeaderImageContainer>
                             <StyledHeader>Requirements</StyledHeader>
-                            <StyledImg src={Requirements} />
+                            <StyledImg>
+                                <StaticImage
+                                    src="../../images/common/jd/requirements.png"
+                                    alt="career join us image"
+                                    placeholder="none"
+                                />
+                            </StyledImg>
                         </HeaderImageContainer>
                         <StyledList>
                             {position?.requirements.map((requirement, index) => {
                                 return (
                                     <StyledListItem key={index}>
-                                        <ArrowImage src={Arrow} />
+                                        <ArrowImage>
+                                            <StaticImage
+                                                src="../../images/common/jd/arrow.png"
+                                                alt="career join us image"
+                                                placeholder="none"
+                                            />
+                                        </ArrowImage>
                                         <StyledText padding="0 0 0 10px" mobile_ta="left">
                                             {requirement}
                                         </StyledText>
@@ -218,13 +250,25 @@ const Description = ({ position }: JobTitleProps) => {
                         <StyledCard direction="column">
                             <HeaderImageContainer>
                                 <StyledHeader>What’s good to have</StyledHeader>
-                                <StyledImg src={GoodToHave} />
+                                <StyledImg>
+                                    <StaticImage
+                                        src="../../images/common/jd/good-to-have.png"
+                                        alt="career join us image"
+                                        placeholder="none"
+                                    />
+                                </StyledImg>
                             </HeaderImageContainer>
                             <StyledList>
                                 {position?.good_to_have.map((ability, index) => {
                                     return (
                                         <StyledListItem key={index}>
-                                            <ArrowImage src={Arrow} />
+                                            <ArrowImage>
+                                                <StaticImage
+                                                    src="../../images/common/jd/arrow.png"
+                                                    alt="career join us image"
+                                                    placeholder="none"
+                                                />
+                                            </ArrowImage>
                                             <StyledText padding="0 0 0 10px" mobile_ta="left">
                                                 {ability}
                                             </StyledText>

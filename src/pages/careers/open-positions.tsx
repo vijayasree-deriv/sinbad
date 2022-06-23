@@ -1,10 +1,9 @@
 import React, { ReactNode } from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { ContainerWrapper, ImageContainer } from 'components/containers'
 import device from 'themes/device'
-import { Card } from 'components/containers/flex'
+import { Card, CardButton, LinkContainer } from 'components/containers/flex'
 
 type StyledTextProps = {
     font_family?: string
@@ -15,7 +14,6 @@ type PositionsType = {
     icon: ReactNode
     position: string
     text: string
-    link: string
 }
 
 const OpenPositionsContainer = styled.div`
@@ -100,30 +98,21 @@ const CardLinkText = styled.div<StyledTextProps>`
     }
 `
 
-const CardButton = styled(Link)`
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-`
-
 const positions: PositionsType[] = [
     {
         icon: <StaticImage src="../../images/common/careers/it.png" alt="information security" />,
         position: 'Information security',
         text: 'Provide the best solutions for our clients by taking a hollstic view of our technical environment',
-        link: '',
     },
     {
         icon: <StaticImage src="../../images/common/careers/product.png" alt="product design" />,
         position: 'Product design',
         text: 'Deliver intuitive and beautiful designs that will impress our clients and help them reach their goals',
-        link: '',
     },
     {
         icon: <StaticImage src="../../images/common/careers/bi.png" alt="business intelligence" />,
         position: 'Business intelligence',
         text: 'Provide analytical and strategic insights that enchance the growth of our clients business, products, and services',
-        link: '',
     },
 ]
 
@@ -136,7 +125,7 @@ const OpenPositions = () => {
                     <StyledHeader>Make your passion your career</StyledHeader>
                 </HeaderContainer>
                 <CardContainer>
-                    {positions.map(({ position, text, icon, link }, index) => {
+                    {positions.map(({ position, text, icon }, index) => {
                         return (
                             <Card
                                 key={index}
@@ -154,12 +143,19 @@ const OpenPositions = () => {
                                 </ImageContainer>
                                 <CardHeader>{position}</CardHeader>
                                 <CardText>{text}</CardText>
-                                <CardButton to={link}>
+                                <LinkContainer to={'/open-positions'}>
                                     <CardLinkText> See jobs</CardLinkText>
-                                    <ImageContainer width="30px" height="30px" max_height="unset">
-                                        {icon}
-                                    </ImageContainer>
-                                </CardButton>
+                                    <CardButton>
+                                        <StaticImage
+                                            src="../../images/common/openpositions/arrow.png"
+                                            alt="arrow"
+                                            width={10}
+                                            height={10}
+                                            loading="eager"
+                                            placeholder="none"
+                                        />
+                                    </CardButton>
+                                </LinkContainer>
                             </Card>
                         )
                     })}
