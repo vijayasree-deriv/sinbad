@@ -35,6 +35,7 @@ const StyledHeader = styled.div<StyledTextProps>`
     font-family: ${(props) => props.font_family || 'Maven Pro'};
     text-align: center;
     text-transform: uppercase;
+    padding-bottom: 20px;
 
     @media ${device.mobileL} {
         padding: 10px;
@@ -194,7 +195,7 @@ const CardText = styled.div<StyledTextProps>`
 const data = {
     first: {
         header: 'App development & integration',
-        text: 'We create desktop and mobile software and also manage complex integrations with existing systems',
+        text: 'We create desktop and mobile software and also manage complex integrations with existing systems.',
         icon: (
             <StaticImage
                 src="../../images/common/homepage/welcome/first.png"
@@ -207,7 +208,7 @@ const data = {
     other: [
         {
             header: 'Ideation',
-            text: 'With research, analysis, ideation, and strategising, we translate our clients needs into opportunities for digital innovation',
+            text: 'With research, analysis, ideation, and strategising, we translate our clients’ needs into opportunities for digital innovation.',
             icon: (
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-0.png"
@@ -219,7 +220,7 @@ const data = {
         },
         {
             header: 'Quality assurance',
-            text: 'Whatever we build goes through rigorous to make sure its quality and security meet our tough standarts',
+            text: 'Whatever we build goes through rigorous testing to make sure its quality and security meet our tough standarts.',
             icon: (
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-1.png"
@@ -231,7 +232,7 @@ const data = {
         },
         {
             header: 'Product design',
-            text: 'The journey from vision to intuitive software starts here. We design winning products for the fintech industry',
+            text: 'The journey from vision to intuitive software starts here. We design winning products for the fintech industry.',
             icon: (
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-2.png"
@@ -243,7 +244,7 @@ const data = {
         },
         {
             header: 'Software maintenance',
-            text: 'Offering lifetime maintenance and upgrading services, we continue to 0pxain our clients digital partner',
+            text: 'Offering lifetime maintenance and upgrading services, we continue to remain our clients’ digital partner.',
             icon: (
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-3.png"
@@ -266,8 +267,8 @@ const Welcome = () => {
                     </StyledHeader>
                     <StyledText>
                         Sinbad Software LLC provides software development services and IT solutions
-                        for the fintech industri. At every step of the way, we aim to give our
-                        clients the power to go beyond digital boundaires and surpass their
+                        for the fintech industry. At every step of the way, we aim to give our
+                        clients the power to go beyond digital boundaries and surpass their
                         competitors in the ever-evolving fintech landscape.
                     </StyledText>
                 </TextContainer>

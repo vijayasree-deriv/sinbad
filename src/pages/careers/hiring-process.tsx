@@ -141,7 +141,7 @@ const data: DataType[] = [
             />
         ),
         header: 'Interview with HR and Manager',
-        text: 'An HR representative and your potential manager will interview you. They will',
+        text: 'An HR representative and your potential manager will interview you.',
     },
     {
         icon: (

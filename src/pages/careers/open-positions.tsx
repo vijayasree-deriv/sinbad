@@ -107,8 +107,8 @@ const positions: PositionsType[] = [
                 placeholder="tracedSVG"
             />
         ),
-        position: 'Information security',
-        text: 'Provide the best solutions for our clients by taking a hollstic view of our technical environment',
+        position: 'Information technology',
+        text: 'Provide the best solutions for our clients by taking a holistic view of our technical environment.',
     },
     {
         icon: (
@@ -119,7 +119,7 @@ const positions: PositionsType[] = [
             />
         ),
         position: 'Product design',
-        text: 'Deliver intuitive and beautiful designs that will impress our clients and help them reach their goals',
+        text: 'Deliver intuitive and beautiful designs that will impress our clients and help them reach their goals.',
     },
     {
         icon: (
@@ -130,7 +130,7 @@ const positions: PositionsType[] = [
             />
         ),
         position: 'Business intelligence',
-        text: 'Provide analytical and strategic insights that enchance the growth of our clients business, products, and services',
+        text: 'Provide analytical and strategic insights that enchance the growth of our clients’ business, products, and services.',
     },
 ]
 

@@ -172,12 +172,12 @@ const OurTeams = () => {
                     <SectionLabel />
                     <StyledHeader>Revolutionising fintech needs amazing software</StyledHeader>
                     <StyledText>
-                        Our mission is to develop world-class fintech software solutions taht will
+                        Our mission is to develop world-class fintech software solutions that will
                         give our clients a cutting edge.
                     </StyledText>
                     <StyledText>
                         With a deep undestanding of the fintech industry and a talented team, we are
-                        ready to provide clients around the world with they need - from custom
+                        ready to provide clients around the world with what they need - from custom
                         software to mobile applications, websites, web applications, information
                         architecture, and more.
                     </StyledText>
