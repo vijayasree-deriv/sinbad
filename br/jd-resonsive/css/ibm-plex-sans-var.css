@@ -1,0 +1,21 @@
+
+/* maven-pro-regular - latin */
+@font-face {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/maven-pro-v31-latin-regular.eot'), /* IE9 Compat Modes */
+         url('../fonts/maven-pro-v31-latin-regular.woff2') format('woff2'); /* Super Modern Browsers */
+  }
+
+  /* maven-pro-700 - latin */
+  @font-face {
+    font-family: 'Maven Pro Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/maven-pro-v31-latin-700.eot'),/* IE9 Compat Modes */
+         url('../fonts/maven-pro-v31-latin-700.woff2') format('woff2'); /* Super Modern Browsers */
+
+  }
+
+ 
