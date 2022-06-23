@@ -1,0 +1,136 @@
+version: 2.1
+orbs:
+  slack: circleci/slack@3.4.2
+commands:
+  git_checkout_from_cache:
+    description: "Git checkout and save cache"
+    steps:
+      #- restore_cache:
+      #    keys:
+      #      - source-v1-{{ .Branch }}-{{ .Revision }}
+      #      - source-v1-{{ .Branch }}-
+      #      - source-v1-
+      - run:
+          name: Fetch git tags
+          command: |
+            mkdir -p ~/.ssh
+            ssh-keyscan github.com >> ~/.ssh/known_hosts
+            echo 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ== ' >> ~/.ssh/known_hosts
+            # Fetch tags if git cache is present
+            if [ -e /home/circleci/project/.git ]
+            then
+              git fetch origin --tags
+            fi
+      - checkout
+      - run:
+          name: Compress git objects
+          command: git gc
+      - save_cache:
+          key: source-v1-{{ .Branch }}-{{ .Revision }}
+          paths:
+            - ".git"
+  npm_install:
+    description: "npm install"
+    steps:
+      - run:
+          name: Install npm packages
+          command: |
+            npm ci
+            npm run format
+  build:
+    description: "Build for release"
+    steps:
+      - run:
+          name: Building application
+          command: |
+            npm run build
+  tag:
+    description: "Tag version"
+    parameters:
+      target_version:
+        type: string
+        default: "staging"
+    steps:
+      - run:
+          name: Tag build
+          command: echo "<< parameters.target_version >> $(date -u +'%Y-%m-%dT%H:%M:%SZ')" > build_version
+  docker_build_push:
+    description: "Build Docker image"
+    parameters:
+      docker_latest_image_tag:
+        type: string
+        default: "latest-staging"
+      docker_image_tag:
+        type: string
+        default: ${CIRCLE_SHA1}
+    steps:
+      - setup_remote_docker
+      - run:
+          name: Building docker image
+          command: |
+            docker build -t ${DOCKHUB_ORGANISATION}/sinbad-software:<< parameters.docker_image_tag >> -t ${DOCKHUB_ORGANISATION}/sinbad-software:<< parameters.docker_latest_image_tag >> .
+      - run:
+          name: Pushing Image to docker hub
+          command: |
+            echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USERNAME --password-stdin
+            docker push ${DOCKHUB_ORGANISATION}/sinbad-software:<< parameters.docker_image_tag >>
+            docker push ${DOCKHUB_ORGANISATION}/sinbad-software:<< parameters.docker_latest_image_tag >>
+  notify_slack:
+    description: "Notify slack"
+    steps:
+      - slack/status:
+          include_project_field: false
+          failure_message: "Release failed for sinbad-software with version *$(cat build_version)*"
+          success_message: "Release succeeded for sinbad-software with version *$(cat build_version)*"
+          webhook: ${SLACK_WEBHOOK}
+jobs:
+  test:
+    docker:
+      - image: cimg/node:18.4.0
+    steps:
+      - git_checkout_from_cache
+      - npm_install
+  release_staging:
+    docker:
+      - image: cimg/node:18.4.0
+    steps:
+      - git_checkout_from_cache
+      - tag
+      - npm_install
+      - build
+      - docker_build_push
+      - notify_slack
+  release_aws_production:
+    docker:
+      - image: cimg/node:18.4.0
+    steps:
+      - git_checkout_from_cache
+      - npm_install
+      - build
+      - tag:
+          target_version: 'production'
+      - docker_build_push:
+          docker_latest_image_tag: latest
+          docker_image_tag: ${CIRCLE_TAG}
+      - notify_slack
+workflows:
+  development:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore: /^master$/
+  release:
+    jobs:
+      - release_staging:
+          filters:
+            branches:
+              only: /^master$/
+          context: binary-frontend-artifact-upload
+      - release_aws_production:
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^production.*/
+          context: binary-frontend-artifact-upload
