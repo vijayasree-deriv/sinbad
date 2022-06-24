@@ -91,7 +91,7 @@ const Hero = () => {
                             <StaticImage
                                 src="../../images/common/openpositions/first-section.png"
                                 alt="selected people icon"
-                                placeholder="none"
+                                placeholder="tracedSVG"
                                 objectFit="fill"
                             />
                         </OpenPositionImage>

@@ -41,7 +41,7 @@ const JoinUsJob = () => {
                         <StaticImage
                             src="../../../images/common/jd/job-join-us.png"
                             alt="jobs join us image"
-                            placeholder="none"
+                            placeholder="tracedSVG"
                         />
                     </JoinUsImageContainer>
                     <JoinUsInfo>
