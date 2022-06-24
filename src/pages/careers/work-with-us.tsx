@@ -72,8 +72,17 @@ const StyledImageContainer = styled(ImageContainer)`
     @media ${device.tabletL} {
         width: 570px;
     }
+    @media ${device.bp680} {
+        width: 500px;
+    }
     @media ${device.tabletS} {
-        width: 400px;
+        width: 380px;
+    }
+    @media ${device.mobileL} {
+        max-width: 340px;
+    }
+    @media ${device.mobileM} {
+        max-width: 310px;
     }
 `
 

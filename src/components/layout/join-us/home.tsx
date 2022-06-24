@@ -82,6 +82,10 @@ const JoinUsWrapper = styled(JoinUsContainer)`
     background-position: top right;
     background-size: 42% 70%;
     width: 100%;
+
+    @media ${device.laptopM} {
+        background-image: none;
+    }
 `
 
 export const JoinUsInfo = styled.div`
