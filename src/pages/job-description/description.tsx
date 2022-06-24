@@ -33,6 +33,11 @@ const StyledHeader = styled(Header)`
     line-height: 50px;
     font-weight: 560;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
+
+    @media ${device.tabletL} {
+        text-align: center;
+        padding: 0px;
+    }
 `
 
 const HeaderImageContainer = styled.div`
@@ -40,6 +45,11 @@ const HeaderImageContainer = styled.div`
     flex-direction: row;
     justify-content: flex-end;
     padding-top: 30px;
+
+    @media ${device.tabletL} {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const JDContainer = styled.div`
@@ -47,6 +57,10 @@ const JDContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     padding-bottom: 60px;
+
+    @media ${device.laptopL} {
+        width: 90%;
+    }
 `
 
 const StyledCard = styled(Card)`
@@ -54,17 +68,32 @@ const StyledCard = styled(Card)`
     flex-direction: column;
     max-width: 1190px;
     margin: 20px 0;
+
+    @media ${device.tabletL} {
+        align-items: center;
+        padding: 10px;
+    }
 `
 
 const StyledImg = styled.div`
     padding-right: 50px;
     align-items: flex-end;
+
+    @media ${device.tabletL} {
+        align-items: center;
+        padding: 10px 0px;
+    }
 `
 
 const ArrowImage = styled.div`
     width: 18px;
     height: 18px;
     margin-top: 5px;
+
+    @media ${device.laptopL} {
+        align-self: start;
+        margin-top: 10px;
+    }
 `
 
 const StyledList = styled.ul`
@@ -73,10 +102,21 @@ const StyledList = styled.ul`
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 50px 0;
+
+    @media ${device.tabletL} {
+        padding-top: 30px;
+        padding-right: 30px;
+    }
+
+    @media ${device.mobileL} {
+        padding-top: 30px;
+        padding-right: 10px;
+    }
 `
 
 const StyledListItem = styled.li<{ pb?: string }>`
     display: flex;
+    width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
@@ -85,9 +125,13 @@ const StyledListItem = styled.li<{ pb?: string }>`
     max-width: 1000px;
     padding-bottom: ${(props) => props.pb || 'unset'};
 
+    @media ${device.laptopL} {
+        max-width: 800px;
+    }
+
     @media ${device.tabletL} {
-        max-width: 750px;
-        padding-left: 50px;
+        max-width: 700px;
+        padding-left: 10px;
     }
     @media ${device.tablet} {
         max-width: 600px;
@@ -105,6 +149,10 @@ const StyledText = styled.div<{ font_family?: string; padding?: string; mobile_t
     padding: ${(props) => props.padding || 'unset'};
     display: flex;
     align-items: center;
+
+    @media ${device.tabletL} {
+        padding: 0px 10px;
+    }
 
     @media ${device.tablet} {
         text-align: ${(props) => props.mobile_ta || 'center'};
@@ -125,7 +173,6 @@ const Description = ({ position }: JobTitleProps) => {
                             )
                         })}
                     </StyledCard>
-
                     <StyledCard direction="column">
                         <HeaderImageContainer>
                             <StyledHeader>Your challenges</StyledHeader>
