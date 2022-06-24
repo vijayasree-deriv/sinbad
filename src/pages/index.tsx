@@ -1,9 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Carousel from './home/carousel'
-import Welcome from './home/welcome'
-import { JoinUs, OurTerms, TechStack } from './home'
-import Layout from 'components/layout/layout'
+import { JoinUs, OurTerms, TechStack, Welcome, Carousel, Layout } from './home'
 
 const Home = () => {
     return (

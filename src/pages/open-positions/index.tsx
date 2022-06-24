@@ -1,9 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Hero from './hero'
-import OpenPositions from './open-positions'
-import Layout from 'components/layout/layout'
-import { JoinUs } from 'pages/home'
+import { Hero, OpenPositions } from './loading'
+import { JoinUs, Layout } from 'pages/home'
 
 const Positions = () => {
     return (
