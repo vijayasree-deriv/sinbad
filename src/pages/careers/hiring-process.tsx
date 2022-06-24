@@ -177,7 +177,7 @@ const data: DataType[] = [
             />
         ),
         header: 'Job offer',
-        text: "If everything goes well, you'll recieve a job offer. Be ready, as your new adventure with us is about to begin.",
+        text: "If everything goes well, you'll receive a job offer. Be ready, as your new adventure with us is about to begin.",
     },
     {
         icon: (
@@ -189,7 +189,7 @@ const data: DataType[] = [
             />
         ),
         header: "You're one of us",
-        text: "Welcome to Sinbad! You'll recieve your start date and the details of your onboarding programme.",
+        text: "Welcome to Sinbad! You'll receive your start date and the details of your onboarding programme.",
     },
 ]
 
