@@ -73,6 +73,7 @@ const PageNotFound = () => {
                             alt="Page not found"
                             loading="eager"
                             placeholder="tracedSVG"
+                            height={500}
                         />
                         <PageNotFoundContainerInfo>
                             <Header>We couldn’t find that page</Header>
