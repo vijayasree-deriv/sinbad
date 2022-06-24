@@ -34,7 +34,7 @@ const TechStackContainerWrapper = styled(ContainerWrapper)`
 `
 
 const TechDashboard = styled.img`
-    max-width: 800px;
+    max-width: 685px;
     max-height: 600px;
 
     @media ${device.tabletL} {
@@ -66,7 +66,7 @@ const tech_stack = [
     '>  InDesign',
     '>  PostgreSQL',
     '>  Redis',
-    '>  Amazon Web Services',
+    '>  Amazon Web Services (AWS)',
     '>  GitHub',
     '>  Redmine',
     '>  Wikimedia Commons',
@@ -128,7 +128,7 @@ const TechStack = () => {
     return (
         <TechStackContainer>
             <TechStackContainerWrapper>
-                <TechDashboard src={Dashboard} alt="Tech Stack" />
+                <TechDashboard src={Dashboard} />
                 <TermsTextContainer>
                     <SectionLabel />
                     <StyledHeader>Tech stack</StyledHeader>
