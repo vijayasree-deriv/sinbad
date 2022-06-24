@@ -89,7 +89,7 @@ const CardLinkText = styled.div<StyledTextProps>`
     line-height: 22px;
     color: var(--color-black-3);
     font-weight: 560;
-    font-family: ${(props) => props.font_family || 'Maven Pro'};
+    font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     text-transform: uppercase;
     padding-right: 20px;
 
