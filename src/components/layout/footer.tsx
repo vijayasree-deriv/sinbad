@@ -65,7 +65,7 @@ const Footer = () => {
     return (
         <DefaultFooter>
             <FooterWrapper>
-                <Returner src={UpArrow} onClick={scrollTop} />
+                <Returner src={UpArrow} onClick={scrollTop} alt="Back to Top" />
                 <FooterContainer>
                     <SocialWrapperComponent />
                     <DisclaimerWrapper>

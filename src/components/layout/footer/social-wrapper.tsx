@@ -68,14 +68,14 @@ const SocialWrapperComponent = () => {
 
     return (
         <SocialWrapper>
-            {contacts.map((contact) => (
-                <ContactContainer key={contact.id}>
-                    <ContactLink to={contact.link}>
-                        <ContactImage src={contact.image} />
+            {contacts.map(({ id, link, info, details, image }) => (
+                <ContactContainer key={id}>
+                    <ContactLink to={link}>
+                        <ContactImage src={image} alt={info} />
                     </ContactLink>
                     <div>
-                        <ContactText>{contact.info}</ContactText>
-                        <ContactText>{contact.details}</ContactText>
+                        <ContactText>{info}</ContactText>
+                        <ContactText>{details}</ContactText>
                     </div>
                 </ContactContainer>
             ))}
