@@ -1,12 +1,9 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import type { PageProps } from 'gatsby'
-import Description from '../pages/job-description/description'
-import JobTitle from '../pages/job-description/job-title'
-import BenefitsList from '../pages/job-description/benefits'
+import { JoinUs, Layout } from 'pages/home'
 import Positions from 'data/positions.json'
-import Layout from 'components/layout/layout'
-import { JoinUs } from 'pages/home'
+import { BenefitsList, Description, JobTitle } from 'pages/job-description/loading'
 
 const JobDescription = (props: PageProps) => {
     const position = Positions?.find(({ id }) => id === props.pageContext.slug)

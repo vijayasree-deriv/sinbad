@@ -72,8 +72,8 @@ const StyledText = styled.div<{ font_family?: string }>`
     }
 `
 const StyledImage = styled(ImageContainer)`
-    width: 900px;
-    height: 800px;
+    width: 700px;
+    height: 600px;
     max-height: unset;
 
     @media ${device.tabletL} {
@@ -102,7 +102,7 @@ const StyledImage = styled(ImageContainer)`
     }
 `
 
-const WorkWithUs = () => {
+const WhyWithUs = () => {
     return (
         <WorkWithUsContainer>
             <CareersContainerWrapper>
@@ -111,7 +111,7 @@ const WorkWithUs = () => {
                     <StyledText>
                         Fintech is an industry where projects come in many shapes and sizes. You’ll
                         be constantly challenged to come up with new solutions and work with various
-                        technologies. WIth us, you’ll have the opportunity to continuosily learn and
+                        technologies. With us, you’ll have the opportunity to continuosly learn and
                         build your skills while working on new challenges with a smart, supportive
                         team.
                     </StyledText>
@@ -120,7 +120,7 @@ const WorkWithUs = () => {
                     <StaticImage
                         src="../../images/common/careers/words.png"
                         alt="reasons to work at sinbad"
-                        placeholder="none"
+                        placeholder="tracedSVG"
                         loading="eager"
                     />
                 </StyledImage>
@@ -129,4 +129,4 @@ const WorkWithUs = () => {
     )
 }
 
-export default WorkWithUs
+export default WhyWithUs

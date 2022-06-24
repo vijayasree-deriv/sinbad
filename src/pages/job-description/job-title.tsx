@@ -44,7 +44,7 @@ const JobTitle = ({ position }: JobTitleProps) => {
                         alt="job description"
                         loading="eager"
                         objectFit="scale-down"
-                        placeholder="none"
+                        placeholder="tracedSVG"
                     />
                 </ImageContainer>
             </JobTitleContainerWrapper>

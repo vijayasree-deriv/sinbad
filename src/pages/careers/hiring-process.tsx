@@ -131,7 +131,7 @@ const data: DataType[] = [
             <StaticImage
                 src="../../images/common/careers/cv.png"
                 alt="email icon"
-                placeholder="none"
+                placeholder="tracedSVG"
                 objectFit="fill"
             />
         ),
@@ -143,7 +143,7 @@ const data: DataType[] = [
             <StaticImage
                 src="../../images/common/careers/questions.png"
                 alt="question icon"
-                placeholder="none"
+                placeholder="tracedSVG"
                 objectFit="fill"
             />
         ),
@@ -155,19 +155,19 @@ const data: DataType[] = [
             <StaticImage
                 src="../../images/common/careers/interview.png"
                 alt="inteview icon"
-                placeholder="none"
+                placeholder="tracedSVG"
                 objectFit="fill"
             />
         ),
         header: 'Interview with HR and Manager',
-        text: 'An HR representative and your potential manager will interview you. They will',
+        text: 'An HR representative and your potential manager will interview you.',
     },
     {
         icon: (
             <StaticImage
                 src="../../images/common/careers/interview2.png"
                 alt="second interview icon"
-                placeholder="none"
+                placeholder="tracedSVG"
                 objectFit="contain"
             />
         ),
@@ -179,7 +179,7 @@ const data: DataType[] = [
             <StaticImage
                 src="../../images/common/careers/checking.png"
                 alt="background check icon"
-                placeholder="none"
+                placeholder="tracedSVG"
                 objectFit="fill"
             />
         ),
@@ -191,7 +191,7 @@ const data: DataType[] = [
             <StaticImage
                 src="../../images/common/careers/offer.png"
                 alt="job offer icon"
-                placeholder="none"
+                placeholder="tracedSVG"
                 objectFit="fill"
             />
         ),
@@ -203,7 +203,7 @@ const data: DataType[] = [
             <StaticImage
                 src="../../images/common/careers/you-in.png"
                 alt="selected people icon"
-                placeholder="none"
+                placeholder="tracedSVG"
                 objectFit="fill"
             />
         ),

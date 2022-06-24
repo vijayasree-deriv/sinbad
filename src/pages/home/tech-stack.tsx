@@ -4,6 +4,7 @@ import Dashboard from 'images/common/dashboard.png'
 import { ContainerWrapper } from 'components/containers'
 import device from 'themes/device'
 import { BlueBackground } from 'images/common/jd'
+import { SectionLabel } from 'components/chunks'
 
 type StyledTextProps = {
     font_family?: string
@@ -88,20 +89,6 @@ const Stack = styled.div<StyledTextProps>`
     padding: 15px 25px 0 0;
     font-family: ${(props) => props.font_family || 'Maven Pro'};
 `
-const StyledSSHeader = styled.div`
-    display: flex;
-    flex-direction: row;
-`
-
-const StyledSSText = styled.div<StyledTextProps>`
-    padding: unset;
-    color: var(--color-sand-4);
-    font-size: 3.3rem;
-    line-height: 62px;
-    font-weight: 656;
-    font-family: ${(props) => props.font_family || 'Maven Pro'};
-    padding-right: 5px;
-`
 const StyledText = styled.div<StyledTextProps>`
     max-width: 350px;
     font-size: 1.6rem;
@@ -143,14 +130,11 @@ const TechStack = () => {
             <TechStackContainerWrapper>
                 <TechDashboard src={Dashboard} />
                 <TermsTextContainer>
-                    <StyledSSHeader>
-                        <StyledSSText font_family="Maven Pro Bold">Sinbad </StyledSSText>
-                        <StyledSSText>Software</StyledSSText>
-                    </StyledSSHeader>
+                    <SectionLabel />
                     <StyledHeader>Tech stack</StyledHeader>
                     <StyledText>
                         We leverage a wide range of programming languages and frameworks to create
-                        robus software for the fintech industry to meet our clients needs.
+                        robust software for the fintech industry to meet our clients’ needs.
                     </StyledText>
                     <StackContainer>
                         {tech_stack.map((item, index) => (

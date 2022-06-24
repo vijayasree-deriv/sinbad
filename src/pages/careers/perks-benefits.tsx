@@ -172,14 +172,14 @@ const PerksBenefits = () => {
                         assistance programme - applicable to both short-term and long-term
                         work-related courses - to encourage colleagues to boost their knowledge and
                         skills. Lateral moving is also a practice that we warmly welcome as a part
-                        of your career development as it can broaden and deepen your expirience.
+                        of your career development as it can broaden and deepen your experience.
                     </StyledText>
                 </TextAboutCareer>
                 <StyledImage>
                     <StaticImage
                         src={`../../images/common/careers/sinbad-near-p&b.png`}
                         alt="sinbad mascott"
-                        placeholder="none"
+                        placeholder="tracedSVG"
                     />
                 </StyledImage>
                 <Table data={data} text={'Perks and benefits'} />
