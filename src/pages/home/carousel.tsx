@@ -25,10 +25,12 @@ const CarouselContainer = styled.div`
 const CarouselContainerWrapper = styled(ContainerWrapper)`
     justify-content: space-between;
     margin: 50px 0 75px 0;
+    height: 600px;
 
     @media ${device.tabletL} {
         flex-direction: column-reverse;
         align-items: center;
+        height: auto;
         margin: 0;
     }
 `
@@ -240,7 +242,7 @@ const Carousel = () => {
 
     useEffect(() => {
         const next = (active + 1) % 3
-        const id = setTimeout(() => setActive(next), 5000)
+        const id = setTimeout(() => setActive(next), 2500)
         return () => clearTimeout(id)
     }, [active])
 
