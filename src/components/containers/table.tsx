@@ -34,7 +34,7 @@ const TableContainer = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
-    max-width: 590px;
+    max-width: 640px;
     width: 100%;
 
     @media ${device.bp1060} {
@@ -67,6 +67,7 @@ const TermHeaderText = styled.div<TermProps>`
     color: var(--color-black-3);
     font-weight: bold;
     text-align: left;
+    padding: 0 115px 30px 0;
 
     @media ${device.laptopM} {
         font-size: 3.4rem;
@@ -105,7 +106,7 @@ const TermText = styled.div<TermProps>`
     font-size: 1.8rem;
     line-height: 22px;
     color: var(--color-black-3);
-    font-weight: bold;
+    font-family: Maven Pro;
     text-align: left;
 
     @media ${device.laptopM} {
