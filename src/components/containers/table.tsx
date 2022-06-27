@@ -31,7 +31,7 @@ type DataType = {
 const TableContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
     align-content: center;
     max-width: 590px;
@@ -67,7 +67,6 @@ const TermHeaderText = styled.div<TermProps>`
     color: var(--color-black-3);
     font-weight: bold;
     text-align: left;
-    padding: 0 110px 30px 0;
 
     @media ${device.laptopM} {
         font-size: 3.4rem;
@@ -120,7 +119,7 @@ const TermText = styled.div<TermProps>`
 `
 
 const Term = styled.div<TermProps>`
-    max-width: 224px;
+    max-width: 232px;
     width: 100%;
     height: 120px;
     display: flex;
