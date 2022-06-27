@@ -82,7 +82,7 @@ const WorkWithUs = () => {
         <WorkWithUsContainer>
             <CareersContainerWrapper>
                 <StyledHeader color="var(--color-sand-4)">
-                    Work{' '}
+                    Work
                     <StyledHeader padding="0 10px" color="var(--color-sand-4)">
                         with talented teams.
                     </StyledHeader>
