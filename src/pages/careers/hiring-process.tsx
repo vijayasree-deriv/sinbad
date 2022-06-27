@@ -208,7 +208,7 @@ const HiringProcess = () => {
                                 ai="flex-start"
                                 jc="space-between"
                                 max_width="390px"
-                                height="220px"
+                                height="240px"
                                 padding="10px 10px 20px 20px"
                                 margin="5px"
                                 border-radius="5px"
