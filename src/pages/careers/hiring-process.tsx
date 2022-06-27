@@ -141,7 +141,7 @@ const data: DataType[] = [
             />
         ),
         header: 'Interview with HR and Manager',
-        text: 'An HR representative and your potential manager will interview you.',
+        text: 'An HR representative and your potential manager will interview you. They will assess your experience, skills, and cultural fit.',
     },
     {
         icon: (
