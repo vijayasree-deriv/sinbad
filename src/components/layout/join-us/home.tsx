@@ -10,7 +10,7 @@ import { SectionLabel } from 'components/chunks'
 import { Banner } from 'images/common/careers'
 
 const Wrapper = styled.div`
-    background-color: var(--color-sand-1);
+    background-color: var(--color-sand-transparent);
     background-repeat: no-repeat;
     background-image: url(${Sinbad});
     background-position: bottom center;
