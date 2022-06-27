@@ -10,7 +10,7 @@ import { SectionLabel } from 'components/chunks'
 import { Banner } from 'images/common/careers'
 
 const Wrapper = styled.div`
-    background-color: #fef5e675;
+    background-color: var(--color-sand-1);
     background-repeat: no-repeat;
     background-image: url(${Sinbad});
     background-position: bottom center;
@@ -40,8 +40,6 @@ export const StyledText = styled.div<{ font_family?: string }>`
     font-weight: 320;
     text-align: left;
     padding: 25px 0;
-    font-family: ${(props) => props.font_family || 'Maven Pro'};
-
     @media ${device.mobileL} {
         text-align: center;
     }

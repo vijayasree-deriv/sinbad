@@ -25,7 +25,7 @@ const PBContainer = styled.div`
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: var(--color-sand-1);
+    background-color: var(--color-sand-transparent);
     background-image: url(${OpacityBackground});
     background-repeat: no-repeat;
     background-size: contain;
