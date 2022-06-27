@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { ContainerWrapper } from 'components/containers'
 import { Button } from 'components/elements'
 import device from 'themes/device'
-import { getPathName, contactUsAction } from 'common/utility'
+import { contactUsAction } from 'common/utility'
 import { HeaderTitle } from 'components/containers/common/style'
 
 /* stylelint-disable */
@@ -59,7 +59,6 @@ const StyledHeaderLink = styled(Link)`
     text-align: left;
     padding-right: 30px;
 
-    &.active,
     &:hover {
         color: var(--color-sand-4);
     }
@@ -192,7 +191,6 @@ const Header = () => {
     const node = React.useRef()
     useOnClickOutside(node, () => setOpen(false))
 
-    const pathname = getPathName()
     const HomeRedirect = () => {
         navigate('/')
     }
@@ -201,18 +199,24 @@ const Header = () => {
             <BurgerMenu>
                 <Burger open={open} setOpen={setOpen} />
                 <StyledMenu open={open}>
-                    <StyledHeaderLink to="/" className={pathname === '/' ? 'active' : ''}>
+                    <StyledHeaderLink
+                        to="/"
+                        activeStyle={{ color: 'var(--color-sand-4)' }}
+                        partiallyActive={false}
+                    >
                         Home
                     </StyledHeaderLink>
                     <StyledHeaderLink
                         to="/careers"
-                        className={pathname === '/careers' ? 'active' : ''}
+                        activeStyle={{ color: 'var(--color-sand-4)' }}
+                        partiallyActive={true}
                     >
                         Careers
                     </StyledHeaderLink>
                     <StyledHeaderLink
                         to="/open-positions"
-                        className={pathname === '/open-positions' ? 'active' : ''}
+                        activeStyle={{ color: 'var(--color-sand-4)' }}
+                        partiallyActive={true}
                     >
                         Open Positions
                     </StyledHeaderLink>
@@ -225,18 +229,24 @@ const Header = () => {
                         <HeaderTitle padding_left="5px">Software</HeaderTitle>
                     </StyledHeader>
                     <NavWrapper>
-                        <StyledHeaderLink to="/" className={pathname === '/' ? 'active' : ''}>
+                        <StyledHeaderLink
+                            to="/"
+                            activeStyle={{ color: 'var(--color-sand-4)' }}
+                            partiallyActive={false}
+                        >
                             Home
                         </StyledHeaderLink>
                         <StyledHeaderLink
                             to="/careers"
-                            className={pathname === '/careers' ? 'active' : ''}
+                            activeStyle={{ color: 'var(--color-sand-4)' }}
+                            partiallyActive={true}
                         >
                             Careers
                         </StyledHeaderLink>
                         <StyledHeaderLink
                             to="/open-positions"
-                            className={pathname === '/open-positions' ? 'active' : ''}
+                            activeStyle={{ color: 'var(--color-sand-4)' }}
+                            partiallyActive={true}
                         >
                             Open Positions
                         </StyledHeaderLink>
