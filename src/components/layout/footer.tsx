@@ -7,18 +7,25 @@ import { ContainerWrapper } from 'components/containers/common/style'
 import UpArrow from 'images/common/layout/up-arrow.png'
 import Flex from 'components/containers/flex'
 import device from 'themes/device'
+import { CSSElementProps } from 'types/generics'
 
-const StyledFooterLink = styled(Link)`
+const StyledFooterLink = styled(Link)<{ border_right?: string; font_family?: string }>`
     text-decoration: none;
     color: white;
     font-size: 1.6rem;
-    line-height: 36px;
-    font-weight: 400;
+    line-height: 30px;
+    font-weight: 320;
+    font-family: ${(props) => props.font_family || 'Maven Pro'};
     text-align: left;
     cursor: pointer;
+    border-right: ${(props) => props.border_right || '1px solid white'};
+    padding: 0 25px;
 `
-const StyledFooterText = styled.div`
-    font-size: 1.6rem;
+const StyledFooterText = styled.div<CSSElementProps>`
+    font-size: 2rem;
+    line-height: 25px;
+    font-weight: 320;
+    font-family: ${(props) => props.fontFamily || 'Maven Pro'};
 `
 
 const FooterContainer = styled.div`
@@ -74,9 +81,9 @@ const Footer = () => {
                                 © 2022 Sinbad Software LLC. All rights reserved.
                             </StyledFooterText>
                             <FooterLinks>
-                                <StyledFooterLink to="/">Home | </StyledFooterLink>
-                                <StyledFooterLink to="/careers"> Careers | </StyledFooterLink>
-                                <StyledFooterLink to="/open-positions">
+                                <StyledFooterLink to="/">Home</StyledFooterLink>
+                                <StyledFooterLink to="/careers"> Careers</StyledFooterLink>
+                                <StyledFooterLink to="/open-positions" border_right="unset">
                                     Open Positions
                                 </StyledFooterLink>
                             </FooterLinks>

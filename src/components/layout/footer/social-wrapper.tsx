@@ -6,6 +6,7 @@ import MapSvg from 'images/svg/map.svg'
 import PhoneSvg from 'images/svg/phone.svg'
 import EmailSvg from 'images/svg/mail.svg'
 import device from 'themes/device'
+import { CSSElementProps } from 'types/generics'
 
 const ContactLink = styled(GatsbyLink)`
     align-self: center;
@@ -15,12 +16,13 @@ const ContactLink = styled(GatsbyLink)`
     border-radius: 30px;
 `
 
-const ContactText = styled.div`
+const ContactText = styled.div<CSSElementProps>`
     font-size: 1.6rem;
     color: white;
     padding-top: 10px;
     padding-left: 10px;
     justify-content: center;
+    font-family: ${(props) => props.fontFamily || 'Maven Pro'};
 `
 
 const ContactImage = styled.img`
@@ -32,7 +34,7 @@ const ContactContainer = styled.div`
     display: flex;
     flex-direction: row;
     width: fit-content;
-    padding-right: 45px;
+    padding-right: 70px;
 
     @media ${device.tabletL} {
         padding: 0;

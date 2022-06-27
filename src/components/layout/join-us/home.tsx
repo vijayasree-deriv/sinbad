@@ -8,6 +8,7 @@ import device from 'themes/device'
 import { openPositionActions } from 'common/utility'
 import { SectionLabel } from 'components/chunks'
 import { Banner } from 'images/common/careers'
+import { CSSElementProps } from 'types/generics'
 
 const Wrapper = styled.div`
     background-color: var(--color-sand-1);
@@ -40,6 +41,8 @@ export const StyledText = styled.div<{ font_family?: string }>`
     font-weight: 320;
     text-align: left;
     padding: 25px 0;
+    font-family: ${(props) => props.font_family || 'Maven Pro'};
+
     @media ${device.mobileL} {
         text-align: center;
     }
