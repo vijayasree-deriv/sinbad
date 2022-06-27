@@ -8,10 +8,9 @@ import device from 'themes/device'
 import { openPositionActions } from 'common/utility'
 import { SectionLabel } from 'components/chunks'
 import { Banner } from 'images/common/careers'
-import { CSSElementProps } from 'types/generics'
 
 const Wrapper = styled.div`
-    background-color: var(--color-sand-1);
+    background-color: #fef5e675;
     background-repeat: no-repeat;
     background-image: url(${Sinbad});
     background-position: bottom center;
