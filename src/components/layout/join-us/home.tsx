@@ -40,6 +40,8 @@ export const StyledText = styled.div<{ font_family?: string }>`
     font-weight: 320;
     text-align: left;
     padding: 25px 0;
+    font-family: Maven Pro;
+
     @media ${device.mobileL} {
         text-align: center;
     }
