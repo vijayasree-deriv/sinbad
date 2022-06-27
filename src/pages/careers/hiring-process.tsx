@@ -35,6 +35,7 @@ const StyledHeader = styled.div`
     font-weight: bold;
     text-transform: uppercase;
     padding: 0 0 30px;
+    text-align: center;
 `
 
 const StyledBorder = styled.div`
@@ -54,6 +55,21 @@ const StyledFlex = styled.div`
     }
     @media ${device.laptop} {
         padding: 40px 0 80px;
+    }
+`
+
+const StyledCard = styled(Card)`
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 390px;
+    height: 220px;
+    padding: 10px 10px 20px 20px;
+    margin: 5px;
+    border-radius: 5px;
+
+    @media ${device.mobileL} {
+        height: 240px;
     }
 `
 
@@ -202,24 +218,14 @@ const HiringProcess = () => {
                 <StyledFlex>
                     {data.map(({ icon, header, text }, index) => {
                         return (
-                            <Card
-                                key={index}
-                                direction="row"
-                                ai="flex-start"
-                                jc="space-between"
-                                max_width="390px"
-                                height="220px"
-                                padding="10px 10px 20px 20px"
-                                margin="5px"
-                                border-radius="5px"
-                            >
+                            <StyledCard key={index}>
                                 <StyledImageContainer>{icon}</StyledImageContainer>
                                 <CardInfo>
                                     <CardHeader>{header}</CardHeader>
                                     <CardText>{text}</CardText>
                                 </CardInfo>
                                 <CardNumber>{index + 1}</CardNumber>
-                            </Card>
+                            </StyledCard>
                         )
                     })}
                 </StyledFlex>

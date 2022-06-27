@@ -78,6 +78,10 @@ const StyledImage = styled(ImageContainer)`
         width: 400px;
         height: 350px;
     }
+    @media ${device.mobileL} {
+        width: 300px;
+        height: 250px;
+    }
 `
 
 const WorkWithUs = () => {

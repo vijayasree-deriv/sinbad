@@ -63,6 +63,7 @@ const CardHeader = styled.div<StyledTextProps>`
     font-weight: 560;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     padding: 20px 0 10px;
+    text-align: center;
 
     @media ${device.laptop} {
         font-size: 2.8rem;
