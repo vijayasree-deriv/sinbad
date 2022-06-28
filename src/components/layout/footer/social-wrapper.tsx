@@ -52,6 +52,7 @@ const contacts = [
         details:
             '2201, 22nd Floor, One by Omniyat Building, Al Mustaqbal Street, Business Bay, Dubai, UAE',
         to: 'https://goo.gl/maps/8Lb4NbYoUpikKJxS6',
+        target: '_blank',
     },
     {
         id: 1,
@@ -59,6 +60,7 @@ const contacts = [
         info: 'Phone:',
         details: '+971 50 861-1678',
         to: 'tel:971508611678',
+        target: '_self',
     },
     {
         id: 2,
@@ -66,6 +68,7 @@ const contacts = [
         info: 'Email:',
         details: 'information@sinbad.software',
         to: 'mailto:information@sinbad.software',
+        target: '_self',
     },
 ]
 
@@ -74,12 +77,12 @@ const SocialWrapperComponent = () => {
         <SocialWrapper>
             {contacts.map((contact) => (
                 <ContactContainer key={contact.id}>
-                    <ContactLink href={contact.to} target="_blank">
+                    <ContactLink href={contact.to} target={contact.target}>
                         <ContactImage src={contact.image} />
                     </ContactLink>
                     <div
                         onClick={() => {
-                            window.open(contact.to, '_blank')
+                            window.open(contact.to, contact.target)
                         }}
                     >
                         <ContactText>{contact.info}</ContactText>
