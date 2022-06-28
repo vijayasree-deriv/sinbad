@@ -81,8 +81,11 @@ const WorkWithUs = () => {
     return (
         <WorkWithUsContainer>
             <CareersContainerWrapper>
-                <StyledHeader color="var(--color-sand-4)">
-                    Work <StyledHeader padding="0 10px">with talented teams.</StyledHeader>
+                <StyledHeader>
+                    Work
+                    <StyledHeader padding="0 10px" color="var(--color-sand-4)">
+                        with talented teams.
+                    </StyledHeader>
                 </StyledHeader>
                 <StyledContainer>
                     <StyledHeader>with the latest tech stack.</StyledHeader>
