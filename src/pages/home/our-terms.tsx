@@ -38,7 +38,7 @@ const OurTeamsContainer = styled.div`
     text-align: center;
     justify-content: center;
     align-items: flex-start;
-    background-color: var(--color-sand-1);
+    background-color: var(--color-sand-transparent);
     background-image: url(${OurTermsBackground});
     background-repeat: no-repeat;
     background-size: contain;

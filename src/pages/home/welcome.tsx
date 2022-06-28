@@ -104,7 +104,7 @@ const CardContainer = styled.div`
         position: absolute;
         bottom: 0;
         content: '';
-        background: var(--color-sand-1);
+        background: var(--color-sand-transparent);
         width: 100%;
         height: 300px;
         z-index: 1;
