@@ -3,13 +3,13 @@ import styled from 'styled-components'
 import device from 'themes/device'
 import { CSSElementProps } from 'types/generics'
 
-const StyledSSHeader = styled.div<{ text_align?: string }>`
+const StyledSSHeader = styled.div<{ jc?: boolean }>`
     display: flex;
     flex-direction: row;
     white-space: nowrap;
 
     @media ${device.tabletL} {
-        text-align: ${(props) => props.text_align || 'left'};
+        justify-content: ${(props) => (props.jc ? 'center' : 'unset')};
     }
 `
 
@@ -31,9 +31,9 @@ const StyledSSText = styled.div<CSSElementProps>`
     }
 `
 
-const SectionLabel = ({ text_align }: any) => {
+const SectionLabel = (jc) => {
     return (
-        <StyledSSHeader text_align={text_align}>
+        <StyledSSHeader jc={jc}>
             <StyledSSText fontFamily="Maven Pro Bold">Sinbad </StyledSSText>
             <StyledSSText> Software</StyledSSText>
         </StyledSSHeader>

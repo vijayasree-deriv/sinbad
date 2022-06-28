@@ -165,7 +165,7 @@ const PerksBenefits = () => {
         <PBContainer>
             <PBContainerWrapper>
                 <TextAboutCareer>
-                    <SectionLabel />
+                    <SectionLabel jc={true} />
                     <StyledHeader>Helping you grow in your career</StyledHeader>
                     <StyledText>
                         We offer a robust training programme to help you with seamless onboarding
