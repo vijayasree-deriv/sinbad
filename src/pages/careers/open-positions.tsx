@@ -130,7 +130,7 @@ const positions: PositionsType[] = [
             />
         ),
         position: 'Business intelligence',
-        text: 'Provide analytical and strategic insights that enchance the growth of our clients’ business, products, and services.',
+        text: 'Provide analytical and strategic insights that enchance the growth of our clients’ businesses, products, and services.',
     },
 ]
 
