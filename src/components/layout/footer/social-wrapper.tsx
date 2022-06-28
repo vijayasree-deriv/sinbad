@@ -1,5 +1,4 @@
 import React from 'react'
-//import { Link as GatsbyLink } from 'gatsby'
 import styled from 'styled-components'
 import { SocialWrapper } from '../../containers/common/style'
 import MapSvg from 'images/svg/map.svg'
