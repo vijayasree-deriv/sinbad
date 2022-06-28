@@ -44,6 +44,7 @@ export const SocialWrapper = styled.div`
 
     @media ${device.tabletL} {
         display: flex;
+        height: 250px;
         flex-direction: column;
         justify-content: center;
         margin: 3rem 0 1rem;
