@@ -35,7 +35,7 @@ const ContactContainer = styled.div`
     display: flex;
     flex-direction: row;
     width: fit-content;
-    padding-right: 70px;
+    padding-right: 55px;
 
     @media ${device.tabletL} {
         padding: 0;
