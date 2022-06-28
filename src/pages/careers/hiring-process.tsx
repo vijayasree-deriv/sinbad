@@ -170,7 +170,7 @@ const data: DataType[] = [
     {
         icon: (
             <StaticImage
-                src="../../images/common/careers/offer.png"
+                src="../../images/common/careers/you-in.png"
                 alt="job offer icon"
                 placeholder="tracedSVG"
                 objectFit="fill"
@@ -182,7 +182,7 @@ const data: DataType[] = [
     {
         icon: (
             <StaticImage
-                src="../../images/common/careers/you-in.png"
+                src="../../images/common/careers/offer.png"
                 alt="selected people icon"
                 placeholder="tracedSVG"
                 objectFit="fill"
