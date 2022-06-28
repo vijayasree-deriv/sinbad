@@ -84,9 +84,9 @@ const StyledBurger = styled.button<MenuProps>`
     left: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 5rem;
-    height: 5rem;
+    justify-content: space-evenly;
+    width: 3rem;
+    height: 3rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -94,7 +94,7 @@ const StyledBurger = styled.button<MenuProps>`
     z-index: 10;
 
     div {
-        width: 5rem;
+        width: 2.5rem;
         height: 0.25rem;
         background: ${({ open }) => (open ? '#0D0C1D' : 'var(--color-sand-4)')};
         border-radius: 10px;
@@ -103,7 +103,7 @@ const StyledBurger = styled.button<MenuProps>`
         transform-origin: 1px;
 
         :first-child {
-            transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
+            transform: ${({ open }) => (open ? 'rotate(48deg)' : 'rotate(0)')};
         }
 
         :nth-child(2) {
@@ -112,23 +112,24 @@ const StyledBurger = styled.button<MenuProps>`
         }
 
         :nth-child(3) {
-            transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
+            transform: ${({ open }) => (open ? 'rotate(-42deg)' : 'rotate(0)')};
         }
     }
 
     @media ${`(max-width: 425px)`} {
-        top: 1%;
+        top: 2.2%;
     }
 `
 const StyledMenu = styled.nav<MenuProps>`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     background: #effffa;
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
     height: 100vh;
     text-align: left;
     padding: 2rem;
+    padding-top: 11rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -198,7 +199,7 @@ const Header = () => {
 
     return (
         <Container>
-            <BurgerMenu>
+            <BurgerMenu ref={node}>
                 <Burger open={open} setOpen={setOpen} />
                 <StyledMenu open={open}>
                     <StyledHeaderLink to="/" activeStyle={active_link} partiallyActive={false}>
