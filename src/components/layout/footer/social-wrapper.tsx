@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SocialWrapper } from '../../containers/common/style'
+import { isMobile } from 'common/os-detect'
 import MapSvg from 'images/svg/map.svg'
 import PhoneSvg from 'images/svg/phone.svg'
 import EmailSvg from 'images/svg/mail.svg'
@@ -77,17 +78,49 @@ const SocialWrapperComponent = () => {
         <SocialWrapper>
             {contacts.map((contact) => (
                 <ContactContainer key={contact.id}>
-                    <ContactLink href={contact.to} target={contact.target}>
-                        <ContactImage src={contact.image} />
-                    </ContactLink>
-                    <div
-                        onClick={() => {
-                            window.open(contact.to, contact.target)
-                        }}
-                    >
-                        <ContactText>{contact.info}</ContactText>
-                        <ContactText>{contact.details}</ContactText>
-                    </div>
+                    {contact.id == 1 && isMobile && (
+                        <ContactLink href={contact.to} target={contact.target}>
+                            <ContactImage src={contact.image} />
+                        </ContactLink>
+                    )}
+                    {contact.id == 1 && !isMobile && (
+                        <ContactLink href="">
+                            <ContactImage src={contact.image} />
+                        </ContactLink>
+                    )}
+
+                    {contact.id != 1 && (
+                        <ContactLink href={contact.to} target={contact.target}>
+                            <ContactImage src={contact.image} />
+                        </ContactLink>
+                    )}
+
+                    {contact.id == 1 && isMobile && (
+                        <div
+                            onClick={() => {
+                                window.open(contact.to, contact.target)
+                            }}
+                        >
+                            <ContactText>{contact.info}</ContactText>
+                            <ContactText>{contact.details}</ContactText>
+                        </div>
+                    )}
+                    {contact.id == 1 && !isMobile && (
+                        <div>
+                            <ContactText>{contact.info}</ContactText>
+                            <ContactText>{contact.details}</ContactText>
+                        </div>
+                    )}
+                    {contact.id != 1 && (
+                        <div
+                            onClick={() => {
+                                window.open(contact.to, contact.target)
+                            }}
+                        >
+                            <ContactText>{contact.info}</ContactText>
+                            <ContactText>{contact.details}</ContactText>
+                        </div>
+                    )}
                 </ContactContainer>
             ))}
         </SocialWrapper>
