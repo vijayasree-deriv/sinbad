@@ -86,12 +86,12 @@ const StyledImg = styled.div`
 `
 
 const ArrowImage = styled.div`
+    flex: none;
     width: 18px;
     height: 18px;
-    margin-top: 5px;
-
+    margin-top: 8px;
+    align-self: start;
     @media ${device.laptopL} {
-        align-self: start;
         margin-top: 10px;
     }
 `
@@ -101,7 +101,8 @@ const StyledList = styled.ul`
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding: 50px 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
 
     @media ${device.tabletL} {
         padding-top: 30px;
@@ -126,7 +127,7 @@ const StyledListItem = styled.li<{ pb?: string }>`
     padding-bottom: ${(props) => props.pb || 'unset'};
 
     @media ${device.laptopL} {
-        max-width: 800px;
+        max-width: 950px;
     }
 
     @media ${device.tabletL} {
@@ -139,7 +140,12 @@ const StyledListItem = styled.li<{ pb?: string }>`
     }
 `
 
-const StyledText = styled.div<{ font_family?: string; padding?: string; mobile_ta?: string }>`
+const StyledText = styled.div<{
+    font_family?: string
+    padding?: string
+    mobile_ta?: string
+    max_width?: string
+}>`
     font-size: 1.9rem;
     line-height: 33px;
     color: var(--color-black-2);
@@ -149,6 +155,7 @@ const StyledText = styled.div<{ font_family?: string; padding?: string; mobile_t
     padding: ${(props) => props.padding || 'unset'};
     display: flex;
     align-items: center;
+    max-width: ${(props) => props.max_width || 'none'};
 
     @media ${device.tabletL} {
         padding: 0px 10px;
@@ -167,7 +174,7 @@ const Description = ({ position }: JobTitleProps) => {
                     <StyledCard ai="center">
                         {position?.description.map((paragraph, index) => {
                             return (
-                                <StyledText padding="50px 75px" key={index}>
+                                <StyledText padding="50px 75px" max_width="1100px" key={index}>
                                     {paragraph}
                                 </StyledText>
                             )
@@ -214,7 +221,9 @@ const Description = ({ position }: JobTitleProps) => {
                                 />
                             </StyledImg>
                         </HeaderImageContainer>
-                        <StyledText padding="15px 75px 50px">{position?.team}</StyledText>
+                        <StyledText padding="25px 75px 50px" max_width="1050px">
+                            {position?.team}
+                        </StyledText>
                     </StyledCard>
                     <StyledCard direction="column">
                         <HeaderImageContainer>
@@ -246,7 +255,7 @@ const Description = ({ position }: JobTitleProps) => {
                             })}
                         </StyledList>
                     </StyledCard>
-                    {position?.good_to_have.length > 1 ? (
+                    {position?.good_to_have.length && (
                         <StyledCard direction="column">
                             <HeaderImageContainer>
                                 <StyledHeader>What’s good to have</StyledHeader>
@@ -277,7 +286,7 @@ const Description = ({ position }: JobTitleProps) => {
                                 })}
                             </StyledList>
                         </StyledCard>
-                    ) : null}
+                    )}
                 </JDContainer>
             </DescriptionContainerWrapper>
         </DescriptionContainer>
