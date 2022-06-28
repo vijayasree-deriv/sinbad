@@ -15,7 +15,7 @@ const StyledFooterLink = styled(Link)<CSSElementProps>`
     font-size: 1.6rem;
     line-height: 30px;
     font-weight: 320;
-    font-family: ${(props) => props.fontFamily || 'Maven Pro'};
+    font-family: Maven Pro;
     text-align: left;
     cursor: pointer;
     border-right: ${(props) => props.borderRight || '1px solid white'};
@@ -25,7 +25,7 @@ const StyledFooterText = styled.div<CSSElementProps>`
     font-size: 2rem;
     line-height: 25px;
     font-weight: 320;
-    font-family: ${(props) => props.fontFamily || 'Maven Pro'};
+    font-family: Maven Pro;
 `
 
 const FooterContainer = styled.div`
