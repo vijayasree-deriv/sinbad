@@ -22,7 +22,7 @@ const StyledFooterLink = styled(Link)<CSSElementProps>`
     padding: 0 25px;
 `
 const StyledFooterText = styled.div<CSSElementProps>`
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     line-height: 24px;
     font-weight: 320;
     font-family: Maven Pro;
