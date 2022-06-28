@@ -87,6 +87,7 @@ const StyledText = styled.div<StyledTextProps>`
     @media ${device.tabletL} {
         font-size: 2rem;
         line-height: 18px;
+        text-align: center;
     }
 `
 
@@ -106,9 +107,10 @@ const StyledHeader = styled.div<StyledTextProps>`
         line-height: 46px;
     }
     @media ${device.tabletL} {
-        max-width: 305px;
+        max-width: 350px;
         font-size: 3.8rem;
         line-height: 40px;
+        text-align: center;
     }
 `
 

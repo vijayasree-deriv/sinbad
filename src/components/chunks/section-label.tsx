@@ -3,10 +3,14 @@ import styled from 'styled-components'
 import device from 'themes/device'
 import { CSSElementProps } from 'types/generics'
 
-const StyledSSHeader = styled.div`
+const StyledSSHeader = styled.div<{ text_align?: string }>`
     display: flex;
     flex-direction: row;
     white-space: nowrap;
+
+    @media ${device.tabletL} {
+        text-align: ${(props) => props.text_align || 'left'};
+    }
 `
 
 const StyledSSText = styled.div<CSSElementProps>`
@@ -27,9 +31,9 @@ const StyledSSText = styled.div<CSSElementProps>`
     }
 `
 
-const SectionLabel = () => {
+const SectionLabel = ({ text_align }: any) => {
     return (
-        <StyledSSHeader>
+        <StyledSSHeader text_align={text_align}>
             <StyledSSText fontFamily="Maven Pro Bold">Sinbad </StyledSSText>
             <StyledSSText> Software</StyledSSText>
         </StyledSSHeader>
