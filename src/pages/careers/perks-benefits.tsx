@@ -36,7 +36,7 @@ const PBContainer = styled.div`
     }
 `
 const PBContainerWrapper = styled(ContainerWrapper)`
-    padding: 50px 0;
+    padding: 100px 0;
     display: flex;
     align-items: flex-start;
 
@@ -114,6 +114,7 @@ const StyledHeader = styled.div<StyledTextProps>`
 
 const StyledImage = styled(ImageContainer)`
     max-width: 260px;
+    padding-top: 25px;
 
     @media ${`(max-width: 1200px)`} {
         max-width: 220px;
@@ -129,28 +130,28 @@ const data: TableType[] = [
         text: 'Full medical insurance',
     },
     {
-        icon: Education,
-        text: 'Education assistance & training programms',
-    },
-    {
-        icon: Annual,
-        text: '22 days annual leave',
-    },
-    {
-        icon: Office,
-        text: 'Chic, comfy office in the heart of Dubai',
-    },
-    {
         icon: Security,
         text: 'Social security',
+    },
+    {
+        icon: Education,
+        text: 'Education assistance & training programms',
     },
     {
         icon: Tech,
         text: 'Corporate laptops, monitors, and other hardware',
     },
     {
+        icon: Annual,
+        text: '22 days annual leave',
+    },
+    {
         icon: Bonus,
         text: 'Annual bonus',
+    },
+    {
+        icon: Office,
+        text: 'Chic, comfy office in the heart of Dubai',
     },
     {
         icon: Pantry,

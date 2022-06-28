@@ -153,7 +153,7 @@ const data: DataType[] = [
             />
         ),
         header: 'Interview with COO/CTO/CEO',
-        text: "In this round, you'll speak with our COO, CTO, CEO depending on the role.",
+        text: "In this round, you'll speak with our COO, CTO or CEO depending on the role.",
     },
     {
         icon: (

@@ -9,16 +9,16 @@ import Flex from 'components/containers/flex'
 import device from 'themes/device'
 import { CSSElementProps } from 'types/generics'
 
-const StyledFooterLink = styled(Link)<{ border_right?: string; font_family?: string }>`
+const StyledFooterLink = styled(Link)<CSSElementProps>`
     text-decoration: none;
     color: white;
     font-size: 1.6rem;
     line-height: 30px;
     font-weight: 320;
-    font-family: ${(props) => props.font_family || 'Maven Pro'};
+    font-family: ${(props) => props.fontFamily || 'Maven Pro'};
     text-align: left;
     cursor: pointer;
-    border-right: ${(props) => props.border_right || '1px solid white'};
+    border-right: ${(props) => props.borderRight || '1px solid white'};
     padding: 0 25px;
 `
 const StyledFooterText = styled.div<CSSElementProps>`
@@ -83,7 +83,7 @@ const Footer = () => {
                             <FooterLinks>
                                 <StyledFooterLink to="/">Home</StyledFooterLink>
                                 <StyledFooterLink to="/careers"> Careers</StyledFooterLink>
-                                <StyledFooterLink to="/open-positions" border_right="unset">
+                                <StyledFooterLink to="/open-positions" borderRight="unset">
                                     Open Positions
                                 </StyledFooterLink>
                             </FooterLinks>
