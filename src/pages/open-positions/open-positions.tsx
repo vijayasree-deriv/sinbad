@@ -137,7 +137,7 @@ const OpenPositions = () => {
             <OpenPositionsContainerWrapper>
                 <PositionsCarouselContainer>
                     <StyledFlex width="760px" wrap="wrap">
-                        {positions.map(({ position, text, id }, index) => {
+                        {positions.map(({ role_plural, text, id }, index) => {
                             return (
                                 <Card
                                     key={index}
@@ -150,7 +150,7 @@ const OpenPositions = () => {
                                     margin="20px"
                                 >
                                     <StyledHeader color="var(--color-sand-4)" padding="20px 0px">
-                                        {position}
+                                        {role_plural}
                                     </StyledHeader>
                                     <StyledText font_size="14px" text_align="center">
                                         {text}
