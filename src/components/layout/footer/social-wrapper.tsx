@@ -7,12 +7,13 @@ import EmailSvg from 'images/svg/mail.svg'
 import device from 'themes/device'
 import { CSSElementProps } from 'types/generics'
 
-const ContactIcon = styled.div`
+const ContactIcon = styled.div<CSSElementProps>`
     align-self: start;
     padding: 8px;
     display: flex;
     background: white;
     border-radius: 30px;
+    cursor: ${(props) => props.cursor || 'unset'};
 `
 
 const ContactText = styled.div<CSSElementProps>`
@@ -23,7 +24,7 @@ const ContactText = styled.div<CSSElementProps>`
     padding-left: 10px;
     justify-content: center;
     font-family: Maven Pro;
-    cursor: pointer;
+    cursor: ${(props) => props.cursor || 'unset'};
 `
 
 const ContactImage = styled.img`
@@ -78,12 +79,12 @@ const SocialWrapperComponent = () => {
                 <ContactContainer key={contact.id}>
                     {contact.id == 2 ? (
                         <>
-                            <ContactIcon onClick={sendMailToSinbad}>
+                            <ContactIcon onClick={sendMailToSinbad} cursor="pointer">
                                 <ContactImage src={contact.image} />
                             </ContactIcon>
                             <div onClick={sendMailToSinbad}>
-                                <ContactText>{contact.info}</ContactText>
-                                <ContactText>{contact.details}</ContactText>
+                                <ContactText cursor="pointer">{contact.info}</ContactText>
+                                <ContactText cursor="pointer">{contact.details}</ContactText>
                             </div>
                         </>
                     ) : (
