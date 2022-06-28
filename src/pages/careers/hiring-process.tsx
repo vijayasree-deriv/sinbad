@@ -36,6 +36,10 @@ const StyledHeader = styled.div`
     text-transform: uppercase;
     padding: 0 0 30px;
     text-align: center;
+
+    @media ${device.tablet} {
+        max-width: 250px;
+    }
 `
 
 const StyledBorder = styled.div`
