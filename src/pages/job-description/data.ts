@@ -2,7 +2,8 @@ import Positions from 'data/positions.json'
 
 type PositionsType = {
     id: string
-    position?: string
+    role_plural?: string
+    role?: string
     text?: string
     description?: string[]
     challenges?: string[]
