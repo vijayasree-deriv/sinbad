@@ -36,7 +36,7 @@ export const DefaultFooter = styled.footer`
 
 export const SocialWrapper = styled.div`
     align-items: center;
-    height: 175px;
+    height: 250px;
     background: var(--color-blue-1);
     color: white;
     display: flex;
@@ -44,6 +44,7 @@ export const SocialWrapper = styled.div`
 
     @media ${device.tabletL} {
         display: flex;
+        height: 250px;
         flex-direction: column;
         justify-content: center;
         margin: 3rem 0 1rem;
@@ -58,10 +59,10 @@ export const SocialWrapper = styled.div`
 
 export const DisclaimerWrapper = styled.div`
     width: 100%;
-    height: 100px;
+    height: 150px;
     background: var(--color-blue-1);
     color: white;
-    border-top: 1px solid gray;
+    border-top: 1px solid rgb(22, 57, 79);
     display: flex;
 `
 

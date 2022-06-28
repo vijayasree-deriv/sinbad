@@ -25,7 +25,7 @@ const PBContainer = styled.div`
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: var(--color-sand-1);
+    background-color: var(--color-sand-transparent);
     background-image: url(${OpacityBackground});
     background-repeat: no-repeat;
     background-size: contain;
@@ -36,7 +36,7 @@ const PBContainer = styled.div`
     }
 `
 const PBContainerWrapper = styled(ContainerWrapper)`
-    padding: 50px 0;
+    padding: 100px 0;
     display: flex;
     align-items: flex-start;
 
@@ -116,6 +116,7 @@ const StyledHeader = styled.div<StyledTextProps>`
 
 const StyledImage = styled(ImageContainer)`
     max-width: 260px;
+    padding-top: 25px;
 
     @media ${`(max-width: 1200px)`} {
         max-width: 220px;
@@ -131,28 +132,28 @@ const data: TableType[] = [
         text: 'Full medical insurance',
     },
     {
-        icon: Education,
-        text: 'Education assistance & training programms',
-    },
-    {
-        icon: Annual,
-        text: '22 days annual leave',
-    },
-    {
-        icon: Office,
-        text: 'Chic, comfy office in the heart of Dubai',
-    },
-    {
         icon: Security,
         text: 'Social security',
+    },
+    {
+        icon: Education,
+        text: 'Education assistance & training programms',
     },
     {
         icon: Tech,
         text: 'Corporate laptops, monitors, and other hardware',
     },
     {
+        icon: Annual,
+        text: '22 days annual leave',
+    },
+    {
         icon: Bonus,
         text: 'Annual bonus',
+    },
+    {
+        icon: Office,
+        text: 'Chic, comfy office in the heart of Dubai',
     },
     {
         icon: Pantry,
@@ -165,7 +166,7 @@ const PerksBenefits = () => {
         <PBContainer>
             <PBContainerWrapper>
                 <TextAboutCareer>
-                    <SectionLabel jc={true} />
+                    <SectionLabel jc="center" />
                     <StyledHeader>Helping you grow in your career</StyledHeader>
                     <StyledText>
                         We offer a robust training programme to help you with seamless onboarding

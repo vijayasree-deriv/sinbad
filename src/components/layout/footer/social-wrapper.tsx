@@ -6,6 +6,7 @@ import MapSvg from 'images/svg/map.svg'
 import PhoneSvg from 'images/svg/phone.svg'
 import EmailSvg from 'images/svg/mail.svg'
 import device from 'themes/device'
+import { CSSElementProps } from 'types/generics'
 
 const ContactLink = styled(GatsbyLink)`
     align-self: center;
@@ -15,12 +16,15 @@ const ContactLink = styled(GatsbyLink)`
     border-radius: 30px;
 `
 
-const ContactText = styled.div`
+const ContactText = styled.div<CSSElementProps>`
     font-size: 1.6rem;
+    line-height: 20px;
     color: white;
     padding-top: 10px;
     padding-left: 10px;
     justify-content: center;
+    font-family: Maven Pro;
+    cursor: pointer;
 `
 
 const ContactImage = styled.img`
@@ -32,7 +36,7 @@ const ContactContainer = styled.div`
     display: flex;
     flex-direction: row;
     width: fit-content;
-    padding-right: 45px;
+    padding-right: 70px;
 
     @media ${device.tabletL} {
         padding: 0;
@@ -41,42 +45,52 @@ const ContactContainer = styled.div`
     }
 `
 
+const contacts = [
+    {
+        id: 0,
+        image: MapSvg,
+        info: 'Sinbad Software LLC',
+        details:
+            '2201, 22nd Floor, One by Omniyat Building, Al Mustaqbal Street, Business Bay, Dubai, UAE',
+    },
+    {
+        id: 1,
+        image: PhoneSvg,
+        info: 'Phone:',
+        details: '+971 50 861-1678',
+    },
+    {
+        id: 2,
+        image: EmailSvg,
+        info: 'Email:',
+        details: 'information@sinbad.software',
+    },
+]
+
 const SocialWrapperComponent = () => {
-    const contacts = [
-        {
-            id: 0,
-            image: MapSvg,
-            info: 'Sinbad Software LLC',
-            details: 'Suite 112, Excepteur cupidatat non',
-            link: '',
-        },
-        {
-            id: 1,
-            image: PhoneSvg,
-            info: 'Phone:',
-            details: '888 22200 33300',
-            link: '',
-        },
-        {
-            id: 2,
-            image: EmailSvg,
-            info: 'Email:',
-            details: 'info@sinbad.software',
-            link: '',
-        },
-    ]
+    const sendMailToSinbad = () => {
+        const link = 'mailto:information@sinbad.software'
+        window.location.href = link
+    }
 
     return (
         <SocialWrapper>
             {contacts.map((contact) => (
                 <ContactContainer key={contact.id}>
-                    <ContactLink to={contact.link}>
+                    <ContactLink to={'mailto:information@sinbad.software'}>
                         <ContactImage src={contact.image} />
                     </ContactLink>
-                    <div>
-                        <ContactText>{contact.info}</ContactText>
-                        <ContactText>{contact.details}</ContactText>
-                    </div>
+                    {contact.id == 2 ? (
+                        <div onClick={sendMailToSinbad}>
+                            <ContactText>{contact.info}</ContactText>
+                            <ContactText>{contact.details}</ContactText>
+                        </div>
+                    ) : (
+                        <div>
+                            <ContactText>{contact.info}</ContactText>
+                            <ContactText>{contact.details}</ContactText>
+                        </div>
+                    )}
                 </ContactContainer>
             ))}
         </SocialWrapper>

@@ -161,7 +161,7 @@ const data: DataType[] = [
             />
         ),
         header: 'Interview with HR and Manager',
-        text: 'An HR representative and your potential manager will interview you.',
+        text: 'An HR representative and your potential manager will interview you. They will assess your experience, skills, and cultural fit.',
     },
     {
         icon: (
@@ -190,26 +190,26 @@ const data: DataType[] = [
     {
         icon: (
             <StaticImage
-                src="../../images/common/careers/offer.png"
+                src="../../images/common/careers/you-in.png"
                 alt="job offer icon"
                 placeholder="tracedSVG"
                 objectFit="fill"
             />
         ),
         header: 'Job offer',
-        text: "If everything goes well, you'll recieve a job offer. Be ready, as your new adventure with us is about to begin.",
+        text: "If everything goes well, you'll receive a job offer. Be ready, as your new adventure with us is about to begin.",
     },
     {
         icon: (
             <StaticImage
-                src="../../images/common/careers/you-in.png"
+                src="../../images/common/careers/offer.png"
                 alt="selected people icon"
                 placeholder="tracedSVG"
                 objectFit="fill"
             />
         ),
         header: "You're one of us",
-        text: "Welcome to Sinbad! You'll recieve your start date and the details of your onboarding programme.",
+        text: "Welcome to Sinbad! You'll receive your start date and the details of your onboarding programme.",
     },
 ]
 

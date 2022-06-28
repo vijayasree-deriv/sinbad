@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { ContainerWrapper } from 'components/containers'
 import { Button } from 'components/elements'
 import device from 'themes/device'
-import { getPathName, contactUsAction } from 'common/utility'
+import { contactUsAction } from 'common/utility'
 import { HeaderTitle } from 'components/containers/common/style'
 
 /* stylelint-disable */
@@ -59,7 +59,6 @@ const StyledHeaderLink = styled(Link)`
     text-align: left;
     padding-right: 30px;
 
-    &.active,
     &:hover {
         color: var(--color-sand-4);
     }
@@ -85,9 +84,9 @@ const StyledBurger = styled.button<MenuProps>`
     left: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 5rem;
-    height: 5rem;
+    justify-content: space-evenly;
+    width: 3rem;
+    height: 3rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -95,7 +94,7 @@ const StyledBurger = styled.button<MenuProps>`
     z-index: 10;
 
     div {
-        width: 5rem;
+        width: 2.5rem;
         height: 0.25rem;
         background: ${({ open }) => (open ? '#0D0C1D' : 'var(--color-sand-4)')};
         border-radius: 10px;
@@ -104,7 +103,7 @@ const StyledBurger = styled.button<MenuProps>`
         transform-origin: 1px;
 
         :first-child {
-            transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
+            transform: ${({ open }) => (open ? 'rotate(48deg)' : 'rotate(0)')};
         }
 
         :nth-child(2) {
@@ -113,23 +112,24 @@ const StyledBurger = styled.button<MenuProps>`
         }
 
         :nth-child(3) {
-            transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
+            transform: ${({ open }) => (open ? 'rotate(-42deg)' : 'rotate(0)')};
         }
     }
 
     @media ${`(max-width: 425px)`} {
-        top: 1%;
+        top: 2.2%;
     }
 `
 const StyledMenu = styled.nav<MenuProps>`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     background: #effffa;
     transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
     height: 100vh;
     text-align: left;
     padding: 2rem;
+    padding-top: 11rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -192,27 +192,30 @@ const Header = () => {
     const node = React.useRef()
     useOnClickOutside(node, () => setOpen(false))
 
-    const pathname = getPathName()
     const HomeRedirect = () => {
         navigate('/')
     }
+    const active_link = { color: 'var(--color-sand-4)' }
+
     return (
         <Container>
-            <BurgerMenu>
+            <BurgerMenu ref={node}>
                 <Burger open={open} setOpen={setOpen} />
                 <StyledMenu open={open}>
-                    <StyledHeaderLink to="/" className={pathname === '/' ? 'active' : ''}>
+                    <StyledHeaderLink to="/" activeStyle={active_link} partiallyActive={false}>
                         Home
                     </StyledHeaderLink>
                     <StyledHeaderLink
                         to="/careers"
-                        className={pathname === '/careers' ? 'active' : ''}
+                        activeStyle={active_link}
+                        partiallyActive={true}
                     >
                         Careers
                     </StyledHeaderLink>
                     <StyledHeaderLink
                         to="/open-positions"
-                        className={pathname === '/open-positions' ? 'active' : ''}
+                        activeStyle={active_link}
+                        partiallyActive={true}
                     >
                         Open Positions
                     </StyledHeaderLink>
@@ -225,18 +228,20 @@ const Header = () => {
                         <HeaderTitle padding_left="5px">Software</HeaderTitle>
                     </StyledHeader>
                     <NavWrapper>
-                        <StyledHeaderLink to="/" className={pathname === '/' ? 'active' : ''}>
+                        <StyledHeaderLink to="/" activeStyle={active_link} partiallyActive={false}>
                             Home
                         </StyledHeaderLink>
                         <StyledHeaderLink
                             to="/careers"
-                            className={pathname === '/careers' ? 'active' : ''}
+                            activeStyle={active_link}
+                            partiallyActive={true}
                         >
                             Careers
                         </StyledHeaderLink>
                         <StyledHeaderLink
                             to="/open-positions"
-                            className={pathname === '/open-positions' ? 'active' : ''}
+                            activeStyle={active_link}
+                            partiallyActive={true}
                         >
                             Open Positions
                         </StyledHeaderLink>

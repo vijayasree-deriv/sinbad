@@ -104,7 +104,7 @@ const CardContainer = styled.div`
         position: absolute;
         bottom: 0;
         content: '';
-        background: var(--color-sand-1);
+        background: var(--color-sand-transparent);
         width: 100%;
         height: 300px;
         z-index: 1;
@@ -219,24 +219,24 @@ const data = {
             ),
         },
         {
-            header: 'Quality assurance',
-            text: 'Whatever we build goes through rigorous testing to make sure its quality and security meet our tough standards.',
+            header: 'Product design',
+            text: 'The journey from vision to intuitive software starts here. We design winning products for the fintech industry.',
             icon: (
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-1.png"
-                    alt="quality assurance icon"
+                    alt="product design icon"
                     placeholder="tracedSVG"
                     objectFit="contain"
                 />
             ),
         },
         {
-            header: 'Product design',
-            text: 'The journey from vision to intuitive software starts here. We design winning products for the fintech industry.',
+            header: 'Quality assurance',
+            text: 'Whatever we build goes through rigorous testing to make sure its quality and security meet our tough standarts.',
             icon: (
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-2.png"
-                    alt="product design icon"
+                    alt="quality assurance icon"
                     placeholder="tracedSVG"
                     objectFit="contain"
                 />

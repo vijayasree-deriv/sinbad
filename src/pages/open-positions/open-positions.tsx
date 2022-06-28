@@ -137,7 +137,7 @@ const OpenPositions = () => {
             <OpenPositionsContainerWrapper>
                 <PositionsCarouselContainer>
                     <StyledFlex width="760px" wrap="wrap">
-                        {positions.map(({ position, text, id }, index) => {
+                        {positions.map(({ role_plural, text, id }, index) => {
                             return (
                                 <Card
                                     key={index}
@@ -150,19 +150,18 @@ const OpenPositions = () => {
                                     margin="20px"
                                 >
                                     <StyledHeader color="var(--color-sand-4)" padding="20px 0px">
-                                        {position}
+                                        {role_plural}
                                     </StyledHeader>
                                     <StyledText font_size="14px" text_align="center">
                                         {text}
                                     </StyledText>
                                     <LinkContainer to={`/job-description/${id}`}>
                                         <Text
-                                            font_size="1.5rem"
+                                            font_size="1.75rem"
                                             text_align="center"
                                             width="50px"
                                             padding="0px"
                                             font_family="Maven Pro Bold"
-                                            text_transform="uppercase"
                                         >
                                             More
                                         </Text>
@@ -183,11 +182,8 @@ const OpenPositions = () => {
                     </StyledFlex>
                 </PositionsCarouselContainer>
                 <OpenPositionsInfo>
-                    <StyledHeader text_align="left" padding="unset">
-                        Open
-                    </StyledHeader>
                     <StyledHeader text_align="left" border_bottom="2px solid var(--color-sand-1)">
-                        Positions
+                        Open Positions
                     </StyledHeader>
                     <StyledHeaderText padding="30px 0 10px">Back-end Development</StyledHeaderText>
                     <StyledHeaderText>Business Intelligence</StyledHeaderText>
@@ -195,7 +191,7 @@ const OpenPositions = () => {
                     <StyledHeaderText>Quantitative</StyledHeaderText>
                     <StyledHeaderText>Mobile app Development</StyledHeaderText>
                     <StyledHeaderText
-                        color="var(--color-sand-4)"
+                        color="var(--color-black-3)"
                         font_size="18px"
                         padding="25px 0"
                         text_transform="unset"

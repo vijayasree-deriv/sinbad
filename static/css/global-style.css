@@ -8,6 +8,7 @@
     --color-blue-2: #3bc8f7;
     --color-blue-3: #ecf6f8;
     --color-sand-1: #fef5e6;
+    --color-sand-transparent: #fef5e675;
     --color-sand-2: #fae9a7;
     --color-sand-3: #f7cd43;
     --color-sand-4: #f47c48;
@@ -32,13 +33,12 @@
     --text-size-header-5: 4.8rem;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
 html {
     font-size: 62.5%;
 }
-
-
-
