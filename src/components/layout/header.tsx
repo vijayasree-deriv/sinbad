@@ -194,28 +194,26 @@ const Header = () => {
     const HomeRedirect = () => {
         navigate('/')
     }
+    const active_link = { color: 'var(--color-sand-4)' }
+
     return (
         <Container>
             <BurgerMenu>
                 <Burger open={open} setOpen={setOpen} />
                 <StyledMenu open={open}>
-                    <StyledHeaderLink
-                        to="/"
-                        activeStyle={{ color: 'var(--color-sand-4)' }}
-                        partiallyActive={false}
-                    >
+                    <StyledHeaderLink to="/" activeStyle={active_link} partiallyActive={false}>
                         Home
                     </StyledHeaderLink>
                     <StyledHeaderLink
                         to="/careers"
-                        activeStyle={{ color: 'var(--color-sand-4)' }}
+                        activeStyle={active_link}
                         partiallyActive={true}
                     >
                         Careers
                     </StyledHeaderLink>
                     <StyledHeaderLink
                         to="/open-positions"
-                        activeStyle={{ color: 'var(--color-sand-4)' }}
+                        activeStyle={active_link}
                         partiallyActive={true}
                     >
                         Open Positions
@@ -229,23 +227,19 @@ const Header = () => {
                         <HeaderTitle padding_left="5px">Software</HeaderTitle>
                     </StyledHeader>
                     <NavWrapper>
-                        <StyledHeaderLink
-                            to="/"
-                            activeStyle={{ color: 'var(--color-sand-4)' }}
-                            partiallyActive={false}
-                        >
+                        <StyledHeaderLink to="/" activeStyle={active_link} partiallyActive={false}>
                             Home
                         </StyledHeaderLink>
                         <StyledHeaderLink
                             to="/careers"
-                            activeStyle={{ color: 'var(--color-sand-4)' }}
+                            activeStyle={active_link}
                             partiallyActive={true}
                         >
                             Careers
                         </StyledHeaderLink>
                         <StyledHeaderLink
                             to="/open-positions"
-                            activeStyle={{ color: 'var(--color-sand-4)' }}
+                            activeStyle={active_link}
                             partiallyActive={true}
                         >
                             Open Positions
