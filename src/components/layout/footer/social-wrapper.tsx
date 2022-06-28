@@ -23,7 +23,7 @@ const ContactText = styled.div<CSSElementProps>`
     padding-top: 10px;
     padding-left: 10px;
     justify-content: center;
-    font-family: ${(props) => props.fontFamily || 'Maven Pro'};
+    font-family: Maven Pro;
     cursor: pointer;
 `
 
