@@ -37,7 +37,7 @@ const JobTitle = ({ position }: JobTitleProps) => {
     return (
         <JobTitleContainer>
             <JobTitleContainerWrapper>
-                <StyledHeader>{position?.position}</StyledHeader>
+                <StyledHeader>{position?.position.slice(0, -1)}</StyledHeader>
                 <ImageContainer max_height="unset">
                     <StaticImage
                         src="../../images/common/jd/analytic-background.png"

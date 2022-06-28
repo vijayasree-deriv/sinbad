@@ -2,7 +2,7 @@
     {
         "id": "front-end-dev",
         "slug": "front-end-dev",
-        "position": "Front-End Developers",
+        "position": "Front-end Developers",
         "text": "We are seeking a talented Front-end Developer to create robust front-end systems for global fintech companies.",
         "description": [
             "You’ll build powerful front-end systems with an improved user experience for our clients worldwide. You‘ll advocate for clients’ needs in the design and development of our applications, especially when implementing new products and features."
@@ -220,7 +220,7 @@
     {
         "id": "back-end-dev",
         "slug": "back-end-dev",
-        "position": "Back-End Developers",
+        "position": "Back-end Developers",
         "text": "We are seeking a Back-end Developer to build automated tests and perform regular reviews to enhance code quality for top fintech companies.",
         "description": [
             "You’ll design and develop reliable server-side apps and databases. By testing and debugging them, you make sure that issues are found and addressed in time. Our client base is growing rapidly, and so is the need to make our system and APIs more scalable. You will play an important role in making our platform scalable by transforming from monolithic to microservice-based architecture.",
