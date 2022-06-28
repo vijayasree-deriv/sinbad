@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link as GatsbyLink } from 'gatsby'
 import styled from 'styled-components'
 import { SocialWrapper } from '../../containers/common/style'
 import MapSvg from 'images/svg/map.svg'
@@ -8,8 +7,8 @@ import EmailSvg from 'images/svg/mail.svg'
 import device from 'themes/device'
 import { CSSElementProps } from 'types/generics'
 
-const ContactLink = styled(GatsbyLink)`
-    align-self: center;
+const ContactIcon = styled.div`
+    align-self: start;
     padding: 8px;
     display: flex;
     background: white;
@@ -17,10 +16,10 @@ const ContactLink = styled(GatsbyLink)`
 `
 
 const ContactText = styled.div<CSSElementProps>`
+    max-width: 250px;
     font-size: 1.6rem;
     line-height: 20px;
     color: white;
-    padding-top: 10px;
     padding-left: 10px;
     justify-content: center;
     font-family: Maven Pro;
@@ -77,19 +76,26 @@ const SocialWrapperComponent = () => {
         <SocialWrapper>
             {contacts.map((contact) => (
                 <ContactContainer key={contact.id}>
-                    <ContactLink to={'mailto:information@sinbad.software'}>
-                        <ContactImage src={contact.image} />
-                    </ContactLink>
                     {contact.id == 2 ? (
-                        <div onClick={sendMailToSinbad}>
-                            <ContactText>{contact.info}</ContactText>
-                            <ContactText>{contact.details}</ContactText>
-                        </div>
+                        <>
+                            <ContactIcon onClick={sendMailToSinbad}>
+                                <ContactImage src={contact.image} />
+                            </ContactIcon>
+                            <div onClick={sendMailToSinbad}>
+                                <ContactText>{contact.info}</ContactText>
+                                <ContactText>{contact.details}</ContactText>
+                            </div>
+                        </>
                     ) : (
-                        <div>
-                            <ContactText>{contact.info}</ContactText>
-                            <ContactText>{contact.details}</ContactText>
-                        </div>
+                        <>
+                            <ContactIcon>
+                                <ContactImage src={contact.image} />
+                            </ContactIcon>
+                            <div>
+                                <ContactText>{contact.info}</ContactText>
+                                <ContactText>{contact.details}</ContactText>
+                            </div>
+                        </>
                     )}
                 </ContactContainer>
             ))}
