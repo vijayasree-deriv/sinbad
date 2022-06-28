@@ -78,13 +78,8 @@ const SocialWrapperComponent = () => {
         <SocialWrapper>
             {contacts.map((contact) => (
                 <ContactContainer key={contact.id}>
-                    {contact.id == 1 && isMobile && (
-                        <ContactLink href={contact.to} target={contact.target}>
-                            <ContactImage src={contact.image} />
-                        </ContactLink>
-                    )}
-                    {contact.id == 1 && !isMobile && (
-                        <ContactLink href="">
+                    {contact.id == 1 && (
+                        <ContactLink href={isMobile() ? contact.to : '#'} target={contact.target}>
                             <ContactImage src={contact.image} />
                         </ContactLink>
                     )}
@@ -95,18 +90,12 @@ const SocialWrapperComponent = () => {
                         </ContactLink>
                     )}
 
-                    {contact.id == 1 && isMobile && (
+                    {contact.id == 1 && (
                         <div
                             onClick={() => {
-                                window.open(contact.to, contact.target)
+                                isMobile() ? window.open(contact.to, contact.target) : null
                             }}
                         >
-                            <ContactText>{contact.info}</ContactText>
-                            <ContactText>{contact.details}</ContactText>
-                        </div>
-                    )}
-                    {contact.id == 1 && !isMobile && (
-                        <div>
                             <ContactText>{contact.info}</ContactText>
                             <ContactText>{contact.details}</ContactText>
                         </div>
