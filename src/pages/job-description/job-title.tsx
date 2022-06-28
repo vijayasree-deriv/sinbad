@@ -37,7 +37,7 @@ const JobTitle = ({ position }: JobTitleProps) => {
     return (
         <JobTitleContainer>
             <JobTitleContainerWrapper>
-                <StyledHeader>{position?.position}</StyledHeader>
+                <StyledHeader>{position?.role}</StyledHeader>
                 <ImageContainer max_height="unset">
                     <StaticImage
                         src="../../images/common/jd/analytic-background.png"
