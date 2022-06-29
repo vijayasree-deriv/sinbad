@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { SocialWrapper } from '../../containers/common/style'
+import { isMobile } from 'common/os-detect'
 import MapSvg from 'images/svg/map.svg'
 import PhoneSvg from 'images/svg/phone.svg'
 import EmailSvg from 'images/svg/mail.svg'
@@ -13,7 +14,7 @@ const ContactIcon = styled.div<CSSElementProps>`
     display: flex;
     background: white;
     border-radius: 30px;
-    cursor: ${(props) => props.cursor || 'unset'};
+    cursor: pointer;
 `
 
 const ContactText = styled.div<CSSElementProps>`
@@ -24,7 +25,7 @@ const ContactText = styled.div<CSSElementProps>`
     padding-left: 10px;
     justify-content: center;
     font-family: Maven Pro;
-    cursor: ${(props) => props.cursor || 'unset'};
+    cursor: pointer;
 `
 
 const ContactImage = styled.img`
@@ -52,52 +53,52 @@ const contacts = [
         info: 'Sinbad Software LLC',
         details:
             '2201, 22nd Floor, One by Omniyat Building, Al Mustaqbal Street, Business Bay, Dubai, UAE',
+        to: 'https://goo.gl/maps/8Lb4NbYoUpikKJxS6',
+        target: '_blank',
+        only_mobile: false,
     },
     {
         id: 1,
         image: PhoneSvg,
         info: 'Phone:',
         details: '+971 50 861-1678',
+        to: 'tel:971508611678',
+        target: '_self',
+        only_mobile: true,
     },
     {
         id: 2,
         image: EmailSvg,
         info: 'Email:',
         details: 'information@sinbad.software',
+        to: 'mailto:information@sinbad.software',
+        target: '_self',
+        only_mobile: false,
     },
 ]
 
 const SocialWrapperComponent = () => {
-    const sendMailToSinbad = () => {
-        const link = 'mailto:information@sinbad.software'
-        window.location.href = link
-    }
-
     return (
         <SocialWrapper>
-            {contacts.map((contact) => (
-                <ContactContainer key={contact.id}>
-                    {contact.id == 2 ? (
-                        <>
-                            <ContactIcon onClick={sendMailToSinbad} cursor="pointer">
-                                <ContactImage src={contact.image} />
-                            </ContactIcon>
-                            <div onClick={sendMailToSinbad}>
-                                <ContactText cursor="pointer">{contact.info}</ContactText>
-                                <ContactText cursor="pointer">{contact.details}</ContactText>
-                            </div>
-                        </>
-                    ) : (
-                        <>
-                            <ContactIcon>
-                                <ContactImage src={contact.image} />
-                            </ContactIcon>
-                            <div>
-                                <ContactText>{contact.info}</ContactText>
-                                <ContactText>{contact.details}</ContactText>
-                            </div>
-                        </>
-                    )}
+            {contacts.map(({ id, image, info, details, to, target, only_mobile }) => (
+                <ContactContainer
+                    key={id}
+                    onClick={() => {
+                        {
+                            only_mobile && isMobile() && window.open(to, target)
+                        }
+                        {
+                            !only_mobile && window.open(to, target)
+                        }
+                    }}
+                >
+                    <ContactIcon>
+                        <ContactImage src={image} />
+                    </ContactIcon>
+                    <div>
+                        <ContactText>{info}</ContactText>
+                        <ContactText>{details}</ContactText>
+                    </div>
                 </ContactContainer>
             ))}
         </SocialWrapper>
