@@ -1,14 +1,14 @@
 import React from 'react'
+import { Link as GatsbyLink } from 'gatsby'
 import styled from 'styled-components'
 import { SocialWrapper } from '../../containers/common/style'
-import { isMobile } from 'common/os-detect'
 import MapSvg from 'images/svg/map.svg'
 import PhoneSvg from 'images/svg/phone.svg'
 import EmailSvg from 'images/svg/mail.svg'
 import device from 'themes/device'
 import { CSSElementProps } from 'types/generics'
 
-const ContactLink = styled.a`
+const ContactLink = styled(GatsbyLink)`
     align-self: center;
     padding: 8px;
     display: flex;
@@ -35,7 +35,7 @@ const ContactImage = styled.img`
 const ContactContainer = styled.div`
     display: flex;
     flex-direction: row;
-    max-width: 450px;
+    width: fit-content;
     padding-right: 70px;
 
     @media ${device.tabletL} {
@@ -52,60 +52,41 @@ const contacts = [
         info: 'Sinbad Software LLC',
         details:
             '2201, 22nd Floor, One by Omniyat Building, Al Mustaqbal Street, Business Bay, Dubai, UAE',
-        to: 'https://goo.gl/maps/8Lb4NbYoUpikKJxS6',
-        target: '_blank',
     },
     {
         id: 1,
         image: PhoneSvg,
         info: 'Phone:',
         details: '+971 50 861-1678',
-        to: 'tel:971508611678',
-        target: '_self',
     },
     {
         id: 2,
         image: EmailSvg,
         info: 'Email:',
         details: 'information@sinbad.software',
-        to: 'mailto:information@sinbad.software',
-        target: '_self',
     },
 ]
 
 const SocialWrapperComponent = () => {
+    const sendMailToSinbad = () => {
+        const link = 'mailto:information@sinbad.software'
+        window.location.href = link
+    }
+
     return (
         <SocialWrapper>
             {contacts.map((contact) => (
                 <ContactContainer key={contact.id}>
-                    {contact.id == 1 && (
-                        <ContactLink href={isMobile() ? contact.to : '#'} target={contact.target}>
-                            <ContactImage src={contact.image} />
-                        </ContactLink>
-                    )}
-
-                    {contact.id != 1 && (
-                        <ContactLink href={contact.to} target={contact.target}>
-                            <ContactImage src={contact.image} />
-                        </ContactLink>
-                    )}
-
-                    {contact.id == 1 && (
-                        <div
-                            onClick={() => {
-                                isMobile() ? window.open(contact.to, contact.target) : null
-                            }}
-                        >
+                    <ContactLink to={'mailto:information@sinbad.software'}>
+                        <ContactImage src={contact.image} />
+                    </ContactLink>
+                    {contact.id == 2 ? (
+                        <div onClick={sendMailToSinbad}>
                             <ContactText>{contact.info}</ContactText>
                             <ContactText>{contact.details}</ContactText>
                         </div>
-                    )}
-                    {contact.id != 1 && (
-                        <div
-                            onClick={() => {
-                                window.open(contact.to, contact.target)
-                            }}
-                        >
+                    ) : (
+                        <div>
                             <ContactText>{contact.info}</ContactText>
                             <ContactText>{contact.details}</ContactText>
                         </div>
