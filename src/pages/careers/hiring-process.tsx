@@ -28,7 +28,7 @@ const HiringProcessContainerWrapper = styled(ContainerWrapper)`
     align-items: center;
 `
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.h2`
     font-size: 4.8rem;
     line-height: 51px;
     color: var(--color-black-3);

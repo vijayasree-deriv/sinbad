@@ -31,7 +31,7 @@ const WhyWithUsText = styled.div`
     align-items: center;
     padding: 80px 0;
 `
-const StyledHeader = styled.div<{ font_family?: string }>`
+const StyledHeader = styled.h2<{ font_family?: string }>`
     font-size: 4.8rem;
     line-height: 50px;
     color: #1b1b1b;
@@ -101,7 +101,7 @@ const WorkWithUs = () => {
                 <StyledImage>
                     <StaticImage
                         src="../../images/common/careers/words.png"
-                        alt="reasons to work at sinbad"
+                        alt="Variety of programming languages, challenges, and support"
                         placeholder="tracedSVG"
                         loading="eager"
                     />

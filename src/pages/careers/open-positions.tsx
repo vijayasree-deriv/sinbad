@@ -37,7 +37,7 @@ const HeaderContainer = styled.div`
     padding: 50px 0;
 `
 
-const StyledHeader = styled.div<StyledTextProps>`
+const StyledHeader = styled.h2<StyledTextProps>`
     font-size: 4.8rem;
     line-height: 51px;
     color: var(--color-black-3);

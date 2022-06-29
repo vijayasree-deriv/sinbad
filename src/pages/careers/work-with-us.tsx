@@ -31,7 +31,7 @@ const CareersContainerWrapper = styled(ContainerWrapper)`
         align-items: center;
     }
 `
-const StyledHeader = styled.div<{ font_family?: string; color?: string; padding?: string }>`
+const StyledHeader = styled.h1<{ font_family?: string; color?: string; padding?: string }>`
     display: flex;
     font-size: 4.8rem;
     line-height: 57px;
@@ -96,7 +96,7 @@ const WorkWithUs = () => {
                 <StyledImageContainer>
                     <StaticImage
                         src="../../images/common/careers/work-with-us.png"
-                        alt="work with us"
+                        alt="Work on tech projects with Sinbad Software"
                         placeholder="tracedSVG"
                         loading="eager"
                     />

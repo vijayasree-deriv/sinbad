@@ -59,7 +59,7 @@ const JoinUsCareers = () => {
                     >
                         <StaticImage
                             src="../../../images/common/careers/careers-join-us.png"
-                            alt="career join us image"
+                            alt="Building great software at Sinbad Software"
                             placeholder="tracedSVG"
                         />
                     </JoinUsImageContainer>
