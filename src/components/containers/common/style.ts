@@ -35,19 +35,21 @@ export const DefaultFooter = styled.footer`
 `
 
 export const SocialWrapper = styled.div`
-    align-items: center;
+    align-items: flex-start;
     height: 250px;
     background: var(--color-blue-1);
     color: white;
     display: flex;
     justify-content: space-between;
+    padding-top: 100px;
 
     @media ${device.tabletL} {
         display: flex;
-        height: 250px;
+        height: 275px;
         flex-direction: column;
         justify-content: center;
         margin: 3rem 0 1rem;
+        padding-top: 10px;
 
         a:first-child {
             img {
