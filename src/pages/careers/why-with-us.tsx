@@ -78,6 +78,10 @@ const StyledImage = styled(ImageContainer)`
         width: 400px;
         height: 350px;
     }
+    @media ${device.mobileL} {
+        width: 300px;
+        height: 250px;
+    }
 `
 
 const WorkWithUs = () => {
@@ -89,7 +93,7 @@ const WorkWithUs = () => {
                     <StyledText>
                         Fintech is an industry where projects come in many shapes and sizes. You’ll
                         be constantly challenged to come up with new solutions and work with various
-                        technologies. With us, you’ll have the opportunity to continuosly learn and
+                        technologies. With us, you’ll have the opportunity to continuously learn and
                         build your skills while working on new challenges with a smart, supportive
                         team.
                     </StyledText>

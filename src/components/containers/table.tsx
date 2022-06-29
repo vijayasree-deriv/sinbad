@@ -106,7 +106,7 @@ const TermText = styled.div<TermProps>`
     font-size: 1.8rem;
     line-height: 22px;
     color: var(--color-black-3);
-    font-family: Maven Pro;
+    font-family: Maven Pro Bold;
     text-align: left;
 
     @media ${device.laptopM} {

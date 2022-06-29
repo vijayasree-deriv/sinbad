@@ -63,6 +63,7 @@ const CardHeader = styled.div<StyledTextProps>`
     font-weight: 560;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     padding: 20px 0 10px;
+    text-align: center;
 
     @media ${device.laptop} {
         font-size: 2.8rem;
@@ -89,7 +90,7 @@ const CardLinkText = styled.div<StyledTextProps>`
     line-height: 22px;
     color: var(--color-black-3);
     font-weight: 560;
-    font-family: ${(props) => props.font_family || 'Maven Pro'};
+    font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     text-transform: uppercase;
     padding-right: 20px;
 
@@ -130,7 +131,7 @@ const positions: PositionsType[] = [
             />
         ),
         position: 'Business intelligence',
-        text: 'Provide analytical and strategic insights that enchance the growth of our clients’ business, products, and services.',
+        text: 'Provide analytical and strategic insights that enchance the growth of our clients’ businesses, products, and services.',
     },
 ]
 
