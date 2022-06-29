@@ -78,38 +78,17 @@ const SocialWrapperComponent = () => {
         <SocialWrapper>
             {contacts.map((contact) => (
                 <ContactContainer key={contact.id}>
-                    {contact.id == 1 && (
-                        <ContactLink href={isMobile() ? contact.to : '#'} target={contact.target}>
-                            <ContactImage src={contact.image} />
-                        </ContactLink>
-                    )}
-
-                    {contact.id != 1 && (
-                        <ContactLink href={contact.to} target={contact.target}>
-                            <ContactImage src={contact.image} />
-                        </ContactLink>
-                    )}
-
-                    {contact.id == 1 && (
-                        <div
-                            onClick={() => {
-                                isMobile() ? window.open(contact.to, contact.target) : null
-                            }}
-                        >
-                            <ContactText>{contact.info}</ContactText>
-                            <ContactText>{contact.details}</ContactText>
-                        </div>
-                    )}
-                    {contact.id != 1 && (
-                        <div
-                            onClick={() => {
-                                window.open(contact.to, contact.target)
-                            }}
-                        >
-                            <ContactText>{contact.info}</ContactText>
-                            <ContactText>{contact.details}</ContactText>
-                        </div>
-                    )}
+                    <ContactLink href={isMobile() ? contact.to : '#'} target={contact.target}>
+                        <ContactImage src={contact.image} />
+                    </ContactLink>
+                    <div
+                        onClick={() => {
+                            isMobile() ? window.open(contact.to, contact.target) : null
+                        }}
+                    >
+                        <ContactText>{contact.info}</ContactText>
+                        <ContactText>{contact.details}</ContactText>
+                    </div>
                 </ContactContainer>
             ))}
         </SocialWrapper>
