@@ -55,6 +55,7 @@ const TermsTextContainer = styled.div`
     text-align: center;
     align-items: flex-start;
     margin: 30px 15px;
+    max-width: 420px;
 `
 
 const tech_stack = [
@@ -79,7 +80,7 @@ const StackContainer = styled.div`
     align-items: flex-start;
     max-width: 500px;
     max-height: 170px;
-    padding: 20px 0;
+    padding: 10px 0;
 `
 
 const Stack = styled.div<StyledTextProps>`
@@ -90,7 +91,6 @@ const Stack = styled.div<StyledTextProps>`
     font-family: ${(props) => props.font_family || 'Maven Pro'};
 `
 const StyledText = styled.div<StyledTextProps>`
-    max-width: 350px;
     font-size: 1.6rem;
     line-height: 27px;
     color: var(--color-black-3);
@@ -113,11 +113,10 @@ const StyledDescription = styled.div<StyledTextProps>`
     max-width: 480px;
     font-size: 2.4rem;
     line-height: 27px;
-    color: var(--color-sand-4);
     font-weight: 560;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     text-align: left;
-    padding-bottom: 120px;
+    padding: 30px 0 120px;
 
     @media ${device.laptopM} {
         padding-bottom: 0;
