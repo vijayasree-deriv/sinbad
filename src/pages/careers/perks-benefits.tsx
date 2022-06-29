@@ -15,7 +15,6 @@ import {
     Tech,
 } from 'images/svg/benefits'
 import device from 'themes/device'
-import { SectionLabel } from 'components/chunks'
 
 type StyledTextProps = {
     font_family?: string
@@ -166,7 +165,6 @@ const PerksBenefits = () => {
         <PBContainer>
             <PBContainerWrapper>
                 <TextAboutCareer>
-                    <SectionLabel jc="center" />
                     <StyledHeader>Helping you grow in your career</StyledHeader>
                     <StyledText>
                         We offer a robust training programme to help you with seamless onboarding

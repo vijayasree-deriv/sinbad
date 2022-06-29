@@ -7,7 +7,6 @@ import { Button } from 'components/elements'
 import { JoinUsImageContainer } from 'components/containers/main'
 import Sinbad from 'images/common/openpositions/join-us-background.png'
 import { Banner } from 'images/common/jd'
-import { SectionLabel } from 'components/chunks'
 
 const Wrapper = styled.div`
     background-color: var(--color-sand-transparent);
@@ -46,7 +45,6 @@ const JoinUsJob = ({ position }: JobTitleProps) => {
                         />
                     </JoinUsImageContainer>
                     <JoinUsInfo>
-                        <SectionLabel />
                         <TextContainer>
                             <StyledHeader>Join Our Team!</StyledHeader>
                             <StyledText>

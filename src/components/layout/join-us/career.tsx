@@ -6,7 +6,6 @@ import { Button } from 'components/elements'
 import { JoinUsImageContainer } from 'components/containers/main'
 import Sinbad from 'images/common/openpositions/join-us-background.png'
 import { openPositionActions } from 'common/utility'
-import { SectionLabel } from 'components/chunks'
 import { Banner } from 'images/common/careers'
 import device from 'themes/device'
 
@@ -39,7 +38,6 @@ const JoinUsCareers = () => {
             <JoinUsWrapper>
                 <JoinUsContainer>
                     <JoinUsInfo>
-                        <SectionLabel />
                         <TextContainer padding_bottom="120px">
                             <StyledHeader>Join Our Team!</StyledHeader>
                             <StyledText>
