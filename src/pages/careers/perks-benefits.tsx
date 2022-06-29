@@ -137,7 +137,7 @@ const data: TableType[] = [
     },
     {
         icon: Education,
-        text: 'Education assistance & training programms',
+        text: 'Education assistance & training programmes',
     },
     {
         icon: Tech,
