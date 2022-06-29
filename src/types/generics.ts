@@ -17,6 +17,7 @@ export type CSSElementProps = {
     marginLeft?: string
     borderRight?: string
     cursor?: string
+    jc?: string
 }
 
 export type TableDataProps = {
