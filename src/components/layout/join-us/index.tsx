@@ -29,7 +29,7 @@ const JoinUs = ({ appearance, position }: JoinUsProps) => {
         case Appearance.job:
             return <JoinUsJob position={position} />
         default:
-        //<PageNotFound />
+            return <PageNotFound />
     }
 }
 
