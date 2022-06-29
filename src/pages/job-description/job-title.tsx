@@ -22,7 +22,7 @@ const JobTitleContainerWrapper = styled(ContainerWrapper)`
     align-items: center;
 `
 
-const StyledHeader = styled.div<{ font_family?: string }>`
+const StyledHeader = styled.h1<{ font_family?: string }>`
     max-width: 600px;
     font-size: 4.8rem;
     line-height: 58px;
@@ -41,7 +41,7 @@ const JobTitle = ({ position }: JobTitleProps) => {
                 <ImageContainer max_height="unset">
                     <StaticImage
                         src="../../images/common/jd/analytic-background.png"
-                        alt="job description"
+                        alt={position?.alt}
                         loading="eager"
                         objectFit="scale-down"
                         placeholder="tracedSVG"

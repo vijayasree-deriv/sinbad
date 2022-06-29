@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { StaticImage } from 'gatsby-plugin-image'
 import { JoinUsContainer, JoinUsInfo, StyledHeader, StyledText, TextContainer } from './home'
+import { JobTitleProps } from 'pages/job-description/data'
 import { Button } from 'components/elements'
 import { JoinUsImageContainer } from 'components/containers/main'
 import Sinbad from 'images/common/openpositions/join-us-background.png'
@@ -27,7 +28,7 @@ const JoinUsWrapper = styled(JoinUsContainer)`
     width: 100%;
 `
 
-const JoinUsJob = () => {
+const JoinUsJob = ({ position }: JobTitleProps) => {
     const sendMailToHR = () => {
         const link = 'mailto:hr@sinbad.software'
         window.location.href = link
@@ -40,7 +41,7 @@ const JoinUsJob = () => {
                     <JoinUsImageContainer padding_bottom="unset" width="600px" mobile_pb="unset">
                         <StaticImage
                             src="../../../images/common/jd/job-join-us.png"
-                            alt="jobs join us image"
+                            alt={position?.join_alt}
                             placeholder="tracedSVG"
                         />
                     </JoinUsImageContainer>

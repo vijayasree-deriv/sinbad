@@ -1,12 +1,14 @@
 import React from 'react'
 import JoinUsHome from 'components/layout/join-us/home'
 import JoinUsCareers from 'components/layout/join-us/career'
+import { JobTitleProps } from 'pages/job-description/data'
 import JoinUsOpenPositions from 'components/layout/join-us/open-position'
 import JoinUsJob from 'components/layout/join-us/job'
 import PageNotFound from 'pages/404'
 
-type JoinUsProps = {
+type JoinUsProps = JobTitleProps & {
     appearance: string
+    position?: JobTitleProps
 }
 
 const Appearance = {
@@ -16,7 +18,7 @@ const Appearance = {
     job: 'job',
 }
 
-const JoinUs = ({ appearance }: JoinUsProps) => {
+const JoinUs = ({ appearance, position }: JoinUsProps) => {
     switch (appearance) {
         case Appearance.home:
             return <JoinUsHome />
@@ -25,9 +27,9 @@ const JoinUs = ({ appearance }: JoinUsProps) => {
         case Appearance.openPositions:
             return <JoinUsOpenPositions />
         case Appearance.job:
-            return <JoinUsJob />
+            return <JoinUsJob position={position} />
         default:
-            <PageNotFound />
+        //<PageNotFound />
     }
 }
 

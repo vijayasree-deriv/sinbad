@@ -66,7 +66,7 @@ export const JoinUsImageContainer = styled(ImageContainer)<ImageProps>`
     }
 `
 
-export const Header = styled.div<HeaderProps>`
+export const Header = styled.h2<HeaderProps>`
     font-size: ${(props) => props.font_size || '2.4rem'};
     line-height: ${(props) => props.line_height || '18px'};
     font-weight: ${(props) => props.font_weight || 'bold'};

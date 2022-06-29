@@ -1,6 +1,8 @@
 [
     {
         "id": "front-end-dev",
+        "seo_title": "Front-end Developer jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a Front-end Developer in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "front-end-dev",
         "role_plural": "Front-end Developers",
         "role": "Front-end Developer",
@@ -8,6 +10,8 @@
         "description": [
             "You’ll build powerful front-end systems with an improved user experience for our clients worldwide. You‘ll advocate for clients’ needs in the design and development of our applications, especially when implementing new products and features."
         ],
+        "alt": "Front-end Developer jobs at Sinbad software",
+        "join_alt": "Work with Sinbad Software as a Front-end Developer",
         "challenges": [
             "Find the balance between functional and aesthetic design, and create engaging user interfaces for all our products.",
             "Ensure our products are accessible across all platforms by optimising them for speed, scalability, and usability.",
@@ -32,6 +36,8 @@
     },
     {
         "id": "data-analyst",
+        "seo_title": "Data Analyst jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a Data Analyst in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "data-analyst",
         "role_plural": "Data Analysts",
         "role": "Data Analyst",
@@ -39,6 +45,8 @@
         "description": [
             "You’ll provide insights by collecting, processing, analysing, and presenting data in a usable way. You’ll ensure data integrity and use data-driven techniques to acquire information to help draft business strategies. Your keen eye for detail and expertise in data analysis will be vital in converting data into actionable insights to solve complex business challenges."
         ],
+        "alt": "Data Analyst jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a Data Analyst",
         "challenges": [
             "Analyse business requirements and create a seamless data flow from the source.",
             "Maintain data integrity, identify and resolve data gaps, convert data for analysis purposes, and create business terminologies for the users.",
@@ -65,6 +73,8 @@
     },
     {
         "id": "graphic-designer",
+        "seo_title": "Graphic Designer jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a Graphic Designer in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "graphic-designer",
         "role_plural": "Graphic Designers",
         "role": "Graphic Designer",
@@ -72,6 +82,8 @@
         "description": [
             "You’ll produce captivating designs that inform the audience and call them to action. With your keen eye for aesthetics, you will conceptualise creative solutions for visual challenges. You will play an essential role in building the user interface that brings our products and users together."
         ],
+        "alt": "Graphic Designer jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a Graphic Designer",
         "challenges": [
             "Develop the design rationale and explain visual choices to cross-functional teams verbally and visually.",
             "Produce high-quality visual designs, including icons, graphics, and marketing materials, for desktop, web, and mobile devices with various resolutions.",
@@ -94,6 +106,8 @@
     },
     {
         "id": "flutter-developer",
+        "seo_title": "Flutter Development jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a Flutter Developer in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "flutter-developer",
         "role_plural": "Flutter Developers",
         "role": "Flutter Developer",
@@ -101,6 +115,8 @@
         "description": [
             "You’ll be responsible for designing and developing applications for iOS and Android while working closely with the Product Development team to plan new app features. You will handle debugging and troubleshooting to improve mobile app functionality and create advanced applications."
         ],
+        "alt": "Flutter Developer jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a Flutter Developer",
         "challenges": [
             "Develop iOS and Android mobile applications, writing high-quality code and tests.",
             "Collaborate with cross-functional teams to analyse data and decide on the best strategies to improve customers’ interaction with our mobile apps.",
@@ -126,6 +142,8 @@
     },
     {
         "id": "motion-designer",
+        "seo_title": "Motion Designer jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a Motion Designer in Dubai, you can read more details here and apply for the position at Sinbad Software.",
         "slug": "motion-designer",
         "role_plural": "Motion Designers",
         "role": "Motion Designer",
@@ -133,6 +151,8 @@
         "description": [
             "You’ll define and create inventive motion designs for our products in collaboration with other designers and developers. You’ll bring innovative ideas to life on various platforms through your mastery of user interface animation, rapid prototyping, and motion studies. Your creations will elevate the motion experience of our clients and tell our brand story."
         ],
+        "alt": "Motion Designer jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a Motion Designer",
         "challenges": [
             "Shape the product narrative by creating UX motion behaviours, systems, and animations that simplify complexity and guide clients. ",
             "Create the motion design approach and strategy by converting early concepts, storyboards, and prototypes into final designs.",
@@ -159,6 +179,8 @@
     },
     {
         "id": "quantitative-analyst",
+        "seo_title": "Quantitative Analyst jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a Quantitative Analyst in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "quantitative-analyst",
         "role_plural": "Quantitative Analysts",
         "role": "Quantitative Analyst",
@@ -166,6 +188,8 @@
         "description": [
             "You’ll design and create new trading products that will allow our clients to trade anything they desire. You’ll use mathematical and financial methods to develop derivatives pricing and risk management algorithms based on real-time market data, new events, and any such parameters impacting the underlying instruments. With your extensive financial knowledge and data analysis skills, you will create models that will help us mitigate risk, make sound business decisions, and introduce a new generation of trading products to the fintech world."
         ],
+        "alt": "Quantitative Analyst jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a Quantitative Analyst",
         "challenges": [
             "Apply mathematical models to real-world scenarios.",
             "Solve complex and abstract mathematical problems to optimise pricing and manage risk.",
@@ -190,6 +214,8 @@
 
     {
         "id": "ui-ux-designer",
+        "seo_title": "UI/UX Designer jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a UI/UX Designer in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "ui-ux-designer",
         "role_plural": "UI/UX Designers",
         "role": "UI/UX Designer",
@@ -197,6 +223,8 @@
         "description": [
             "You’ll inform the design of our websites and apps from the perspective of our end-user. You will have an in-depth understanding of the user requirements, and you will be involved in every aspect of the product development process. You’ll transform complex concepts into intuitive, accessible, and user-friendly designs."
         ],
+        "alt": "UI/UX Designer jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a UI/UX Designer",
         "challenges": [
             "Take broad, conceptual ideas and turn them into something useful and valuable for our clients.",
             "Translate concepts into wireframes, mockups, and prototypes that lead to an intuitive user experience.",
@@ -226,6 +254,8 @@
     },
     {
         "id": "back-end-dev",
+        "seo_title": "Back-end Developer jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a Back-end Developer in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "back-end-dev",
         "role_plural": "Back-end Developers",
         "role": "Back-end Developer",
@@ -235,6 +265,8 @@
             "You’re working with a supportive team who are ready to hear your thoughts, brainstorm when you want fresh ideas, and work with you when you need to delegate. We believe that everyone should be heard and respected. We are also firm believers in open communication, voicing and solving problems early, before they become major obstacles.",
             "Armed with your experience, supported by your team, and motivated by exciting projects, you’re all set for a successful career at Sinbad Software."
         ],
+        "alt": "Back-end Developer jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a Back-end Developer",
         "challenges": [
             "Design, build, and maintain core components of applications for our customers, internal teams, and third-party developers.",
             "Help to take your code to production, troubleshoot any issues that arise, and own fixing any associated bugs.",
@@ -258,6 +290,8 @@
     },
     {
         "id": "blockhain-dev",
+        "seo_title": "Blockchain Developer jobs in Dubai | Sinbad Software",
+        "seo_description": "If you are looking for a job as a Blockchain Developer in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "blockhain-dev",
         "role_plural": "Blockchain Developers",
         "role": "Blockchain Developer",
@@ -265,6 +299,8 @@
         "description": [
             "You’ll help with the operation of our existing crypto-cashier system and play a key role in our future blockchain-based projects. You will develop and maintain secure and efficient software to support our cryptocurrency payments. Your work will directly influence the core architecture that powers our high-traffic digital options trading website."
         ],
+        "alt": "Blockchain Developer jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a Blockchain Developer",
         "challenges": [
             "Design, build, and maintain core components of applications for our customers, internal teams, and third-party developers.",
             "Help to take your code to production, troubleshoot any issues that arise, and fix any associated bugs.",
@@ -287,6 +323,8 @@
     },
     {
         "id": "c-plus-plus-dev",
+        "seo_title": "C++ Developer jobs in Dubai | Sinbad Software",
+        "seo_description": "If you are looking for a job as a C++ Developer in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "c-plus-plus-dev",
         "role_plural": "C++ Developers",
         "role": "C++ Developer",
@@ -296,6 +334,8 @@
             "We recalculate 30 million data points in real-time, and our tech stack should support this volume. This isn’t a legacy codebase, either: expect to see C++20, coroutines and cutting-edge versions of Clang and GCC running on various platforms, including cross-compiled to WebAssembly. We’ve chosen C++ for its performance and portability but are also tracking the progress of such alternatives as Rust. In short, we adapt to new technologies when the need arises, and we need you to do the same, so come with a bold, can-do attitude to master our tech stack.",
             "You’ll be working with a team to build, maintain, and extend the high-performance C++ core features for pricing calculations,  automated trading execution algorithms, and platform integrations with key trading platforms such as MetaTrader 5."
         ],
+        "alt": "C++ Developer jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a C++ Developer",
         "challenges": [
             "Support product development by adding core features to shared libraries.",
             "Achieve high-performance execution targets for all critical components.",
@@ -317,6 +357,8 @@
     },
     {
         "id": "win-ops-eng",
+        "seo_title": "WinOps Engineer jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a WinOps Engineer in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "win-ops-eng",
         "role_plural": "WinOps Engineers",
         "role": "WinOps Engineer",
@@ -326,6 +368,8 @@
             "With over 400,000 active MT5 accounts, we constantly develop new practices and adopt new technologies to ensure reliable, scalable, and uninterrupted trading operations. Your expertise in systems administration and the Windows environment will be essential in overcoming technical and system challenges while working in an Agile environment.",
             "As a Devops Engineer (Windows) in Sinbad Software, you will be contributing to applying the DevOps mindset in the Windows world. In a rapid growth environment, where our technology stack is constantly updated, you will learn new technologies and apply best practices."
         ],
+        "alt": "WinOps Engineer jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a WinOps Engineer",
         "challenges": [
             "Explore the dynamics of new technologies–Octopus Deploy, Terraform–and implement automation procedures on the Windows environment with 30+ servers in an effort to eliminate human intervention.",
             "Implement chaos engineering methodology to the production environment to ensure uninterrupted operations with minimal downtime.",
@@ -352,6 +396,8 @@
     },
     {
         "id": "software-tester",
+        "seo_title": "Software Tester jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a Software Tester in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "software-tester",
         "role_plural": "Software Testers",
         "role": "Software Tester",
@@ -359,6 +405,8 @@
         "description": [
             "You’ll engage in quality control throughout the product development lifecycle of all our products, services, and systems. You will help develop test plans and ensure their execution at each stage, from planning until release. We process over a million transactions per day, and we need you to help deliver the best version of every product, fully optimised, free from bugs, and polished for client utilisation. "
         ],
+        "alt": "Software Tester jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a Software Tester",
         "challenges": [
             "Perform high-quality automated and manual tests on the Sinbad Software applications, backend infrastructure, and related systems.",
             "Collaborate closely with the rest of the QA and IT teams to create, design, and run several types of testing based on different objectives.",
@@ -387,6 +435,8 @@
     },
     {
         "id": "dev-ops",
+        "seo_title": "DevOps Engineer jobs in Dubai | Sinbad Software",
+        "seo_description": "If you’re looking for a job as a DevOps Engineer in Dubai, you can find more details here and apply for the position at Sinbad Software.",
         "slug": "dev-ops",
         "role_plural": "DevOps Engineers",
         "role": "DevOps Engineer",
@@ -394,6 +444,8 @@
         "description": [
             "You’ll be deeply involved in every stage of the software lifecycle. You will work closely with developers and testers to facilitate the smooth execution of the continuous integration (CI) process. You must be passionate about connecting software development to day-to-day operations and improving the quality of our products and services."
         ],
+        "alt": "DevOps Engineer jobs at Sinbad Software",
+        "join_alt": "Work with Sinbad Software as a DevOps Engineer",
         "challenges": [
             "Maintain and extend our service monitoring. We use tools such as Datadog to detect and react to issues. We’ll need you to be proactive and find issues before they happen.",
             "Keep things running. Systems do break from time to time. When they break, your job will be to make it work again. Once it works, walk the developers through the failure so they can prevent it from breaking again.",

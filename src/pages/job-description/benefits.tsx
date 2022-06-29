@@ -37,7 +37,7 @@ const BenefitsContainerWrapper = styled(ContainerWrapper)`
     }
 `
 
-const StyledHeader = styled.div<{ font_family?: string }>`
+const StyledHeader = styled.h2<{ font_family?: string }>`
     text-transform: uppercase;
     color: var(--color-sand-4);
     padding: 40px 40px 40px 0;
