@@ -4,7 +4,6 @@ import Dashboard from 'images/common/dashboard.png'
 import { ContainerWrapper } from 'components/containers'
 import device from 'themes/device'
 import { BlueBackground } from 'images/common/jd'
-import { SectionLabel } from 'components/chunks'
 
 type StyledTextProps = {
     font_family?: string
@@ -130,7 +129,6 @@ const TechStack = () => {
             <TechStackContainerWrapper>
                 <TechDashboard src={Dashboard} alt="Tech Stack" />
                 <TermsTextContainer>
-                    <SectionLabel />
                     <StyledHeader>Tech stack</StyledHeader>
                     <StyledText>
                         We leverage a wide range of programming languages and frameworks to create
