@@ -148,8 +148,8 @@ const data: DataType[] = [
                 objectFit="fill"
             />
         ),
-        header: 'Self-assessment questionnarie',
-        text: "We'll send you a questionnarie to help us learn more about you.",
+        header: 'Self-assessment questionnaire',
+        text: "We'll send you a questionnaire to help us learn more about you.",
     },
     {
         icon: (
