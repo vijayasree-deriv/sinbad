@@ -60,7 +60,7 @@ const CarouselImageContainer = styled(ImageContainer)`
     @media ${device.tablet} {
         margin-right: 0;
         max-width: unset;
-        height: 400px;
+        height: unset;
     }
 `
 
