@@ -149,7 +149,7 @@ const data: DataType[] = [
             />
         ),
         header: 'Self-assessment questionnarie',
-        text: "We'll send you a questionnaire to help us learn more about you.",
+        text: "We'll send you a questionnarie to help us learn more about you.",
     },
     {
         icon: (
