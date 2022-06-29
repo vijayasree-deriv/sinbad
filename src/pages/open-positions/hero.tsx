@@ -43,7 +43,7 @@ const OpenPositionImage = styled.div`
     }
 `
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.h1`
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -90,7 +90,7 @@ const Hero = () => {
                         <OpenPositionImage>
                             <StaticImage
                                 src="../../images/common/openpositions/first-section.png"
-                                alt="selected people icon"
+                                alt="Analytical IT dashboard for Sinbad Software"
                                 placeholder="tracedSVG"
                                 objectFit="fill"
                             />

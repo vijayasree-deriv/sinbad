@@ -45,7 +45,7 @@ const JoinUsOpenPositions = () => {
                     <JoinUsImageContainer padding_bottom="unset">
                         <StaticImage
                             src="../../../images/common/openpositions/join-team.png"
-                            alt="open position join us image"
+                            alt=" Build cutting-edge software with Sinbad Software"
                             placeholder="tracedSVG"
                         />
                     </JoinUsImageContainer>

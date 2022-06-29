@@ -79,7 +79,7 @@ const OpenPositionsInfo = styled.div`
     }
 `
 
-const StyledHeader = styled.div<StyledProps>`
+const StyledHeader = styled.h2<StyledProps>`
     font-size: ${(props) => props.font_size || '2.9rem'};
     line-height: ${(props) => props.line_height || '34px'};
     color: ${(props) => props.color || 'var(--color-black-3)'};
