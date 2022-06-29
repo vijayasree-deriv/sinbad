@@ -98,7 +98,7 @@ const StyledText = styled.div<StyledTextProps>`
     font-family: ${(props) => props.font_family || 'Maven Pro'};
     text-align: left;
 `
-const StyledHeader = styled.div<StyledTextProps>`
+const StyledHeader = styled.h2<StyledTextProps>`
     max-width: 425px;
     font-size: 4.8rem;
     line-height: 51px;

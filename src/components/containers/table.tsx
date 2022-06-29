@@ -61,7 +61,7 @@ const TableContainer = styled.div`
     }
 `
 
-const TermHeaderText = styled.div<TermProps>`
+const TermHeaderText = styled.h2<TermProps>`
     font-size: 3.8rem;
     line-height: 53px;
     color: var(--color-black-3);

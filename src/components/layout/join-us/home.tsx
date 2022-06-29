@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     width: 100%;
 `
 
-export const StyledHeader = styled.div<{ font_family?: string }>`
+export const StyledHeader = styled.h2<{ font_family?: string }>`
     text-transform: uppercase;
     color: var(--color-black-3);
     font-size: 4.8rem;
@@ -118,7 +118,7 @@ const JoinUsHome = () => {
                     <JoinUsImageContainer padding_bottom="unset">
                         <StaticImage
                             src="../../../images/common/homepage/join-us/home-join-us.png"
-                            alt="home join us image"
+                            alt="Sinbad Software with a tracking software"
                             placeholder="tracedSVG"
                         />
                     </JoinUsImageContainer>

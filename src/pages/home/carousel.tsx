@@ -118,7 +118,7 @@ const CarouselDots = styled.span`
     }
 `
 
-const BasicText = styled.div<{ font_family?: string }>`
+const BasicText = styled.h1<{ font_family?: string }>`
     font-size: 4.2rem;
     font-weight: 640;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
@@ -199,7 +199,7 @@ const data = [
             <StaticImage
                 key={0}
                 src="../../images/common/homepage/carousel/carousel-0.png"
-                alt="Designing scalable apps"
+                alt="Design mobile apps"
                 objectFit="contain"
                 loading="eager"
                 placeholder="tracedSVG"
@@ -213,7 +213,7 @@ const data = [
             <StaticImage
                 key={1}
                 src="../../images/common/homepage/carousel/carousel-1.png"
-                alt="Creating reliable platforms"
+                alt="Create online platforms"
                 objectFit="contain"
                 loading="eager"
                 placeholder="tracedSVG"
@@ -227,7 +227,7 @@ const data = [
             <StaticImage
                 key={2}
                 src="../../images/common/homepage/carousel/carousel-2.png"
-                alt="Building powerful software"
+                alt="Different software development"
                 objectFit="contain"
                 loading="eager"
                 placeholder="tracedSVG"

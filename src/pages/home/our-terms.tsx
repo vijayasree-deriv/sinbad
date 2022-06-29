@@ -68,7 +68,7 @@ const TermsAndSinbadContainer = styled.div`
     }
 `
 
-const StyledHeader = styled.div<StyledTextProps>`
+const StyledHeader = styled.h2<StyledTextProps>`
     max-width: 520px;
     font-size: 4.8rem;
     line-height: 53px;
@@ -189,7 +189,7 @@ const OurTeams = () => {
                     <SinbadImage>
                         <StaticImage
                             src="../../images/common/homepage/our-terms/sinbad-in-our-terms.png"
-                            alt="sinbad mascott"
+                            alt="Sinbad Software "
                             placeholder="tracedSVG"
                             objectFit="scale-down"
                         />

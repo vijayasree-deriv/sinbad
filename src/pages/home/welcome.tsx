@@ -27,7 +27,7 @@ const TextContainer = styled.div`
     background: var(--color-white);
 `
 
-const StyledHeader = styled.div<StyledTextProps>`
+const StyledHeader = styled.h2<StyledTextProps>`
     font-size: 4.8rem;
     line-height: 50px;
     color: #1b1b1b;
@@ -167,7 +167,7 @@ const Card = styled.div<CSSElementProps>`
     }
 `
 
-const CardHeader = styled.div<StyledTextProps>`
+const CardHeader = styled.h3<StyledTextProps>`
     max-width: 241px;
     font-size: 2.2rem;
     line-height: 27px;
