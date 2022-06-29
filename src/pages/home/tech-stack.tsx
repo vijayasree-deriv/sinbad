@@ -113,7 +113,6 @@ const StyledDescription = styled.div<StyledTextProps>`
     max-width: 480px;
     font-size: 2.4rem;
     line-height: 27px;
-    color: var(--color-sand-4);
     font-weight: 560;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     text-align: left;
