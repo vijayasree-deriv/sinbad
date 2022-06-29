@@ -57,10 +57,9 @@ const CarouselImageContainer = styled(ImageContainer)`
             max-height: 400px;
         }
     }
-
     @media ${device.tablet} {
         margin-right: 0;
-        max-width: 400px;
+        max-width: unset;
         height: 400px;
     }
 `
@@ -155,6 +154,7 @@ const StyledUpperText = styled(BasicText)`
     @media ${device.tabletL} {
         font-size: 3rem;
         line-height: 35px;
+        text-align: center;
     }
     @media ${device.tablet} {
         font-size: 2.8rem;
