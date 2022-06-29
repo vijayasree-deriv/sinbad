@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { JoinUsContainer, JoinUsInfo, StyledHeader, StyledText, TextContainer } from './home'
 import { JoinUsImageContainer } from 'components/containers/main'
 import Sinbad from 'images/common/openpositions/join-us-background.png'
-import { SectionLabel } from 'components/chunks'
 import { Banner } from 'images/common/jd'
 
 const Wrapper = styled.div`
@@ -32,7 +31,6 @@ const JoinUsOpenPositions = () => {
             <JoinUsWrapper>
                 <JoinUsContainer>
                     <JoinUsInfo>
-                        <SectionLabel />
                         <TextContainer>
                             <StyledHeader>JOIN OUR TEAM!</StyledHeader>
                             <StyledText>
