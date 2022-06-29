@@ -47,6 +47,7 @@ const HeaderContainer = styled.div`
 const StyledHeader = styled.div`
     display: flex;
     white-space: nowrap;
+    cursor: pointer;
 `
 
 const StyledHeaderLink = styled(Link)`
@@ -224,8 +225,12 @@ const Header = () => {
             <ContainerWrapper>
                 <HeaderContainer>
                     <StyledHeader onClick={() => HomeRedirect()}>
-                        <HeaderTitle font_family="Maven Pro Bold">Sinbad</HeaderTitle>
-                        <HeaderTitle padding_left="5px">Software</HeaderTitle>
+                        <HeaderTitle font_family="Maven Pro Bold" color="var(--color-sand-4)">
+                            Sinbad
+                        </HeaderTitle>
+                        <HeaderTitle padding_left="5px" color="var(--color-sand-4)">
+                            Software
+                        </HeaderTitle>
                     </StyledHeader>
                     <NavWrapper>
                         <StyledHeaderLink to="/" activeStyle={active_link} partiallyActive={false}>

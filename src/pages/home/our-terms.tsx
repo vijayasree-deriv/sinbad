@@ -5,7 +5,6 @@ import { OurTermsBackground } from 'images/common/homepage/our-terms'
 import { Term0, Term1, Term2, Term3, Term4, Term5, Term6, Term7 } from 'images/svg/terms'
 import { ImageContainer } from 'components/containers'
 import Table, { TableType } from 'components/containers/table'
-import { SectionLabel } from 'components/chunks'
 import { ContainerWrapper } from 'components/containers/common/style'
 import device from 'themes/device'
 
@@ -169,7 +168,6 @@ const OurTeams = () => {
         <OurTeamsContainer>
             <OurTeamsContainerWrapper>
                 <TermsTextContainer>
-                    <SectionLabel />
                     <StyledHeader>Revolutionising fintech needs amazing software</StyledHeader>
                     <StyledText>
                         Our mission is to develop world-class fintech software solutions that will

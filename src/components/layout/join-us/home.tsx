@@ -6,7 +6,6 @@ import { Button } from 'components/elements'
 import { JoinUsImageContainer } from 'components/containers/main'
 import device from 'themes/device'
 import { openPositionActions } from 'common/utility'
-import { SectionLabel } from 'components/chunks'
 import { Banner } from 'images/common/careers'
 
 const Wrapper = styled.div`
@@ -104,7 +103,6 @@ const JoinUsHome = () => {
             <JoinUsWrapper>
                 <JoinUsContainer>
                     <JoinUsInfo>
-                        <SectionLabel />
                         <TextContainer padding_bottom="80px">
                             <StyledHeader>Join Our Team!</StyledHeader>
                             <StyledText>

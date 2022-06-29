@@ -8,19 +8,20 @@ import EmailSvg from 'images/svg/mail.svg'
 import device from 'themes/device'
 import { CSSElementProps } from 'types/generics'
 
-const ContactLink = styled.a`
-    align-self: center;
+const ContactIcon = styled.div<CSSElementProps>`
+    align-self: start;
     padding: 8px;
     display: flex;
     background: white;
     border-radius: 30px;
+    cursor: pointer;
 `
 
 const ContactText = styled.div<CSSElementProps>`
+    max-width: 250px;
     font-size: 1.6rem;
     line-height: 20px;
     color: white;
-    padding-top: 10px;
     padding-left: 10px;
     justify-content: center;
     font-family: Maven Pro;
@@ -35,8 +36,8 @@ const ContactImage = styled.img`
 const ContactContainer = styled.div`
     display: flex;
     flex-direction: row;
-    max-width: 450px;
-    padding-right: 70px;
+    width: fit-content;
+    padding-right: 55px;
 
     @media ${device.tabletL} {
         padding: 0;
@@ -54,6 +55,7 @@ const contacts = [
             '2201, 22nd Floor, One by Omniyat Building, Al Mustaqbal Street, Business Bay, Dubai, UAE',
         to: 'https://goo.gl/maps/8Lb4NbYoUpikKJxS6',
         target: '_blank',
+        only_mobile: false,
     },
     {
         id: 1,
@@ -62,6 +64,7 @@ const contacts = [
         details: '+971 50 861-1678',
         to: 'tel:971508611678',
         target: '_self',
+        only_mobile: true,
     },
     {
         id: 2,
@@ -70,6 +73,7 @@ const contacts = [
         details: 'information@sinbad.software',
         to: 'mailto:information@sinbad.software',
         target: '_self',
+        only_mobile: false,
     },
 ]
 
@@ -77,15 +81,23 @@ const SocialWrapperComponent = () => {
     return (
         <SocialWrapper>
             {contacts.map((contact) => (
-                <ContactContainer key={contact.id}>
-                    <ContactLink href={isMobile() ? contact.to : '#'} target={contact.target}>
+                <ContactContainer
+                    key={contact.id}
+                    onClick={() => {
+                        {
+                            contact.only_mobile &&
+                                isMobile() &&
+                                window.open(contact.to, contact.target)
+                        }
+                        {
+                            !contact.only_mobile && window.open(contact.to, contact.target)
+                        }
+                    }}
+                >
+                    <ContactIcon>
                         <ContactImage src={contact.image} />
-                    </ContactLink>
-                    <div
-                        onClick={() => {
-                            isMobile() ? window.open(contact.to, contact.target) : null
-                        }}
-                    >
+                    </ContactIcon>
+                    <div>
                         <ContactText>{contact.info}</ContactText>
                         <ContactText>{contact.details}</ContactText>
                     </div>
