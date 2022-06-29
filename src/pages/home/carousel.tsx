@@ -60,7 +60,10 @@ const CarouselImageContainer = styled(ImageContainer)`
     @media ${device.tablet} {
         margin-right: 0;
         max-width: unset;
-        height: unset;
+        height: 400px;
+    }
+    @media ${device.tabletS} {
+        height: 320px;
     }
 `
 
@@ -231,6 +234,7 @@ const data = [
                 loading="eager"
                 placeholder="tracedSVG"
                 layout="fullWidth"
+                style={{ 'padding-top': ' 100%' }}
             />
         ),
     },
