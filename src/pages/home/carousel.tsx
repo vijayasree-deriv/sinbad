@@ -16,6 +16,10 @@ const CarouselContainer = styled.div`
     background-size: contain;
     background-position: right 35% bottom 0%;
 
+    @media ${device.laptopM} {
+        background-image: none;
+    }
+
     @media ${device.tabletS} {
         background-image: none;
     }
@@ -29,7 +33,7 @@ const CarouselContainerWrapper = styled(ContainerWrapper)`
     @media ${device.tabletL} {
         flex-direction: column-reverse;
         align-items: center;
-        height: auto;
+        height: 450px;
         margin: 0;
     }
 `
@@ -54,7 +58,7 @@ const CarouselImageContainer = styled(ImageContainer)`
         max-height: 500px;
         height: auto;
         @media ${device.tabletL} {
-            max-height: 400px;
+            max-height: 200px;
         }
         @media ${device.tabletS} {
             max-height: 350px;
@@ -82,6 +86,10 @@ const PickerContainer = styled.div`
     align-items: center;
     width: fit-content;
     margin: 10px 0 0 0;
+
+    @media ${device.tabletL} {
+        padding-bottom: 15px;
+    }
 `
 
 const CarouselDots = styled.span`
@@ -164,17 +172,15 @@ const StyledUpperText = styled(BasicText)`
         line-height: 52px;
     }
     @media ${device.tabletL} {
-        font-size: 3rem;
-        line-height: 35px;
+        font-size: 2.8rem;
+        line-height: 30px;
         text-align: center;
     }
     @media ${device.tablet} {
-        font-size: 2.8rem;
-        line-height: 38px;
+        font-size: 2.4rem;
     }
     @media ${device.tabletS} {
-        font-size: 2.4rem;
-        line-height: 34px;
+        font-size: 2.2rem;
     }
 `
 
