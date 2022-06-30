@@ -170,10 +170,11 @@ const PerksBenefits = () => {
                         We offer a robust training programme to help you with seamless onboarding
                         when you join us. Depending on your needs, your team lead might provide you
                         with technical training, too. Most importantly, we have an ongoing education
-                        assistance programme - applicable to both short-term and long-term
-                        work-related courses - to encourage colleagues to boost their knowledge and
-                        skills. Lateral moving is also a practice that we warmly welcome as a part
-                        of your career development as it can broaden and deepen your experience.
+                        assistance programme &mdash; applicable to both short-term and long-term
+                        work-related courses &mdash; to encourage colleagues to boost their
+                        knowledge and skills. Lateral moving is also a practice that we warmly
+                        welcome as a part of your career development as it can broaden and deepen
+                        your experience.
                     </StyledText>
                 </TextAboutCareer>
                 <StyledImage>

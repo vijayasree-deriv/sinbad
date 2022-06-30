@@ -4,6 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { JobTitleProps } from './data'
 import { ContainerWrapper, ImageContainer } from 'components/containers'
 import Background from 'images/common/background.png'
+import device from 'themes/device'
 
 const JobTitleContainer = styled.div`
     display: flex;
@@ -31,6 +32,10 @@ const StyledHeader = styled.h1<{ font_family?: string }>`
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     text-align: left;
     padding-top: 100px;
+
+    @media ${device.tablet} {
+        text-align: center;
+    }
 `
 
 const JobTitle = ({ position }: JobTitleProps) => {

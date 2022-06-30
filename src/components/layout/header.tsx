@@ -220,6 +220,9 @@ const Header = () => {
                     >
                         Open Positions
                     </StyledHeaderLink>
+                    <StyledHeaderLink to="#" onClick={contactUsAction}>
+                        Contact Us
+                    </StyledHeaderLink>
                 </StyledMenu>
             </BurgerMenu>
             <ContainerWrapper>
