@@ -117,7 +117,7 @@ const CarouselDots = styled.span`
     }
 `
 
-const BasicText = styled.h1<{ font_family?: string }>`
+const BasicText = styled.div<{ font_family?: string }>`
     font-size: 4.2rem;
     font-weight: 640;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
