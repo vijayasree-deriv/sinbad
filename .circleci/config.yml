@@ -119,6 +119,12 @@ jobs:
       - tag
       - npm_install
       - build
+      - run:
+          name: "Publish to cloudflare pages (staging)"
+          command: |
+            cd public
+            npx wrangler pages publish . --project-name=sinbad-pages --branch=staging
+            echo "New staging website - http://staging.cf-pages-sinbad.deriv.com"
       - docker_build_push
       - k8s_deploy
       - notify_slack
@@ -129,6 +135,12 @@ jobs:
       - git_checkout_from_cache
       - npm_install
       - build
+      - run:
+          name: "Publish to cloudflare pages (production)"
+          command: |
+            cd public
+            npx wrangler pages publish . --project-name=sinbad-pages --branch=main
+            echo "New website - http://cf-pages-sinbad.deriv.com"
       - tag:
           target_version: 'production'
       - docker_build_push:
