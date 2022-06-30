@@ -44,9 +44,11 @@ const StyledHeader = styled.h1<{ font_family?: string; color?: string; padding?:
     @media ${device.tabletL} {
         font-size: 3rem;
         line-height: 20px;
+        padding: 0 5px;
     }
     @media ${device.tabletS} {
         font-size: 2.4rem;
+        padding: 0 3px;
     }
 `
 
@@ -57,7 +59,7 @@ const StyledContainer = styled.div`
     padding: 2px 0 2px 252px;
 
     @media ${device.tabletL} {
-        padding: 2px 0 2px 130px;
+        padding: 2px 0 2px 125px;
     }
 
     @media ${device.tabletS} {

@@ -47,6 +47,7 @@ const HeaderContainer = styled.div`
 const StyledHeader = styled.div`
     display: flex;
     white-space: nowrap;
+    cursor: pointer;
 `
 
 const StyledHeaderLink = styled(Link)`
