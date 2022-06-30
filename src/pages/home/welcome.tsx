@@ -232,7 +232,7 @@ const data = {
         },
         {
             header: 'Quality assurance',
-            text: 'Whatever we build goes through rigorous testing to make sure its quality and security meet our tough standarts.',
+            text: 'Whatever we build goes through rigorous testing to make sure its quality and security meet our tough standards.',
             icon: (
                 <StaticImage
                     src="../../images/common/homepage/welcome/other-2.png"
