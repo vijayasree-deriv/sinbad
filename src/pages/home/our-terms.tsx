@@ -131,7 +131,7 @@ const SinbadImage = styled(ImageContainer)`
 const data: TableType[] = [
     {
         icon: Term0,
-        text: 'Mobile App development',
+        text: 'Mobile App Development',
     },
     {
         icon: Term1,
@@ -175,9 +175,9 @@ const OurTeams = () => {
                     </StyledText>
                     <StyledText>
                         With a deep undestanding of the fintech industry and a talented team, we are
-                        ready to provide clients around the world with what they need - from custom
-                        software to mobile applications, websites, web applications, information
-                        architecture, and more.
+                        ready to provide clients around the world with what they need &mdash; from
+                        custom software to mobile applications, websites, web applications,
+                        information architecture, and more.
                     </StyledText>
                     <StyledDescription>
                         Where others see gaps, we see an opportunity to build a powerhouse.
@@ -192,7 +192,7 @@ const OurTeams = () => {
                             objectFit="scale-down"
                         />
                     </SinbadImage>
-                    <Table data={data} text={'Our Teams'} />
+                    <Table data={data} text={'Our teams'} />
                 </TermsAndSinbadContainer>
             </OurTeamsContainerWrapper>
         </OurTeamsContainer>

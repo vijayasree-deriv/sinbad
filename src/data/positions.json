@@ -4,7 +4,7 @@
         "slug": "front-end-dev",
         "role_plural": "Front-end Developers",
         "role": "Front-end Developer",
-        "text": "We are seeking a talented Front-end Developer to create robust front-end systems for global fintech companies.",
+        "text": "We are seeking talented Front-end Developers to create robust front-end systems for global fintech companies.",
         "description": [
             "You’ll build powerful front-end systems with an improved user experience for our clients worldwide. You‘ll advocate for clients’ needs in the design and development of our applications, especially when implementing new products and features."
         ],
@@ -35,7 +35,7 @@
         "slug": "data-analyst",
         "role_plural": "Data Analysts",
         "role": "Data Analyst",
-        "text": "We are looking for a Data Analyst to convert data into actionable insights for leading fintech companies to overcome complex business challenges.",
+        "text": "We are looking for Data Analysts to convert data into actionable insights for leading fintech companies to overcome complex business challenges.",
         "description": [
             "You’ll provide insights by collecting, processing, analysing, and presenting data in a usable way. You’ll ensure data integrity and use data-driven techniques to acquire information to help draft business strategies. Your keen eye for detail and expertise in data analysis will be vital in converting data into actionable insights to solve complex business challenges."
         ],
@@ -67,7 +67,7 @@
         "slug": "graphic-designer",
         "role_plural": "Graphic Designers",
         "role": "Graphic Designer",
-        "text": "We need a creative Graphic Designer to translate business requirements into captivating designs that will inform and motivate the audience to take action.",
+        "text": "We need creative Graphic Designers to translate business requirements into captivating designs that will inform and motivate the audience to take action.",
         "description": [
             "You’ll produce captivating designs that inform the audience and call them to action. With your keen eye for aesthetics, you will conceptualise creative solutions for visual challenges. You will play an essential role in building the user interface that brings our products and users together."
         ],
@@ -96,7 +96,7 @@
         "slug": "flutter-developer",
         "role_plural": "Flutter Developers",
         "role": "Flutter Developer",
-        "text": "We are looking for a Flutter Developer to build advanced Android and iOS applications for fast-paced fintech companies.",
+        "text": "We are looking for Flutter Developers to build advanced Android and iOS applications for fast-paced fintech companies.",
         "description": [
             "You’ll be responsible for designing and developing applications for iOS and Android while working closely with the Product Development team to plan new app features. You will handle debugging and troubleshooting to improve mobile app functionality and create advanced applications."
         ],
@@ -128,7 +128,7 @@
         "slug": "motion-designer",
         "role_plural": "Motion Designers",
         "role": "Motion Designer",
-        "text": "We are seeking a Motion Designer who uses motion to simplify complexity and improve the usability of fintech apps and websites.",
+        "text": "We are seeking Motion Designers who will use motion to simplify complexity and improve the usability of fintech apps and websites.",
         "description": [
             "You’ll define and create inventive motion designs for our products in collaboration with other designers and developers. You’ll bring innovative ideas to life on various platforms through your mastery of user interface animation, rapid prototyping, and motion studies. Your creations will elevate the motion experience of our clients and tell our brand story."
         ],
@@ -161,7 +161,7 @@
         "slug": "quantitative-analyst",
         "role_plural": "Quantitative Analysts",
         "role": "Quantitative Analyst",
-        "text": "We are looking for a Quantitative Analyst to create business models helping fintech companies to mitigate risk and make sound business decisions.",
+        "text": "We are looking for Quantitative Analysts to create business models helping fintech companies to mitigate risk and make sound business decisions.",
         "description": [
             "You’ll design and create new trading products that will allow our clients to trade anything they desire. You’ll use mathematical and financial methods to develop derivatives pricing and risk management algorithms based on real-time market data, new events, and any such parameters impacting the underlying instruments. With your extensive financial knowledge and data analysis skills, you will create models that will help us mitigate risk, make sound business decisions, and introduce a new generation of trading products to the fintech world."
         ],
@@ -192,7 +192,7 @@
         "slug": "ui-ux-designer",
         "role_plural": "UI/UX Designers",
         "role": "UI/UX Designer",
-        "text": "We are seeking a UI/UX Designer who will transform complex concepts into intuitive, accessible, and user-friendly designs for fast-growing fintech companies.",
+        "text": "We are seeking UI/UX Designers who will transform complex concepts into intuitive, accessible, and user-friendly designs for fast-growing fintech companies.",
         "description": [
             "You’ll inform the design of our websites and apps from the perspective of our end-user. You will have an in-depth understanding of the user requirements, and you will be involved in every aspect of the product development process. You’ll transform complex concepts into intuitive, accessible, and user-friendly designs."
         ],
@@ -228,7 +228,7 @@
         "slug": "back-end-dev",
         "role_plural": "Back-end Developers",
         "role": "Back-end Developer",
-        "text": "We are seeking a Back-end Developer to build automated tests and perform regular reviews to enhance code quality for top fintech companies.",
+        "text": "We are seeking Back-end Developers to build automated tests and perform regular reviews to enhance code quality for top fintech companies.",
         "description": [
             "You’ll design and develop reliable server-side apps and databases. By testing and debugging them, you make sure that issues are found and addressed in time. Our client base is growing rapidly, and so is the need to make our system and APIs more scalable. You will play an important role in making our platform scalable by transforming from monolithic to microservice-based architecture.",
             "You’re working with a supportive team who are ready to hear your thoughts, brainstorm when you want fresh ideas, and work with you when you need to delegate. We believe that everyone should be heard and respected. We are also firm believers in open communication, voicing and solving problems early, before they become major obstacles.",
@@ -260,7 +260,7 @@
         "slug": "blockhain-dev",
         "role_plural": "Blockchain Developers",
         "role": "Blockchain Developer",
-        "text": "We are seeking a Blockchain Developer who will help with the crypto-cashier system operations and blockchain-based projects for renowned fintech companies.",
+        "text": "We are seeking Blockchain Developers who will help with the crypto-cashier system operations and blockchain-based projects for renowned fintech companies.",
         "description": [
             "You’ll help with the operation of our existing crypto-cashier system and play a key role in our future blockchain-based projects. You will develop and maintain secure and efficient software to support our cryptocurrency payments. Your work will directly influence the core architecture that powers our high-traffic digital options trading website."
         ],
@@ -289,7 +289,7 @@
         "slug": "c-plus-plus-dev",
         "role_plural": "C++ Developers",
         "role": "C++ Developer",
-        "text": "We are looking for a C++ Developer to run tests and applications and work with large codebases for rapidly growing fintech companies.",
+        "text": "We are looking for C++ Developers to run tests and applications and work with large codebases for rapidly growing fintech companies.",
         "description": [
             "We’re a fast-paced company, where new products and projects are introduced all the time. To support this, we need a good foundation: fast, reliable, well-tested code that can either run directly on our servers — or on mobile/desktop/web clients. Each component is self-contained, but we encourage cross-team sharing of information and processes — your ideas might spark creativity in other projects.",
             "We recalculate 30 million data points in real-time, and our tech stack should support this volume. This isn’t a legacy codebase, either: expect to see C++20, coroutines and cutting-edge versions of Clang and GCC running on various platforms, including cross-compiled to WebAssembly. We’ve chosen C++ for its performance and portability but are also tracking the progress of such alternatives as Rust. In short, we adapt to new technologies when the need arises, and we need you to do the same, so come with a bold, can-do attitude to master our tech stack.",
@@ -319,7 +319,7 @@
         "slug": "win-ops-eng",
         "role_plural": "WinOps Engineers",
         "role": "WinOps Engineer",
-        "text": "We are seeking a WinOps Engineer to deploy product updates, identify and resolve system issues, and perform production operations.",
+        "text": "We are seeking WinOps Engineers to deploy product updates, identify and resolve system issues, and perform production operations.",
         "description": [
             "Are you passionate about automation? Join our WinOps team and apply all your creativity while working on a complex infrastructure of more than 40 servers. We develop a wide range of products and services offered on MT5, and we set ambitious targets to achieve and retain 24/7 availability to our clients.",
             "With over 400,000 active MT5 accounts, we constantly develop new practices and adopt new technologies to ensure reliable, scalable, and uninterrupted trading operations. Your expertise in systems administration and the Windows environment will be essential in overcoming technical and system challenges while working in an Agile environment.",
@@ -354,7 +354,7 @@
         "slug": "software-tester",
         "role_plural": "Software Testers",
         "role": "Software Tester",
-        "text": "We are seeking a Software Tester to improve the quality of websites, applications, back-end infrastructure, and related systems for leading fintech companies.",
+        "text": "We are seeking Software Testers to improve the quality of websites, applications, back-end infrastructure, and related systems for leading fintech companies.",
         "description": [
             "You’ll engage in quality control throughout the product development lifecycle of all our products, services, and systems. You will help develop test plans and ensure their execution at each stage, from planning until release. We process over a million transactions per day, and we need you to help deliver the best version of every product, fully optimised, free from bugs, and polished for client utilisation. "
         ],
@@ -389,7 +389,7 @@
         "slug": "dev-ops",
         "role_plural": "DevOps Engineers",
         "role": "DevOps Engineer",
-        "text": "We are seeking a DevOps Engineer to work closely with developers and testers to ensure the security and smooth running of all systems.",
+        "text": "We are seeking DevOps Engineers to work closely with developers and testers to ensure the security and smooth running of all systems.",
         "description": [
             "You’ll be deeply involved in every stage of the software lifecycle. You will work closely with developers and testers to facilitate the smooth execution of the continuous integration (CI) process. You must be passionate about connecting software development to day-to-day operations and improving the quality of our products and services."
         ],
