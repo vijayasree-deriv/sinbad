@@ -38,10 +38,6 @@ const ContactContainer = styled.div<CSSElementProps>`
     padding-right: 55px;
     cursor: ${(props) => props.cursor || 'unset'};
 
-    @media ${device.mobileL} {
-        cursor: pointer;
-    }
-
     @media ${device.tabletL} {
         padding: 0;
         width: 100%;
