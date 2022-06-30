@@ -56,12 +56,23 @@ const CarouselImageContainer = styled(ImageContainer)`
         @media ${device.tabletL} {
             max-height: 400px;
         }
+        @media ${device.tabletS} {
+            max-height: 350px;
+        }
+        @media ${device.mobileM} {
+            max-height: 300px;
+        }
     }
-
-    @media ${device.tablet} {
-        margin-right: 0;
-        max-width: 400px;
+    @media ${device.tabletL} {
         height: 400px;
+        margin: 0;
+        max-width: 400px;
+    }
+    @media ${device.tabletS} {
+        height: 350px;
+    }
+    @media ${device.mobileM} {
+        height: 320px;
     }
 `
 
@@ -155,6 +166,7 @@ const StyledUpperText = styled(BasicText)`
     @media ${device.tabletL} {
         font-size: 3rem;
         line-height: 35px;
+        text-align: center;
     }
     @media ${device.tablet} {
         font-size: 2.8rem;
@@ -231,6 +243,7 @@ const data = [
                 loading="eager"
                 placeholder="tracedSVG"
                 layout="fullWidth"
+                style={{ 'padding-top': ' 100%' }}
             />
         ),
     },
