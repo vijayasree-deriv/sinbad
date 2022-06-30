@@ -51,7 +51,7 @@ const Button = ({ has_icon = true, label, onClick }: ButtonProps) => {
     return (
         <ButtonContainer>
             <ButtonItem onClick={onClick}>
-                {has_icon && <img src={RoundRight} />}
+                {has_icon && <img alt={label} src={RoundRight} />}
                 <span>{label}</span>
             </ButtonItem>
         </ButtonContainer>

@@ -42,14 +42,10 @@ const StyledHeader = styled.div`
     font-weight: bold;
     text-transform: uppercase;
     padding: 0 0 30px;
+    text-align: center;
 
-    @media ${device.mobileL} {
-        font-size: 4.4rem;
-        text-align: center;
-    }
-    @media ${device.mobileM} {
-        font-size: 4rem;
-        text-align: center;
+    @media ${device.tablet} {
+        max-width: 250px;
     }
 `
 
@@ -70,6 +66,21 @@ const StyledFlex = styled.div`
     }
     @media ${device.laptop} {
         padding: 40px 0 80px;
+    }
+`
+
+const StyledCard = styled(Card)`
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 390px;
+    height: 220px;
+    padding: 10px 10px 20px 20px;
+    margin: 5px;
+    border-radius: 5px;
+
+    @media ${device.mobileL} {
+        height: 240px;
     }
 `
 
@@ -160,7 +171,7 @@ const data: DataType[] = [
             />
         ),
         header: 'Interview with HR and Manager',
-        text: 'An HR representative and your potential manager will interview you.',
+        text: 'An HR representative and your potential manager will interview you. They will assess your experience, skills, and cultural fit.',
     },
     {
         icon: (
@@ -172,7 +183,7 @@ const data: DataType[] = [
             />
         ),
         header: 'Interview with COO/CTO/CEO',
-        text: "In this round, you'll speak with our COO, CTO, CEO depending on the role.",
+        text: "In this round, you'll speak with our COO, CTO or CEO depending on the role.",
     },
     {
         icon: (
@@ -189,26 +200,26 @@ const data: DataType[] = [
     {
         icon: (
             <StaticImage
-                src="../../images/common/careers/offer.png"
+                src="../../images/common/careers/you-in.png"
                 alt="job offer icon"
                 placeholder="tracedSVG"
                 objectFit="fill"
             />
         ),
         header: 'Job offer',
-        text: "If everything goes well, you'll recieve a job offer. Be ready, as your new adventure with us is about to begin.",
+        text: "If everything goes well, you'll receive a job offer. Be ready, as your new adventure with us is about to begin.",
     },
     {
         icon: (
             <StaticImage
-                src="../../images/common/careers/you-in.png"
+                src="../../images/common/careers/offer.png"
                 alt="selected people icon"
                 placeholder="tracedSVG"
                 objectFit="fill"
             />
         ),
         header: "You're one of us",
-        text: "Welcome to Sinbad! You'll recieve your start date and the details of your onboarding programme.",
+        text: "Welcome to Sinbad! You'll receive your start date and the details of your onboarding programme.",
     },
 ]
 
@@ -221,24 +232,14 @@ const HiringProcess = () => {
                 <StyledFlex>
                     {data.map(({ icon, header, text }, index) => {
                         return (
-                            <Card
-                                key={index}
-                                direction="row"
-                                ai="flex-start"
-                                jc="space-between"
-                                max_width="390px"
-                                height="220px"
-                                padding="10px 10px 20px 20px"
-                                margin="5px"
-                                border-radius="5px"
-                            >
+                            <StyledCard key={index}>
                                 <StyledImageContainer>{icon}</StyledImageContainer>
                                 <CardInfo>
                                     <CardHeader>{header}</CardHeader>
                                     <CardText>{text}</CardText>
                                 </CardInfo>
                                 <CardNumber>{index + 1}</CardNumber>
-                            </Card>
+                            </StyledCard>
                         )
                     })}
                 </StyledFlex>

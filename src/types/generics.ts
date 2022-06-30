@@ -7,6 +7,17 @@ export type CSSElementProps = {
     padding?: string
     fontFamily?: string
     alignSelf?: string
+    paddingTop?: string
+    paddingRight?: string
+    paddingBottom?: string
+    paddingLeft?: string
+    marginTop?: string
+    marginRight?: string
+    marginBottom?: string
+    marginLeft?: string
+    borderRight?: string
+    cursor?: string
+    jc?: string
 }
 
 export type TableDataProps = {

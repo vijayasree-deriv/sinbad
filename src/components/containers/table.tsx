@@ -31,10 +31,10 @@ type DataType = {
 const TableContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
     align-content: center;
-    max-width: 590px;
+    max-width: 640px;
     width: 100%;
 
     @media ${device.bp1060} {
@@ -67,7 +67,7 @@ const TermHeaderText = styled.div<TermProps>`
     color: var(--color-black-3);
     font-weight: bold;
     text-align: left;
-    padding: 0 110px 30px 0;
+    padding: 0 115px 30px 0;
 
     @media ${device.laptopM} {
         font-size: 3.4rem;
@@ -106,7 +106,7 @@ const TermText = styled.div<TermProps>`
     font-size: 1.8rem;
     line-height: 22px;
     color: var(--color-black-3);
-    font-weight: bold;
+    font-family: Maven Pro Bold;
     text-align: left;
 
     @media ${device.laptopM} {
@@ -120,7 +120,7 @@ const TermText = styled.div<TermProps>`
 `
 
 const Term = styled.div<TermProps>`
-    max-width: 224px;
+    max-width: 232px;
     width: 100%;
     height: 120px;
     display: flex;

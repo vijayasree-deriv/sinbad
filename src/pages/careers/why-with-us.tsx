@@ -84,21 +84,9 @@ const StyledImage = styled(ImageContainer)`
         max-width: 380px;
         height: 350px;
     }
-    @media ${device.bp680} {
-        max-width: 500px;
-        max-height: 370px;
-    }
     @media ${device.mobileL} {
-        max-width: 330px;
-        max-height: 300px;
-    }
-    @media ${device.mobileM} {
-        max-width: 310px;
-        max-height: 280px;
-    }
-    @media ${device.mobileS} {
-        max-width: 280px;
-        max-height: 250px;
+        width: 300px;
+        height: 250px;
     }
 `
 
@@ -111,7 +99,7 @@ const WhyWithUs = () => {
                     <StyledText>
                         Fintech is an industry where projects come in many shapes and sizes. You’ll
                         be constantly challenged to come up with new solutions and work with various
-                        technologies. With us, you’ll have the opportunity to continuosly learn and
+                        technologies. With us, you’ll have the opportunity to continuously learn and
                         build your skills while working on new challenges with a smart, supportive
                         team.
                     </StyledText>

@@ -4,7 +4,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Background from 'images/common/background.png'
 import { ContainerWrapper } from 'components/containers/common/style'
 import device from 'themes/device'
-import { SectionLabel } from 'components/chunks'
 import { ImageContainer } from 'components/containers'
 
 const CarouselContainer = styled.div`
@@ -256,7 +255,6 @@ const Carousel = () => {
         <CarouselContainer>
             <CarouselContainerWrapper>
                 <CarouselTextContainer>
-                    <SectionLabel />
                     <StyledUpperText>
                         Transforming <br />
                         ideas into <br />

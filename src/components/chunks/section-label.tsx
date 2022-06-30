@@ -3,10 +3,14 @@ import styled from 'styled-components'
 import device from 'themes/device'
 import { CSSElementProps } from 'types/generics'
 
-const StyledSSHeader = styled.div`
+const StyledSSHeader = styled.div<CSSElementProps>`
     display: flex;
     flex-direction: row;
     white-space: nowrap;
+
+    @media ${device.tabletL} {
+        justify-content: ${(props) => props.jc || 'unset'};
+    }
 `
 
 const StyledSSText = styled.div<CSSElementProps>`
@@ -27,9 +31,9 @@ const StyledSSText = styled.div<CSSElementProps>`
     }
 `
 
-const SectionLabel = () => {
+const SectionLabel = ({ jc }: CSSElementProps) => {
     return (
-        <StyledSSHeader>
+        <StyledSSHeader jc={jc}>
             <StyledSSText fontFamily="Maven Pro Bold">Sinbad </StyledSSText>
             <StyledSSText> Software</StyledSSText>
         </StyledSSHeader>

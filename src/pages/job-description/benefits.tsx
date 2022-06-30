@@ -117,10 +117,10 @@ const StyledText = styled.div<{ font_family?: string }>`
 
 const data = [
     { text: 'Market-based salary', icon: Salary },
-    { text: 'Annual perfomance bonus', icon: Bonus },
+    { text: 'Annual performance bonus', icon: Bonus },
     { text: 'Medical insurance', icon: Insurance },
-    { text: 'Housing & transoration allowance', icon: House },
-    { text: 'Casueal dress code', icon: DressCode },
+    { text: 'Housing & transportation allowance', icon: House },
+    { text: 'Casual dress code', icon: DressCode },
     { text: 'Work permit', icon: Contract },
 ]
 

@@ -6,11 +6,9 @@ import { Button } from 'components/elements'
 import { JoinUsImageContainer } from 'components/containers/main'
 import Sinbad from 'images/common/openpositions/join-us-background.png'
 import { Banner } from 'images/common/jd'
-import { SectionLabel } from 'components/chunks'
-import device from 'themes/device'
 
 const Wrapper = styled.div`
-    background-color: var(--color-sand-1);
+    background-color: var(--color-sand-transparent);
     background-repeat: no-repeat;
     background-image: url(${Sinbad});
     background-position: bottom center;
@@ -26,10 +24,6 @@ const JoinUsWrapper = styled(JoinUsContainer)`
     background-image: url(${Banner});
     background-size: 47.5% 65%;
     width: 100%;
-
-    @media ${device.laptopM} {
-        background-image: none;
-    }
 `
 
 const JoinUsJob = () => {
@@ -50,7 +44,6 @@ const JoinUsJob = () => {
                         />
                     </JoinUsImageContainer>
                     <JoinUsInfo>
-                        <SectionLabel />
                         <TextContainer>
                             <StyledHeader>Join Our Team!</StyledHeader>
                             <StyledText>
