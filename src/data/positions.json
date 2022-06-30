@@ -320,7 +320,7 @@
         "slug": "win-ops-eng",
         "role_plural": "WinOps Engineers",
         "role": "WinOps Engineer",
-        "text": "We are seeking a WinOps Engineer to deploy product updates, identify and resolve system issues, and perform production operations.",
+        "text": "We are seeking WinOps Engineers to deploy product updates, identify and resolve system issues, and perform production operations.",
         "description": [
             "Are you passionate about automation? Join our WinOps team and apply all your creativity while working on a complex infrastructure of more than 40 servers. We develop a wide range of products and services offered on MT5, and we set ambitious targets to achieve and retain 24/7 availability to our clients.",
             "With over 400,000 active MT5 accounts, we constantly develop new practices and adopt new technologies to ensure reliable, scalable, and uninterrupted trading operations. Your expertise in systems administration and the Windows environment will be essential in overcoming technical and system challenges while working in an Agile environment.",
@@ -355,7 +355,7 @@
         "slug": "software-tester",
         "role_plural": "Software Testers",
         "role": "Software Tester",
-        "text": "We are seeking a Software Tester to improve the quality of websites, applications, back-end infrastructure, and related systems for leading fintech companies.",
+        "text": "We are seeking Software Testers to improve the quality of websites, applications, back-end infrastructure, and related systems for leading fintech companies.",
         "description": [
             "You’ll engage in quality control throughout the product development lifecycle of all our products, services, and systems. You will help develop test plans and ensure their execution at each stage, from planning until release. We process over a million transactions per day, and we need you to help deliver the best version of every product, fully optimised, free from bugs, and polished for client utilisation. "
         ],
@@ -390,7 +390,7 @@
         "slug": "dev-ops",
         "role_plural": "DevOps Engineers",
         "role": "DevOps Engineer",
-        "text": "We are seeking a DevOps Engineer to work closely with developers and testers to ensure the security and smooth running of all systems.",
+        "text": "We are seeking DevOps Engineers to work closely with developers and testers to ensure the security and smooth running of all systems.",
         "description": [
             "You’ll be deeply involved in every stage of the software lifecycle. You will work closely with developers and testers to facilitate the smooth execution of the continuous integration (CI) process. You must be passionate about connecting software development to day-to-day operations and improving the quality of our products and services."
         ],
