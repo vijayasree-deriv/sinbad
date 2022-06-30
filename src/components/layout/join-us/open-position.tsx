@@ -5,6 +5,7 @@ import { JoinUsContainer, JoinUsInfo, StyledHeader, StyledText, TextContainer } 
 import { JoinUsImageContainer } from 'components/containers/main'
 import Sinbad from 'images/common/openpositions/join-us-background.png'
 import { Banner } from 'images/common/jd'
+import device from 'themes/device'
 
 const Wrapper = styled.div`
     background-color: var(--color-sand-transparent);
@@ -23,6 +24,10 @@ const JoinUsWrapper = styled(JoinUsContainer)`
     background-image: url(${Banner});
     background-size: 47.5% 65%;
     width: 100%;
+
+    @media ${device.laptopM} {
+        background-image: none;
+    }
 `
 
 const JoinUsOpenPositions = () => {

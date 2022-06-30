@@ -28,7 +28,8 @@ const JoinUsWrapper = styled(JoinUsContainer)`
     background-size: 42% 70%;
     width: 100%;
 
-    @media ${device.tabletL} {
+    @media ${device.laptopM} {
+        background-image: none;
     }
 `
 

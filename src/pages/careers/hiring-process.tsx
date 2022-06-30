@@ -26,6 +26,13 @@ const HiringProcessContainerWrapper = styled(ContainerWrapper)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media ${device.mobileL} {
+        max-width: 370px;
+    }
+    @media ${device.mobileM} {
+        max-width: 340px;
+    }
 `
 
 const StyledHeader = styled.div`
@@ -37,8 +44,10 @@ const StyledHeader = styled.div`
     padding: 0 0 30px;
     text-align: center;
 
-    @media ${device.tablet} {
-        max-width: 250px;
+    @media ${device.mobileL} {
+    }
+    @media ${device.mobileM} {
+        font-size: 4rem;
     }
 `
 
@@ -109,6 +118,9 @@ const CardText = styled.div<{ font_family?: string }>`
 
     @media ${device.laptop} {
         font-size: 2.2rem;
+    }
+    @media ${device.mobileM} {
+        font-size: 2rem;
     }
 `
 

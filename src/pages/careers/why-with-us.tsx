@@ -30,6 +30,13 @@ const WhyWithUsText = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 80px 0;
+
+    @media ${device.tabletL} {
+        padding: 40px 0;
+    }
+    @media ${device.mobileL} {
+        padding: 0px;
+    }
 `
 const StyledHeader = styled.div<{ font_family?: string }>`
     font-size: 4.8rem;
@@ -71,16 +78,28 @@ const StyledImage = styled(ImageContainer)`
     max-height: unset;
 
     @media ${device.tabletL} {
-        width: 520px;
+        max-width: 600px;
         height: 500px;
     }
     @media ${device.tabletS} {
-        width: 400px;
+        max-width: 380px;
         height: 350px;
     }
+    @media ${device.bp680} {
+        max-width: 500px;
+        max-height: 370px;
+    }
     @media ${device.mobileL} {
-        width: 300px;
-        height: 250px;
+        max-width: 330px;
+        max-height: 300px;
+    }
+    @media ${device.mobileM} {
+        max-width: 310px;
+        max-height: 280px;
+    }
+    @media ${device.mobileS} {
+        max-width: 280px;
+        max-height: 250px;
     }
 `
 
