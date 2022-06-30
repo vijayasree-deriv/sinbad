@@ -183,12 +183,12 @@ const OpenPositions = () => {
                 </PositionsCarouselContainer>
                 <OpenPositionsInfo>
                     <StyledHeader text_align="left" border_bottom="2px solid var(--color-sand-1)">
-                        Open Positions
+                        Open positions
                     </StyledHeader>
                     <StyledHeaderText padding="30px 0 10px">Back-end Development</StyledHeaderText>
                     <StyledHeaderText>Business Intelligence</StyledHeaderText>
                     <StyledHeaderText>DevOps</StyledHeaderText>
-                    <StyledHeaderText>Quantitative</StyledHeaderText>
+                    <StyledHeaderText>Quantitative Analysis</StyledHeaderText>
                     <StyledHeaderText>Mobile app Development</StyledHeaderText>
                     <StyledHeaderText
                         color="var(--color-black-3)"

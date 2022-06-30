@@ -34,26 +34,26 @@ const TableContainer = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
-    max-width: 640px;
+    max-width: 635px;
     width: 100%;
 
     @media ${device.bp1060} {
-        max-width: 530px;
+        max-width: 525px;
     }
     @media ${device.laptopM} {
-        max-width: 410px;
+        max-width: 405px;
     }
     @media ${device.laptop} {
-        max-width: 415px;
+        max-width: 410px;
     }
     @media ${device.tabletL} {
-        max-width: 320px;
+        max-width: 315px;
     }
     @media ${device.tablet} {
-        max-width: 250px;
+        max-width: 245px;
     }
     @media (max-width: 620px) {
-        max-width: 250px;
+        max-width: 245px;
         justify-content: center;
     }
     @media ${device.mobileL} {

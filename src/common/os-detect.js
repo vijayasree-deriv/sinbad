@@ -1,5 +1,9 @@
+import { isBrowser } from './utility'
+
 export const isMobile = () =>
-    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        isBrowser() && navigator.userAgent,
+    )
 
 export const mobileOSDetect = () => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera

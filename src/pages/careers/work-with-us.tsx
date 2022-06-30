@@ -95,11 +95,11 @@ const WorkWithUs = () => {
                 <StyledHeader>
                     Work
                     <StyledHeader padding="0 10px" color="var(--color-sand-4)">
-                        with talented teams.
+                        with talented teams
                     </StyledHeader>
                 </StyledHeader>
                 <StyledContainer>
-                    <StyledHeader>with the latest tech stack.</StyledHeader>
+                    <StyledHeader>with the latest tech stack</StyledHeader>
                     <StyledHeader color="var(--color-sand-4)">
                         on challenging projects.
                     </StyledHeader>
