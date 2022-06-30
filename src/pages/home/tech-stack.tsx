@@ -126,7 +126,7 @@ const TechStack = () => {
     return (
         <TechStackContainer>
             <TechStackContainerWrapper>
-                <TechDashboard src={Dashboard} alt="Tech Stack" />
+                <TechDashboard src={Dashboard} alt="Tech Stack" width="685" height="550" />
                 <TermsTextContainer>
                     <StyledHeader>Tech stack</StyledHeader>
                     <StyledText>
