@@ -14,7 +14,6 @@ const ContactIcon = styled.div<CSSElementProps>`
     display: flex;
     background: white;
     border-radius: 30px;
-    cursor: pointer;
 `
 
 const ContactText = styled.div<CSSElementProps>`
@@ -25,7 +24,6 @@ const ContactText = styled.div<CSSElementProps>`
     padding-left: 10px;
     justify-content: center;
     font-family: Maven Pro;
-    cursor: pointer;
 `
 
 const ContactImage = styled.img`
@@ -33,11 +31,16 @@ const ContactImage = styled.img`
     height: 25px;
 `
 
-const ContactContainer = styled.div`
+const ContactContainer = styled.div<CSSElementProps>`
     display: flex;
     flex-direction: row;
     width: fit-content;
     padding-right: 55px;
+    cursor: ${(props) => props.cursor || 'unset'};
+
+    @media ${device.mobileL} {
+        cursor: pointer;
+    }
 
     @media ${device.tabletL} {
         padding: 0;
@@ -83,6 +86,7 @@ const SocialWrapperComponent = () => {
             {contacts.map(({ id, image, info, details, to, target, only_mobile }) => (
                 <ContactContainer
                     key={id}
+                    cursor={only_mobile ? '' : 'pointer'}
                     onClick={() => {
                         {
                             only_mobile && isMobile() && window.open(to, target)
