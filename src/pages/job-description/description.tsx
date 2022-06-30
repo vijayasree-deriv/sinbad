@@ -174,7 +174,7 @@ const Description = ({ position }: JobTitleProps) => {
                     <StyledCard ai="center">
                         {position?.description.map((paragraph, index) => {
                             return (
-                                <StyledText padding="50px 75px" max_width="1100px" key={index}>
+                                <StyledText padding="25px 75px" max_width="1100px" key={index}>
                                     {paragraph}
                                 </StyledText>
                             )
