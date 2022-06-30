@@ -82,7 +82,7 @@ const SocialWrapperComponent = () => {
             {contacts.map(({ id, image, info, details, to, target, only_mobile }) => (
                 <ContactContainer
                     key={id}
-                    cursor={only_mobile ? '' : 'pointer'}
+                    cursor={only_mobile ? 'unset' : 'pointer'}
                     onClick={() => {
                         {
                             only_mobile && isMobile() && window.open(to, target)
