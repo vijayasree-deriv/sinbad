@@ -37,11 +37,11 @@ const TechDashboard = styled.img`
     max-height: 600px;
 
     @media ${device.tabletL} {
-        max-width: 600px;
-        max-height: 500px;
+        max-width: 500px;
+        max-height: 450px;
     }
     @media ${device.tabletS} {
-        max-width: 400px;
+        max-width: 350px;
         max-height: 400px;
     }
 `
@@ -78,8 +78,15 @@ const StackContainer = styled.div`
     flex-wrap: wrap;
     align-items: flex-start;
     max-width: 500px;
-    max-height: 170px;
+    max-height: 145px;
     padding: 10px 0;
+
+    @media (max-width: 1270px) {
+        max-height: 210px;
+    }
+    @media ${device.laptopM} {
+        max-height: 145px;
+    }
 `
 
 const Stack = styled.div<StyledTextProps>`
