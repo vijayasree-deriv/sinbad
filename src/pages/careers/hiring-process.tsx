@@ -44,8 +44,6 @@ const StyledHeader = styled.div`
     padding: 0 0 30px;
     text-align: center;
 
-    @media ${device.mobileL} {
-    }
     @media ${device.mobileM} {
         font-size: 4rem;
     }
