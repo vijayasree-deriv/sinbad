@@ -87,6 +87,9 @@ const StackContainer = styled.div`
     @media ${device.laptopM} {
         max-height: 145px;
     }
+    @media ${device.mobileL} {
+        max-height: 190px;
+    }
 `
 
 const Stack = styled.div<StyledTextProps>`
