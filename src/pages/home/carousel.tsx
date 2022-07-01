@@ -203,7 +203,6 @@ const data = [
                 loading="eager"
                 placeholder="tracedSVG"
                 layout="fullWidth"
-                height={500}
             />
         ),
     },
@@ -218,7 +217,6 @@ const data = [
                 loading="eager"
                 placeholder="tracedSVG"
                 layout="fullWidth"
-                height={500}
             />
         ),
     },
@@ -233,7 +231,6 @@ const data = [
                 loading="eager"
                 placeholder="tracedSVG"
                 layout="fullWidth"
-                height={500}
             />
         ),
     },
