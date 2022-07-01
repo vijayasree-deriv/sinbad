@@ -204,7 +204,6 @@ const data = [
                 placeholder="tracedSVG"
                 layout="fullWidth"
                 height={500}
-                width={600}
             />
         ),
     },
@@ -220,7 +219,6 @@ const data = [
                 placeholder="tracedSVG"
                 layout="fullWidth"
                 height={500}
-                width={600}
             />
         ),
     },
@@ -236,7 +234,6 @@ const data = [
                 placeholder="tracedSVG"
                 layout="fullWidth"
                 height={500}
-                width={600}
             />
         ),
     },
