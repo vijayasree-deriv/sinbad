@@ -6,6 +6,7 @@ import { Button } from 'components/elements'
 import { JoinUsImageContainer } from 'components/containers/main'
 import Sinbad from 'images/common/openpositions/join-us-background.png'
 import { Banner } from 'images/common/jd'
+import { HR_EMAIL } from 'common/constants'
 
 const Wrapper = styled.div`
     background-color: var(--color-sand-transparent);
@@ -28,7 +29,7 @@ const JoinUsWrapper = styled(JoinUsContainer)`
 
 const JoinUsJob = () => {
     const sendMailToHR = () => {
-        const link = 'mailto:hr@sinbad.software'
+        const link = `mailto:${HR_EMAIL}`
         window.open(link, '_blank')
     }
 

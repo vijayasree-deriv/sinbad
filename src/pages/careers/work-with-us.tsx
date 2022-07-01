@@ -35,7 +35,7 @@ const StyledHeader = styled.div<{ font_family?: string; color?: string; padding?
     display: flex;
     font-size: 4.8rem;
     line-height: 57px;
-    color: ${(props) => props.color || '#2a2a2a'};
+    color: ${(props) => props.color || 'var(--color-black-1)'};
     font-weight: 640;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     text-align: center;

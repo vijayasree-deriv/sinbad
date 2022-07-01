@@ -94,7 +94,7 @@ const StyledBurger = styled.button<MenuProps>`
     div {
         width: 2.5rem;
         height: 0.25rem;
-        background: ${({ open }) => (open ? '#0D0C1D' : 'var(--color-sand-4)')};
+        background: ${({ open }) => (open ? 'var(--color-black-4)' : 'var(--color-sand-4)')};
         border-radius: 10px;
         transition: all 0.3s linear;
         position: relative;
