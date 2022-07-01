@@ -1,0 +1,55 @@
+:root {
+    /* colors */
+    --color-white: #ffffff;
+    --color-black-1: #2a2a2a;
+    --color-black-2: #242424;
+    --color-black-3: #232323;
+    --color-black-4: #0D0C1D;
+    --color-blue-1: #0e2432;
+    --color-blue-2: #3bc8f7;
+    --color-blue-3: #ecf6f8;
+    --color-sand-1: #fef5e6;
+    --color-sand-transparent: #fef5e675;
+    --color-sand-2: #fae9a7;
+    --color-sand-3: #f7cd43;
+    --color-sand-4: #f47c48;
+    --color-sand-5: #d15824;
+    --color-sea-1: #ecf6f8;
+    --color-grey-1: #5d5d5d;
+    --color-grey-2: #e6ded0;
+
+    /* sizes */
+    --text-size-xxs: 1.2rem;
+    --text-size-xs: 1.4rem;
+    --text-size-s: 1.6rem;
+    --text-size-sm: 2rem;
+    --text-size-m: 2.4rem;
+    --text-size-l: 3.2rem;
+    --text-size-xl: 4.8rem;
+    --text-size-xxl: 6.4rem;
+    --text-size-header-1: 3.6rem;
+    --text-size-header-2: 2.8rem;
+    --text-size-header-3: 7.2rem;
+    --text-size-header-4: 4rem;
+    --text-size-header-5: 4.8rem;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 62.5%;
+}
+
