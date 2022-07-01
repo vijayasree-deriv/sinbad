@@ -26,9 +26,6 @@ const Container = styled.div`
     @media ${device.tabletL} {
         padding: unset;
     }
-    @media ${device.mobileL} {
-        position: static;
-    }
 `
 const HeaderContainer = styled.div`
     height: 60px;
@@ -81,7 +78,7 @@ export const NavWrapper = styled.div`
 `
 const StyledBurger = styled.button<MenuProps>`
     position: absolute;
-    top: 15%;
+    top: 25%;
     left: 2rem;
     display: flex;
     flex-direction: column;
@@ -115,10 +112,6 @@ const StyledBurger = styled.button<MenuProps>`
         :nth-child(3) {
             transform: ${({ open }) => (open ? 'rotate(-42deg)' : 'rotate(0)')};
         }
-    }
-
-    @media ${`(max-width: 425px)`} {
-        top: 2.2%;
     }
 `
 const StyledMenu = styled.nav<MenuProps>`
