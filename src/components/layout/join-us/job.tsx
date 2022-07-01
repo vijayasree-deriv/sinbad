@@ -29,7 +29,7 @@ const JoinUsWrapper = styled(JoinUsContainer)`
 const JoinUsJob = () => {
     const sendMailToHR = () => {
         const link = 'mailto:hr@sinbad.software'
-        window.location.href = link
+        window.open(link, '_blank')
     }
 
     return (
