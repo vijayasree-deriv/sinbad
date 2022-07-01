@@ -7,6 +7,7 @@ import PhoneSvg from 'images/svg/phone.svg'
 import EmailSvg from 'images/svg/mail.svg'
 import device from 'themes/device'
 import { CSSElementProps } from 'types/generics'
+import { EMAIL, MOBILE } from 'common/constants'
 
 const ContactIcon = styled.div<CSSElementProps>`
     align-self: start;
@@ -61,7 +62,7 @@ const contacts = [
         image: PhoneSvg,
         info: 'Phone:',
         details: '+971 50 861-1678',
-        to: 'tel:971508611678',
+        to: `tel:${MOBILE}`,
         target: '_self',
         only_mobile: true,
     },
@@ -69,8 +70,8 @@ const contacts = [
         id: 2,
         image: EmailSvg,
         info: 'Email:',
-        details: 'information@sinbad.software',
-        to: 'mailto:information@sinbad.software',
+        details: `${EMAIL}`,
+        to: `mailto:${EMAIL}`,
         target: '_self',
         only_mobile: false,
     },
