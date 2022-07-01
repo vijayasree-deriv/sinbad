@@ -213,7 +213,7 @@ const data = [
                 alt="Designing scalable apps"
                 objectFit="contain"
                 loading="eager"
-                placeholder="tracedSVG"
+                placeholder="blurred"
                 layout="fullWidth"
             />
         ),
@@ -227,7 +227,7 @@ const data = [
                 alt="Creating reliable platforms"
                 objectFit="contain"
                 loading="eager"
-                placeholder="tracedSVG"
+                placeholder="blurred"
                 layout="fullWidth"
             />
         ),
@@ -241,7 +241,7 @@ const data = [
                 alt="Building powerful software"
                 objectFit="contain"
                 loading="eager"
-                placeholder="tracedSVG"
+                placeholder="blurred"
                 layout="fullWidth"
                 style={{ 'padding-top': ' 100%' }}
             />
