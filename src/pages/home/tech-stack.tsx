@@ -37,11 +37,10 @@ const TechDashboard = styled.img`
     max-height: 600px;
 
     @media ${device.tabletL} {
-        max-width: 500px;
+        max-width: 100%;
         max-height: 450px;
     }
     @media ${device.tabletS} {
-        max-width: 350px;
         max-height: 400px;
     }
 `
