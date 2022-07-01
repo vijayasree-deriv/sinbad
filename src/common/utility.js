@@ -228,7 +228,7 @@ export const useCallbackRef = (callback) => {
 export const isLocalhost = () => !!(isBrowser() && process.env.NODE_ENV === 'development')
 
 export const contactUsAction = () => {
-    window.location = `mailto:${EMAIL}`
+    window.open(`mailto:${EMAIL}`, '_blank')
 }
 
 export const openPositionActions = () => {

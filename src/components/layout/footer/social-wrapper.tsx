@@ -72,7 +72,7 @@ const contacts = [
         info: 'Email:',
         details: `${EMAIL}`,
         to: `mailto:${EMAIL}`,
-        target: '_self',
+        target: '_blank',
         only_mobile: false,
     },
 ]
