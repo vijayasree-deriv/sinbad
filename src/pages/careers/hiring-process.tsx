@@ -123,7 +123,8 @@ const CardText = styled.div<{ font_family?: string }>`
         font-size: 2rem;
     }
     @media ${device.mobileM} {
-        font-size: 1.5rem;
+        line-height: 20px;
+        padding: 10px 0;
     }
 `
 
