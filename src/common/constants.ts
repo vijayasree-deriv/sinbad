@@ -1,2 +1,2 @@
-export const Email = 'information@sinbad.software'
-export const Mobile = '971508611678'
+export const EMAIL = 'information@sinbad.software'
+export const MOBILE = '971508611678'
