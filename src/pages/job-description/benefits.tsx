@@ -47,7 +47,7 @@ const StyledHeader = styled.div<{ font_family?: string }>`
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     text-align: right;
     @media ${device.mobileM} {
-        padding: 40px 60px 40px 0;
+        padding: 40px 50px 40px 0;
     }
     @media ${device.mobileS} {
         padding: 40px 15px 40px 0;
