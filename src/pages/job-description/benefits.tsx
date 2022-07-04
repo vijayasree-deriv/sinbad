@@ -13,6 +13,7 @@ import {
     Contract,
     BlueBackground,
 } from 'images/common/jd'
+import device from 'themes/device'
 
 const BenefitsContainer = styled.div`
     display: flex;
@@ -45,6 +46,12 @@ const StyledHeader = styled.div<{ font_family?: string }>`
     font-weight: 560;
     font-family: ${(props) => props.font_family || 'Maven Pro Bold'};
     text-align: right;
+    @media ${device.mobileM} {
+        padding: 40px 60px 40px 0;
+    }
+    @media ${device.mobileS} {
+        padding: 40px 15px 40px 0;
+    }
 `
 
 const BenefitsImageContainer = styled.div`
@@ -69,6 +76,13 @@ const LocationImageContainer = styled.div`
 
 const StyledImg = styled.img`
     padding-right: 50px;
+
+    @media ${device.mobileM} {
+        padding-right: 20px;
+    }
+    @media ${device.mobileS} {
+        padding-right: 10px;
+    }
 `
 
 const CardInfo = styled.div`
